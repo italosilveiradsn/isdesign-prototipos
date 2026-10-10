@@ -102,6 +102,17 @@ footer .w{display:grid;grid-template-columns:1.3fr 1fr;gap:30px}
 footer b{color:#fff}
 .note{margin-top:26px;padding-top:22px;border-top:1px solid rgba(255,255,255,.1);font-size:13px;color:#8189a3;grid-column:1/-1}
 
+.vid{background:var(--navy2);color:#fff}
+.vid .two{align-items:center}
+.vid h2{color:#fff}.vid .eyebrow{color:var(--org)}.vid p{color:#c5cbe0;margin-top:16px}
+.vid video{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:22px;background:#000;box-shadow:0 24px 60px rgba(0,0,0,.4)}
+.award{display:flex;align-items:center;gap:18px;margin-top:26px;padding:16px 18px;border:1px solid rgba(255,255,255,.14);border-radius:16px;background:rgba(255,255,255,.05)}
+.award img{width:84px;height:84px;border-radius:12px}.award b{display:block;color:#fff;font-size:16px}.award span{font-size:14px;color:#aab1c8}
+.fmap{border:0;width:100%;height:220px;border-radius:14px;filter:grayscale(.2)}
+.hrs{list-style:none;margin-top:8px;display:grid;gap:2px;font-size:13.5px}
+.fcols{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:34px;grid-column:1/-1}
+.fcols h4{color:#fff;font-size:15px;margin-bottom:10px}
+.legal{grid-column:1/-1;display:flex;gap:18px;font-size:13px}.legal a{color:var(--org)}
 .bar{display:none}
 
 @media(max-width:900px){
@@ -110,7 +121,7 @@ footer b{color:#fff}
  .trust .w{grid-template-columns:repeat(2,1fr)}.t{padding:22px 16px}.t:nth-child(odd){border-left:0;padding-left:0}
  section{padding:64px 0}
  .grid3,.rv,.steps{grid-template-columns:1fr}.two{grid-template-columns:1fr;gap:34px}
- footer .w{grid-template-columns:1fr}
+ footer .w{grid-template-columns:1fr}.fcols{grid-template-columns:1fr}
  .bar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:30;gap:10px}
  .bar a{flex:1;text-align:center;font-weight:800;padding:15px;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.3)}
  .bar .a1{background:var(--org);color:#1a1006}.bar .a2{background:#fff;color:var(--navy2)}
@@ -163,6 +174,15 @@ footer b{color:#fff}
   <article class="sv"><img src="img/repair.webp" width="900" height="507" loading="lazy" alt="Roofers repairing a shingle roof"><div><h3>Roof repair</h3><p>Leaks, gutter problems, missing shingles or repainting, we fix it so your roof withstands hot Austin summers and the thunderstorms that follow.</p><a href="tel:+15128206505">Fix my roof →</a></div></article>
  </div>
  <div class="chips"><span>Roof estimates</span><span>Reroofing</span><span>Hail damage</span><span>Metal roofing</span><span>Asphalt shingle</span><span>Tile roofing</span><span>Residential</span><span>Commercial</span><span>Storm damage repair</span><span>Wind damage repair</span></div>
+</div></section>
+
+<section class="vid"><div class="w two">
+ <div>
+  <span class="eyebrow">See us at work</span><h2>Commercial and residential roofing, done by our own crews.</h2>
+  <p>Fully insured W-2 crews, up-to-date gear and a process built around honest assessments. Press play to see how we work on Austin roofs.</p>
+  <div class="award"><img src="img/fast50.webp" width="84" height="84" loading="lazy" alt="Austin Business Journal Fast 50 award badge"><div><b>Austin Business Journal Fast 50</b><span>Named one of the Top 50 Fastest-Growing Companies in Central Texas in 2020 and 2021.</span></div></div>
+ </div>
+ <video controls preload="none" playsinline poster="video/capa.webp" width="1100" height="619"><source src="video/video.mp4" type="video/mp4"></video>
 </div></section>
 
 <section class="why" id="why"><div class="w two">
@@ -223,9 +243,14 @@ footer b{color:#fff}
 </main>
 
 <footer><div class="w">
- <div><b>Austin Roofing Company &amp; Water Damage | WDR</b><br>9711 Beck Cir, Austin, TX 78758<br>(512) 820-6505</div>
- <div>GAF Master Elite Contractor · BBB A+ · Serving Central Texas since 2012</div>
- <p class="note">Design concept prepared by IsDesign (CNPJ 46.721.670/0001-06, Rua Professor Hilário de Melo Rezende, 442, Brazil). Not affiliated with Austin Roofing Company &amp; Water Damage | WDR. Text, photos and ratings come from the company's public website and Google listing, shown here only as a sample. This preview will be deleted on request or after 30 days.</p>
+ <div class="fcols">
+  <div><h4>Austin Roofing Company &amp; Water Damage | WDR</h4>9711 Beck Cir, Austin, TX 78758<br><a href="tel:+15128206505" style="color:var(--org)">(512) 820-6505</a><br><br><b style="font-size:14px">Hours of operation</b>
+   <ul class="hrs"><li>Monday to Sunday: 24 hours</li></ul></div>
+  <div><h4>Service area map</h4><iframe class="fmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3442.112123684591!2d-97.71490098487706!3d30.376173881762934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644cbeec39b9ec1%3A0x7a65c733353b9552!2s9711%20Beck%20Cir%2C%20Austin%2C%20TX%2078758%2C%20USA!5e0!3m2!1sen!2sua!4v1669211101497!5m2!1sen!2sua" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Service area map"></iframe></div>
+  <div><h4>Free roof inspection</h4><p style="margin-bottom:14px">No pressure. Honest assessments. Available 24/7.</p><a class="btn b-org" href="tel:+15128206505">Call (512) 820-6505</a></div>
+ </div>
+ <div class="legal"><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a><a href="#">Sitemap</a></div>
+ <p class="note">Design concept prepared by IsDesign (CNPJ 46.721.670/0001-06, Rua Professor Hilário de Melo Rezende, 442, Brazil). Not affiliated with Austin Roofing Company &amp; Water Damage | WDR. Text, photos, video and ratings come from the company's public website and Google listing, shown here only as a sample. This preview will be deleted on request or after 30 days.</p>
 </div></footer>
 
 <div class="bar"><a class="a1" href="tel:+15128206505">Call now</a><a class="a2" href="#top">Free inspection</a></div>
