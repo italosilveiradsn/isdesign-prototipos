@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Bowles Custom Pools &amp; Spas | Design concept by IsDesign</title>
+<meta name="description" content="Design concept for a faster home page. Prepared by IsDesign (Brazil). Not affiliated with Bowles Custom Pools &amp; Spas.">
+<link rel="preload" as="image" href="img/hero.webp" fetchpriority="high">
+<style>
+:root{--navy:#012038;--navy2:#0a3556;--sand:#e9d5c0;--cream:#fcfbfb;--amber:#fcae60;--amber2:#f29a42;--ink:#14263a;--mut:#5b6b7b;--aqua:#2fa5c9;--ser:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;--san:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--san);color:var(--ink);background:var(--cream);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+.eyebrow{font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--amber2);display:flex;align-items:center;gap:12px}
+.eyebrow:before{content:"";width:34px;height:2px;background:currentColor}
+h1,h2,h3{font-family:var(--ser);font-weight:500;letter-spacing:-.01em;line-height:1.08}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--amber);color:var(--navy);font-weight:700;font-size:.95rem;padding:15px 26px;border-radius:999px;transition:.25s;border:0;cursor:pointer;font-family:inherit}
+.btn:hover{background:#fff;transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.45)}
+.btn.ghost:hover{background:#fff;color:var(--navy)}
+.btn.dark{background:var(--navy);color:#fff}.btn.dark:hover{background:var(--navy2);color:#fff}
+
+/* banner de conceito */
+.concept{background:var(--ink);color:#d9e3ec;font-size:.76rem;text-align:center;padding:8px 14px;line-height:1.4}
+.concept b{color:var(--amber)}
+
+/* nav */
+header{position:absolute;top:0;left:0;right:0;z-index:20}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:18px 0}
+.logo{font-family:var(--ser);color:#fff;font-size:1.7rem;letter-spacing:.14em;line-height:1}
+.logo small{display:block;font:600 .56rem var(--san);letter-spacing:.28em;opacity:.8;margin-top:5px}
+nav ul{display:flex;gap:30px;list-style:none;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;color:#fff;font-weight:600}
+nav a:hover{color:var(--amber)}
+.nav .right{display:flex;align-items:center;gap:18px;color:#fff;font-weight:600}
+.nav .btn{padding:11px 20px;font-size:.85rem}
+
+/* hero */
+.hero{position:relative;min-height:min(100vh,860px);display:flex;align-items:flex-end;color:#fff;background:var(--navy);overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(1,32,56,.92) 0%,rgba(1,32,56,.62) 42%,rgba(1,32,56,.05) 78%),linear-gradient(0deg,rgba(1,32,56,.8),transparent 38%)}
+.hero .wrap{position:relative;z-index:2;padding:190px 0 100px}
+.hero h1{font-size:clamp(2.6rem,5.2vw,4.7rem);max-width:15ch;margin:20px 0 24px}
+.hero h1 em{font-style:italic;color:var(--amber)}
+.hero p.lead{max-width:520px;font-size:1.12rem;color:#dbe6ef;margin-bottom:34px}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap}
+.stamp{position:absolute;right:6%;bottom:90px;z-index:3;width:150px;height:150px;border-radius:50%;background:rgba(1,32,56,.55);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.35);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#fff}
+.stamp b{font-family:var(--ser);font-size:2.3rem;font-weight:500;line-height:1}
+.stamp span{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;margin-top:6px;color:var(--amber)}
+.stamp:before{content:"";position:absolute;inset:7px;border:1px dashed rgba(255,255,255,.35);border-radius:50%}
+
+/* faixa */
+.strip{background:var(--navy);color:#fff;overflow:hidden;padding:15px 0;border-top:1px solid rgba(255,255,255,.12)}
+.strip .track{display:flex;gap:46px;white-space:nowrap;width:max-content;animation:mq 38s linear infinite;font-size:.76rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600}
+.strip .track span:before{content:"★★★★★";color:var(--amber);letter-spacing:.1em;margin-right:14px}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* família */
+.family{padding:120px 0}
+.family .grid{display:grid;grid-template-columns:1.05fr 1fr;gap:80px;align-items:center}
+.photo{position:relative}
+.photo img{width:100%;border-radius:6px;aspect-ratio:6/5;object-fit:cover;object-position:50% 25%}
+.photo:before{content:"";position:absolute;left:-18px;top:-18px;right:18px;bottom:18px;border:1px solid var(--amber);border-radius:6px;z-index:-1}
+.since{position:absolute;right:-26px;bottom:-26px;background:var(--navy);color:#fff;width:132px;height:132px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;border:6px solid var(--cream);text-align:center}
+.since small{font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--amber)}
+.since b{font-family:var(--ser);font-size:1.9rem;font-weight:500;line-height:1.1}
+.family h2{font-size:clamp(2.1rem,4vw,3.4rem);margin:18px 0 22px;color:var(--navy)}
+.family p{color:var(--mut);font-size:1.08rem;max-width:520px}
+.facts{display:flex;gap:40px;margin:34px 0 36px;flex-wrap:wrap}
+.facts div b{display:block;font-family:var(--ser);font-size:2.3rem;font-weight:500;color:var(--navy);line-height:1}
+.facts div span{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}
+
+/* galeria */
+.gallery{background:var(--sand);padding:110px 0 120px}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:46px}
+.head h2{font-size:clamp(2.1rem,4vw,3.4rem);color:var(--navy);margin-top:16px}
+.head p{max-width:420px;color:#5b5147}
+.mos{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:150px;gap:16px}
+.mos a{position:relative;overflow:hidden;border-radius:6px;cursor:zoom-in;background:#cbb9a5}
+.mos img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.mos a:hover img{transform:scale(1.06)}
+.mos figcaption{position:absolute;left:0;right:0;bottom:0;padding:34px 18px 14px;color:#fff;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;background:linear-gradient(0deg,rgba(1,32,56,.8),transparent)}
+.m1{grid-column:1/6;grid-row:1/7}.m2{grid-column:6/13;grid-row:1/4}.m3{grid-column:6/10;grid-row:4/7}.m4{grid-column:10/13;grid-row:4/7}
+.lb{position:fixed;inset:0;background:rgba(1,20,35,.94);z-index:100;display:none;align-items:center;justify-content:center;padding:30px}
+.lb.on{display:flex}.lb img{max-height:90vh;max-width:94vw;border-radius:4px}
+.lb button{position:absolute;top:18px;right:22px;background:none;border:0;color:#fff;font-size:2.4rem;cursor:pointer}
+
+/* processo */
+.process{padding:120px 0;background:var(--cream)}
+.process .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:center}
+.process .photo img{aspect-ratio:4/5;object-position:50% 60%}
+.process h2{font-size:clamp(2.1rem,4vw,3.4rem);color:var(--navy);margin:18px 0 18px}
+.process p.in{color:var(--mut);max-width:520px;margin-bottom:30px}
+.steps{list-style:none;counter-reset:s;border-top:1px solid #dfd6cc}
+.steps li{counter-increment:s;display:flex;align-items:center;gap:22px;padding:19px 0;border-bottom:1px solid #dfd6cc;font-family:var(--ser);font-size:1.45rem;color:var(--navy);transition:.25s}
+.steps li:before{content:"0" counter(s);font:700 .8rem var(--san);letter-spacing:.14em;color:var(--amber2);width:30px}
+.steps li:hover{padding-left:12px}
+.steps li small{margin-left:auto;font:.84rem var(--san);color:var(--mut);text-align:right}
+
+/* avaliações */
+.reviews{background:var(--navy);color:#fff;padding:110px 0 120px;position:relative}
+.reviews .head h2{color:#fff}
+.reviews .head p{color:#a9bccd}
+.g{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);padding:9px 16px;border-radius:999px;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600}
+.g i{font-style:normal;font-weight:800;background:#fff;color:#4285f4;width:22px;height:22px;border-radius:50%;display:grid;place-items:center}
+.car{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:22px;scrollbar-width:none}
+.car::-webkit-scrollbar{display:none}
+.rv{flex:0 0 min(380px,84%);scroll-snap-align:start;background:var(--navy2);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:30px 28px;display:flex;flex-direction:column;gap:18px}
+.rv .st{color:var(--amber);letter-spacing:.2em;font-size:.9rem}
+.rv q{font-family:var(--ser);font-size:1.22rem;line-height:1.45;quotes:none;flex:1}
+.rv cite{font-style:normal;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:#a9bccd;font-weight:600}
+.ctl{display:flex;gap:12px;margin-top:10px}
+.ctl button{width:50px;height:50px;border-radius:50%;border:1px solid rgba(255,255,255,.4);background:transparent;color:#fff;font-size:1.3rem;cursor:pointer;transition:.2s}
+.ctl button:hover{background:var(--amber);color:var(--navy);border-color:var(--amber)}
+
+/* CTA + contato */
+.final{background:linear-gradient(135deg,var(--navy) 0%,#04304f 100%);color:#fff;padding:110px 0 70px;position:relative;overflow:hidden}
+.final:before{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;border:1px solid rgba(252,174,96,.3);box-shadow:0 0 0 60px rgba(252,174,96,.05),0 0 0 120px rgba(252,174,96,.03)}
+.final .top{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center;position:relative}
+.final h2{font-size:clamp(2.2rem,4.6vw,3.9rem)}
+.final h2 em{color:var(--amber)}
+.final p{color:#b7c8d6;margin:18px 0 0;max-width:460px}
+form{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:10px;padding:30px;display:grid;gap:14px}
+form label{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:#a9bccd;font-weight:700;display:grid;gap:6px}
+form input,form textarea{font:inherit;padding:13px 14px;border-radius:6px;border:1px solid rgba(255,255,255,.2);background:rgba(1,32,56,.55);color:#fff}
+form input:focus,form textarea:focus{outline:2px solid var(--amber);border-color:transparent}
+form .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+form small{color:#8ca2b5;font-size:.72rem}
+.info{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:80px;padding-top:40px;border-top:1px solid rgba(255,255,255,.15);font-size:.92rem;color:#b7c8d6;position:relative}
+.info b{display:block;color:#fff;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:10px}
+.info a{color:#fff;font-weight:600}
+footer{background:#001426;color:#7f95a8;font-size:.76rem;padding:24px 0;line-height:1.6}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+/* barra mobile */
+.bar{display:none}
+.rev{opacity:0;transform:translateY(28px);transition:opacity .8s,transform .8s}
+.rev.in{opacity:1;transform:none}
+@media(max-width:900px){
+ nav ul,.nav .right .tel{display:none}
+ .hero .wrap{padding:130px 0 80px}
+ .stamp{display:none}
+ .family{padding:80px 0}.family .grid,.process .grid,.final .top{grid-template-columns:1fr;gap:56px}
+ .process .photo img{aspect-ratio:1/1}
+ .photo:before{left:-10px;top:-10px;right:10px;bottom:10px}
+ .since{right:-8px;bottom:-30px;width:110px;height:110px}.since b{font-size:1.5rem}
+ .mos{grid-template-columns:1fr 1fr;grid-auto-rows:170px;gap:10px}
+ .m1{grid-column:1/3;grid-row:auto/span 2}.m2{grid-column:1/3;grid-row:auto/span 2}.m3,.m4{grid-column:auto;grid-row:auto}
+ .gallery,.reviews{padding:80px 0}.process{padding:80px 0}
+ .steps li{font-size:1.2rem;flex-wrap:wrap}.steps li small{margin-left:52px;text-align:left;width:100%}
+ .info{grid-template-columns:1fr;gap:26px;margin-top:56px}
+ form .row{grid-template-columns:1fr}
+ .bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--navy);padding:10px 14px;gap:10px;border-top:1px solid rgba(255,255,255,.2)}
+ .bar a{flex:1;text-align:center;padding:13px;border-radius:999px;font-weight:700;font-size:.92rem}
+ .bar a:first-child{background:var(--amber);color:var(--navy)}.bar a:last-child{border:1px solid rgba(255,255,255,.4);color:#fff}
+ body{padding-bottom:68px}
+ footer{padding-bottom:30px}
+}
+@media(prefers-reduced-motion:reduce){.strip .track{animation:none}.rev{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="concept"><b>Design concept</b> prepared by IsDesign (Brazil) for Bowles Custom Pools &amp; Spas. Not affiliated with or endorsed by the company. Text and photos are samples from the current website.</div>
+
+
+
+<section class="hero" id="top">
+<header>
+ <div class="wrap nav">
+  <a class="logo" href="#top" aria-label="Bowles Pools">BOWLES<small>CUSTOM POOLS &amp; SPAS</small></a>
+  <nav aria-label="Main"><ul><li><a href="#why">Why Bowles</a></li><li><a href="#work">Galleries</a></li><li><a href="#process">Process</a></li><li><a href="#reviews">Reviews</a></li></ul></nav>
+  <div class="right"><a class="tel" href="tel:+14079999010">407-999-9010</a><a class="btn" href="#contact">Contact</a></div>
+ </div>
+</header>
+ <img src="img/hero.webp" alt="Custom pool with sun loungers and shade umbrellas surrounded by tropical plants" width="1600" height="929" fetchpriority="high">
+ <div class="wrap">
+  <div class="eyebrow">Orlando &middot; Central Florida</div>
+  <h1>Turn your backyard into a <em>personal paradise.</em></h1>
+  <p class="lead">Custom pools built with precision, creativity and care, by a local, family-owned team with deep roots in Central Florida.</p>
+  <div class="cta"><a class="btn" href="#work">Explore our work &rarr;</a><a class="btn ghost" href="#contact">Free consultation</a></div>
+ </div>
+ <div class="stamp" aria-hidden="true"><b>1988</b><span>Family owned</span></div>
+</section>
+
+<div class="strip" aria-hidden="true"><div class="track">
+ <span>Top rated pool builder in Central Florida</span><span>Top rated pool builder in Central Florida</span><span>Top rated pool builder in Central Florida</span><span>Top rated pool builder in Central Florida</span><span>Top rated pool builder in Central Florida</span><span>Top rated pool builder in Central Florida</span><span>Top rated pool builder in Central Florida</span><span>Top rated pool builder in Central Florida</span>
+</div></div>
+
+<section class="family" id="why">
+ <div class="wrap grid">
+  <div class="photo rev"><img src="img/team.webp" alt="The Bowles Pools family team in company shirts" width="900" height="760" loading="lazy"><div class="since"><small>Since</small><b>1988</b></div></div>
+  <div class="rev">
+   <div class="eyebrow">Why Bowles Pools</div>
+   <h2>Family owned, passion driven.</h2>
+   <p>At Bowles Pools, we treat every project like it&rsquo;s in our own backyard. As a second-generation, family-owned business based in Orlando, we&rsquo;re proud to bring decades of craftsmanship and care to every custom pool we build. From first sketch to final splash, we&rsquo;re with you every step of the way.</p>
+   <div class="facts"><div><b>1988</b><span>Serving Central Florida</span></div><div><b>2nd</b><span>Generation, family owned</span></div></div>
+   <a class="btn dark" href="#contact">Talk to our team &rarr;</a>
+  </div>
+ </div>
+</section>
+
+<section class="gallery" id="work">
+ <div class="wrap">
+  <div class="head rev"><div><div class="eyebrow">Photo galleries</div><h2>Crafted with care.<br>Built to last.</h2></div><p>From sleek modern designs to lush tropical escapes, we build pools that match your lifestyle and elevate your home.</p></div>
+  <div class="mos rev">
+   <a class="m1" href="img/rock.webp"><img src="img/rock.webp" alt="Natural rock lagoon pool with waterfall under large oak trees" loading="lazy" width="900" height="1200"><figcaption>Natural lagoon</figcaption></a>
+   <a class="m2" href="img/lake.webp"><img src="img/lake.webp" alt="Rectangular pool overlooking a lake under a blue sky" loading="lazy" width="1000" height="750" style="object-position:50% 60%"><figcaption>Lakeside modern</figcaption></a>
+   <a class="m3" href="img/travertine.webp"><img src="img/travertine.webp" alt="Pool with travertine deck beside a home" loading="lazy" width="1000" height="750"><figcaption>Travertine deck</figcaption></a>
+   <a class="m4" href="img/splash.webp"><img src="img/splash.webp" alt="Community splash pool with interactive water features" loading="lazy" width="800" height="600"><figcaption>Splash pad</figcaption></a>
+  </div>
+  <div style="text-align:center;margin-top:46px"><a class="btn dark" href="#contact">View full gallery &rarr;</a></div>
+ </div>
+</section>
+
+<section class="process" id="process">
+ <div class="wrap grid">
+  <div class="photo rev"><img src="img/oasis.webp" alt="Finished freeform pool with rock waterfall and garden" width="900" height="1069" loading="lazy"></div>
+  <div class="rev">
+   <div class="eyebrow">Process</div>
+   <h2>A clear path from idea to oasis.</h2>
+   <p class="in">We make the pool-building experience stress-free with a simple, proven process. From design to permitting to the final touches, we handle every detail with professionalism and transparency.</p>
+   <ol class="steps">
+    <li>Free consultation</li><li>Custom design</li><li>Permitting prep</li><li>Expert build</li><li>Final walkthrough</li>
+   </ol>
+   <div style="margin-top:34px"><a class="btn dark" href="#contact">Learn more about our process &rarr;</a></div>
+  </div>
+ </div>
+</section>
+
+<section class="reviews" id="reviews">
+ <div class="wrap">
+  <div class="head rev"><div><div class="eyebrow">Reviews</div><h2>Trusted by Central Floridians since 1988.</h2></div><div class="g"><i>G</i>Google verified ratings</div></div>
+  <div class="car" id="car" tabindex="0" aria-label="Customer reviews">
+   <div class="rv"><div class="st" aria-label="5 stars">★★★★★</div><q>Joel and the rest of the team at Bowles pools was amazing to work with from start to finish!</q><cite>Jennifer M.</cite></div>
+   <div class="rv"><div class="st">★★★★★</div><q>Bowles was outstanding from the first phone call to the last appointment after completion.</q><cite>Bhavin S.</cite></div>
+   <div class="rv"><div class="st">★★★★★</div><q>I dreamed it and they built it! The pool build was beyond my expectations. The process was so easy, communication was excellent.</q><cite>Terri B.</cite></div>
+   <div class="rv"><div class="st">★★★★★</div><q>Absolutely love our pool!!! Bowles did an amazing job. From start to finish this project was handled with the utmost professionalism.</q><cite>Midge M.</cite></div>
+   <div class="rv"><div class="st">★★★★★</div><q>I would give 10+ stars if I could! Truly a wonderful company! From start to finish they were beyond helpful and professional!</q><cite>Brittney W.</cite></div>
+   <div class="rv"><div class="st">★★★★★</div><q>Bowles Pools was outstanding. From the start, the salesman Joel was very professional and designed an amazing looking pool.</q><cite>Chris F.</cite></div>
+   <div class="rv"><div class="st">★★★★★</div><q>5-Stars across the board. From design, construction and service Bowles Custom Pools and Spas performed above expectations.</q><cite>Scott S.</cite></div>
+   <div class="rv"><div class="st">★★★★★</div><q>I am extremely pleased with the process and final product this company provided.</q><cite>David S.</cite></div>
+  </div>
+  <div class="ctl"><button type="button" id="prev" aria-label="Previous reviews">&larr;</button><button type="button" id="next" aria-label="Next reviews">&rarr;</button></div>
+ </div>
+</section>
+
+<section class="final" id="contact">
+ <div class="wrap">
+  <div class="top">
+   <div class="rev"><div class="eyebrow">Contact</div><h2 style="margin-top:18px">Ready to create the pool of <em>your dreams?</em></h2><p>Tell us a little about your backyard. A member of the family team will call you back to set up your free consultation.</p></div>
+   <form class="rev" onsubmit="event.preventDefault();this.querySelector('small').textContent='Concept preview only: the form is not connected.';">
+    <div class="row"><label>Name<input type="text" autocomplete="name"></label><label>Phone<input type="tel" autocomplete="tel"></label></div>
+    <label>Email<input type="email" autocomplete="email"></label>
+    <label>About your project<textarea rows="3"></textarea></label>
+    <button class="btn" type="submit">Request a free consultation</button>
+    <small>Concept preview: this form is visual only.</small>
+   </form>
+  </div>
+  <div class="info">
+   <div><b>Visit</b>Orlando, Florida<br>I-4 Exit 79</div>
+   <div><b>Call</b><a href="tel:+14079999010">407-999-9010</a></div>
+   <div><b>Email</b><a href="mailto:info@bowlespools.com">info@bowlespools.com</a></div>
+  </div>
+ </div>
+</section>
+
+<footer><div class="wrap"><span>Design concept prepared by IsDesign (Brazil) as a sample. Bowles Custom Pools &amp; Spas is not affiliated with this preview. Names, text and photos belong to their owners.</span><span>License # CPC1457750</span></div></footer>
+
+<div class="bar"><a href="tel:+14079999010">Call now</a><a href="#contact">Free quote</a></div>
+<div class="lb" id="lb" role="dialog" aria-label="Photo"><button type="button" aria-label="Close">&times;</button><img alt=""></div>
+
+<script>
+(function(){
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:0,rootMargin:"0px 0px -6% 0px"});
+ document.querySelectorAll('.rev').forEach(function(el){io.observe(el)});
+ var c=document.getElementById('car');
+ document.getElementById('next').onclick=function(){c.scrollBy({left:c.clientWidth*.8,behavior:'smooth'})};
+ document.getElementById('prev').onclick=function(){c.scrollBy({left:-c.clientWidth*.8,behavior:'smooth'})};
+ var lb=document.getElementById('lb'),li=lb.querySelector('img');
+ document.querySelectorAll('.mos a').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();li.src=a.getAttribute('href');li.alt=a.querySelector('img').alt;lb.classList.add('on')})});
+ lb.addEventListener('click',function(){lb.classList.remove('on')});
+ document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('on')});
+})();
+</script>
+</body>
+</html>
