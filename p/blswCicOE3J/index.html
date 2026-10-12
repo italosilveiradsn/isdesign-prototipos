@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Pink Plumbing &amp; Sewer | Design concept by IsDesign</title>
+<meta name="description" content="Design concept for a faster home page. Prepared by IsDesign (Brazil). Not affiliated with Pink Plumbing &amp; Sewer.">
+<link rel="preload" as="image" href="img/van.webp" fetchpriority="high">
+<style>
+:root{--navy:#0c1f3d;--navy2:#143058;--pink:#e0189b;--pink2:#ff5cc4;--blush:#fff0f8;--ink:#0c1f3d;--mut:#586579;--line:#e6e9f0;--bg:#f7f8fb;--san:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--san);color:var(--ink);background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1200px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-weight:800;letter-spacing:-.03em;line-height:1.04}
+.tag{display:inline-flex;align-items:center;gap:10px;font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;font-weight:800;color:var(--pink)}
+.tag:before{content:"";width:26px;height:3px;background:currentColor;border-radius:2px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--pink);color:#fff;font-weight:800;font-size:1rem;padding:16px 28px;border-radius:12px;transition:.25s;border:0;cursor:pointer;font-family:inherit;box-shadow:0 10px 24px rgba(224,24,155,.35)}
+.btn:hover{transform:translateY(-3px);box-shadow:0 16px 30px rgba(224,24,155,.45)}
+.btn.w{background:#fff;color:var(--navy);box-shadow:none}.btn.w:hover{background:var(--blush)}
+.btn.ln{background:transparent;border:2px solid rgba(255,255,255,.45);box-shadow:none}.btn.ln:hover{background:#fff;color:var(--navy)}
+
+.concept{background:#06142a;color:#b8c5de;font-size:.76rem;text-align:center;padding:8px 14px;line-height:1.4}
+.concept b{color:var(--pink2)}
+.emerg{background:var(--pink);color:#fff;text-align:center;font-weight:800;font-size:.86rem;letter-spacing:.06em;padding:9px 14px}
+.emerg a{text-decoration:underline;margin-left:8px}
+
+header.nav{position:sticky;top:0;z-index:40;background:#fff;border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:78px;gap:18px}
+.logo{display:flex;align-items:center;gap:12px;font-weight:900;font-size:1.35rem;letter-spacing:-.03em;color:var(--navy);line-height:1}
+.logo .dot{width:40px;height:40px;border-radius:12px;background:var(--pink);display:grid;place-items:center}
+.logo svg{width:24px;height:24px;stroke:#fff;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.logo small{display:block;font-size:.58rem;letter-spacing:.2em;font-weight:800;color:var(--pink);margin-top:3px}
+.nav ul{display:flex;gap:28px;list-style:none;font-weight:700;font-size:.92rem}
+.nav ul a:hover{color:var(--pink)}
+.nav .call{display:flex;align-items:center;gap:14px}
+.nav .num{font-weight:900;font-size:1.05rem}
+.nav .btn{padding:12px 20px;font-size:.9rem}
+
+.hero{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;right:-180px;top:-200px;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(224,24,155,.5),transparent 65%)}
+.hero:after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:70px;background:#fff;clip-path:polygon(0 100%,100% 0,100% 100%)}
+.hero .wrap{display:grid;grid-template-columns:.95fr 1.15fr;gap:48px;align-items:center;padding:70px 0 120px;position:relative;z-index:2}
+.pill{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);padding:8px 16px;border-radius:999px;font-size:.84rem;font-weight:700;margin-bottom:22px}
+.pill i{width:9px;height:9px;border-radius:50%;background:#3ee08f;box-shadow:0 0 0 4px rgba(62,224,143,.25)}
+.hero h1{font-size:clamp(2.5rem,5vw,4.6rem);margin-bottom:22px}
+.hero h1 em{font-style:normal;color:var(--pink2)}
+.hero p.lead{font-size:1.14rem;color:#c3cfe6;max-width:500px;margin-bottom:30px}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap}
+.checks{display:flex;gap:22px;flex-wrap:wrap;margin-top:30px;font-size:.88rem;font-weight:700;color:#dfe6f5}
+.checks span:before{content:"✓";color:var(--pink2);margin-right:8px;font-weight:900}
+.van{position:relative}
+.van img{width:100%;height:auto;border-radius:20px;aspect-ratio:1600/792;object-fit:cover;box-shadow:0 40px 70px rgba(0,0,0,.45);border:4px solid rgba(255,255,255,.12)}
+.van:before{content:"";position:absolute;inset:18px -18px -18px 18px;border-radius:20px;background:var(--pink);z-index:-1;opacity:.9}
+.van .badge{position:absolute;left:-22px;bottom:30px;background:#fff;color:var(--navy);padding:16px 20px;border-radius:14px;box-shadow:0 20px 40px rgba(0,0,0,.35);line-height:1.2}
+.van .badge b{display:block;font-size:1.5rem;letter-spacing:-.03em;color:var(--pink)}
+.van .badge span{font-size:.74rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--mut)}
+
+.proof{padding:46px 0 10px}
+.proof ul{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+.proof b{display:block;font-size:2.3rem;font-weight:900;letter-spacing:-.04em;color:var(--navy);line-height:1}
+.proof b em{font-style:normal;color:var(--pink)}
+.proof span{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);font-weight:700}
+
+.svc{padding:100px 0}
+.hd{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:44px}
+.hd h2{font-size:clamp(2rem,4vw,3.3rem);margin-top:14px}
+.hd p{color:var(--mut);max-width:420px}
+.sg{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.sv{background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:26px 24px;display:flex;flex-direction:column;gap:12px;transition:.25s;min-height:170px}
+.sv:hover{background:var(--navy);color:#fff;transform:translateY(-6px);border-color:var(--navy)}
+.sv:hover p{color:#b8c5de}.sv:hover .ic{background:var(--pink)}.sv:hover .ic svg{stroke:#fff}
+.sv .ic{width:46px;height:46px;border-radius:12px;background:var(--blush);display:grid;place-items:center;transition:.25s}
+.sv svg{width:24px;height:24px;stroke:var(--pink);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.sv h3{font-size:1.15rem;letter-spacing:-.01em}
+.sv p{font-size:.88rem;color:var(--mut);flex:1}
+.sv .go{font-weight:800;font-size:.84rem;color:var(--pink)}
+.sv:hover .go{color:var(--pink2)}
+
+.why{background:var(--navy);color:#fff;padding:100px 0;position:relative;overflow:hidden}
+.why:before{content:"";position:absolute;left:-200px;bottom:-250px;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(224,24,155,.35),transparent 65%)}
+.why .hd p{color:#b8c5de}.why .tag{color:var(--pink2)}
+.wg{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;position:relative}
+.wi{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:30px 26px}
+.wi .n{font-size:2.8rem;font-weight:900;color:var(--pink2);letter-spacing:-.05em;line-height:1;margin-bottom:14px}
+.wi h3{font-size:1.2rem;margin-bottom:10px;letter-spacing:-.01em}
+.wi p{color:#b8c5de;font-size:.93rem}
+
+.jobs{padding:100px 0;background:var(--bg)}
+.jg{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.jb{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:3/4;background:var(--navy)}
+.jb img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.jb:hover img{transform:scale(1.06)}
+.jb div{position:absolute;left:0;right:0;bottom:0;padding:50px 18px 16px;background:linear-gradient(0deg,rgba(12,31,61,.92),transparent);color:#fff;font-weight:800;font-size:.92rem}
+.jb div small{display:block;color:var(--pink2);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase}
+
+.rev{padding:100px 0}
+.rg{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.rc{border:1px solid var(--line);border-radius:18px;padding:30px 28px;display:flex;flex-direction:column;gap:16px;background:#fff;box-shadow:0 14px 34px rgba(12,31,61,.06)}
+.rc .st{color:#f5a623;letter-spacing:.14em}
+.rc p{font-size:1rem;flex:1;color:#27364d}
+.rc b{font-size:.84rem;letter-spacing:.06em;text-transform:uppercase;color:var(--mut)}
+.rc:nth-child(2){background:var(--navy);color:#fff;border-color:var(--navy)}.rc:nth-child(2) p{color:#e4ebf7}.rc:nth-child(2) b{color:var(--pink2)}
+
+.area{background:var(--blush);padding:90px 0}
+.area .grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:center}
+.area h2{font-size:clamp(2rem,3.8vw,3.1rem);margin:14px 0 16px}
+.area p{color:var(--mut)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips span{background:#fff;border:1px solid #f4c9e6;color:var(--navy);font-weight:700;font-size:.9rem;padding:10px 18px;border-radius:999px}
+
+.trust{padding:56px 0;border-bottom:1px solid var(--line)}
+.trust .row{display:flex;align-items:center;justify-content:center;gap:clamp(30px,6vw,80px);flex-wrap:wrap}
+.trust img{height:84px;width:auto}
+.trust .lic{font-weight:800;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--navy);text-align:center;line-height:1.7}
+.trust .lic b{display:block;font-size:1.1rem;letter-spacing:.04em;color:var(--pink)}
+
+.fin{background:var(--pink);color:#fff;padding:90px 0;position:relative;overflow:hidden}
+.fin:before{content:"";position:absolute;right:-100px;top:-100px;width:420px;height:420px;border-radius:50%;background:rgba(255,255,255,.12)}
+.fin .row{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center;position:relative}
+.fin h2{font-size:clamp(2.2rem,4.6vw,3.9rem)}
+.fin p{margin-top:16px;max-width:460px;opacity:.95;font-size:1.08rem}
+.fin .cta{display:flex;flex-direction:column;gap:14px}
+.fin .btn.w{padding:20px;font-size:1.25rem}
+.fin small{opacity:.9;text-align:center;font-weight:600}
+
+footer{background:#06142a;color:#8c9bb8;padding:60px 0 28px;font-size:.88rem}
+.fg{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.12)}
+.fg b{display:block;color:#fff;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;margin-bottom:12px}
+.fg a{color:#fff;font-weight:700;display:block}
+footer .fine{padding-top:24px;font-size:.74rem;line-height:1.6}
+
+.bar{display:none}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+.rv.in{opacity:1;transform:none}
+@media(max-width:980px){
+ .nav ul,.nav .num,.nav .call{display:none}.emerg{font-size:.76rem}.logo small{font-size:.5rem}
+ .hero .wrap,.area .grid,.fin .row,.fg{grid-template-columns:1fr;gap:44px}
+ .hero .wrap{padding:48px 0 100px}.van:before{inset:14px -8px -10px 10px}.van .badge{left:10px;bottom:-26px}
+ .proof ul{grid-template-columns:1fr 1fr;gap:28px 10px}
+ .sg,.wg,.jg{grid-template-columns:1fr 1fr}
+ .rg{grid-template-columns:1fr}
+ .svc,.why,.jobs,.rev,.area,.fin{padding:76px 0}
+ .bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:50;background:#fff;padding:10px 14px;gap:10px;border-top:1px solid var(--line);box-shadow:0 -10px 30px rgba(12,31,61,.12)}
+ .bar a{flex:1;text-align:center;padding:14px;border-radius:12px;font-weight:800;font-size:.95rem}
+ .bar a:first-child{background:var(--pink);color:#fff}.bar a:last-child{background:var(--navy);color:#fff}
+ body{padding-bottom:72px}
+}
+@media(max-width:560px){.sg,.wg{grid-template-columns:1fr}.jg{gap:10px}.jb{aspect-ratio:3/4}.sv{min-height:0}}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="concept"><b>Design concept</b> prepared by IsDesign (Brazil) for Pink Plumbing &amp; Sewer. Not affiliated with or endorsed by the company. Text and photos are samples from the current website.</div>
+<div class="emerg">24 HOUR EMERGENCY SERVICE <a href="tel:+16025292701">Call 602-529-2701</a></div>
+<header class="nav"><div class="wrap">
+ <a class="logo" href="#top" aria-label="Pink Plumbing &amp; Sewer"><span class="dot"><svg viewBox="0 0 24 24"><path d="M12 3c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11z"/></svg></span><span>Pink Plumbing<small>&amp; SEWER &middot; PHOENIX, AZ</small></span></a>
+ <nav aria-label="Main"><ul><li><a href="#svc">Services</a></li><li><a href="#why">Why Pink</a></li><li><a href="#jobs">Recent jobs</a></li><li><a href="#rev">Reviews</a></li><li><a href="#area">Service area</a></li></ul></nav>
+ <div class="call"><a class="num" href="tel:+16025292701">602-529-2701</a><a class="btn" href="#contact">Free estimate</a></div>
+</div></header>
+
+<section class="hero" id="top"><div class="wrap">
+ <div>
+  <div class="pill"><i></i>Live person answers 24/7/365</div>
+  <h1>Phoenix plumbers &amp; sewer line <em>specialists.</em></h1>
+  <p class="lead">Family owned and operated, with over 50 years of combined experience. Flat-rate pricing, free estimates, and a clean, on-time technician every time.</p>
+  <div class="cta"><a class="btn" href="tel:+16025292701">Call 602-529-2701</a><a class="btn ln" href="#svc">See our services</a></div>
+  <div class="checks"><span>Licensed &amp; insured</span><span>Flat-rate pricing</span><span>Free estimates</span></div>
+ </div>
+ <div class="van"><img src="img/van.webp" width="1600" height="792" alt="Pink Plumbing &amp; Sewer service van" fetchpriority="high"><div class="badge"><b>#1 in the #2 business</b><span>The cancer fighting plumber</span></div></div>
+</div></section>
+
+<section class="proof"><div class="wrap"><ul class="rv">
+ <li><b>50<em>+</em></b><span>Years combined experience</span></li>
+ <li><b>24<em>/</em>7</b><span>Emergency service</span></li>
+ <li><b>18</b><span>Valley cities served</span></li>
+ <li><b>A<em>+</em></b><span>BBB accredited</span></li>
+</ul></div></section>
+
+<section class="svc" id="svc"><div class="wrap">
+ <div class="hd rv"><div><span class="tag">Our services</span><h2>Everything your pipes need, one phone call.</h2></div><p>Residential plumbing and sewer, done by technicians who train every week.</p></div>
+ <div class="sg">
+  <a class="sv rv" href="#contact"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11z"/></svg></span><h3>Drain cleaning</h3><p>Clogged sinks, tubs and main lines cleared fast.</p><span class="go">Read more &rarr;</span></a>
+  <a class="sv rv" href="#contact"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 8h10a4 4 0 0 1 0 8H8"/><path d="M4 16h2M18 12h2"/></svg></span><h3>Sewer repair</h3><p>Broken or collapsed sewer lines, repaired right.</p><span class="go">Read more &rarr;</span></a>
+  <a class="sv rv" href="#contact"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11z"/><path d="M9 14a3 3 0 0 0 3 3"/></svg></span><h3>Water leak detection</h3><p>We find the leak without tearing up your home.</p><span class="go">Read more &rarr;</span></a>
+  <a class="sv rv" href="#contact"><span class="ic"><svg viewBox="0 0 24 24"><path d="M3 12h4l2-5 3 10 2-5h7"/></svg></span><h3>Hydro-jetting</h3><p>High-pressure water that scours pipes clean.</p><span class="go">Read more &rarr;</span></a>
+  <a class="sv rv" href="#contact"><span class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="9" width="16" height="6" rx="3"/><path d="M8 9V6M16 9V6"/></svg></span><h3>Pipelining</h3><p>Trenchless repair that saves your yard.</p><span class="go">Read more &rarr;</span></a>
+  <a class="sv rv" href="#contact"><span class="ic"><svg viewBox="0 0 24 24"><path d="M3 18h18M5 18V8l7-4 7 4v10"/><path d="M12 10v4"/></svg></span><h3>Slab leaks</h3><p>Leaks under your foundation, found and fixed.</p><span class="go">Read more &rarr;</span></a>
+  <a class="sv rv" href="#contact"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 4h14v16H5z"/><path d="M9 20v-5h6v5M9 8h6"/></svg></span><h3>Water heaters</h3><p>Repair and replacement, tank or tankless.</p><span class="go">Read more &rarr;</span></a>
+  <a class="sv rv" href="#contact"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M3 12s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z"/></svg></span><h3>Sewer video inspection</h3><p>A camera shows exactly what is wrong.</p><span class="go">Read more &rarr;</span></a>
+  <a class="sv rv" href="#contact"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 20h16M7 20v-6l5-5 5 5v6M12 9V4"/></svg></span><h3>Sump pumps</h3><p>Installation and repair, before the storm.</p><span class="go">Read more &rarr;</span></a>
+  <a class="sv rv" href="#contact"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 20V8M8 12l4-4 4 4"/><path d="M5 20h14"/></svg></span><h3>Sewage ejection pumps</h3><p>Keep waste moving up and out.</p><span class="go">Read more &rarr;</span></a>
+  <a class="sv rv" href="#contact"><span class="ic"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9H3z"/><path d="M10 20v-6h4v6"/></svg></span><h3>Residential plumbing</h3><p>Faucets, toilets, disposals and everything between.</p><span class="go">Read more &rarr;</span></a>
+  <a class="sv rv" href="#contact" style="background:var(--pink);border-color:var(--pink);color:#fff"><span class="ic" style="background:rgba(255,255,255,.2)"><svg viewBox="0 0 24 24" style="stroke:#fff"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span><h3>Not sure what you need?</h3><p style="color:#ffe3f4">Call and a live person will help you.</p><span class="go" style="color:#fff">602-529-2701 &rarr;</span></a>
+ </div>
+</div></section>
+
+<section class="why" id="why"><div class="wrap">
+ <div class="hd rv"><div><span class="tag">Only the best</span><h2>Why Phoenix calls Pink.</h2></div><p>No surprises, no mess, no waiting.</p></div>
+ <div class="wg">
+  <div class="wi rv"><div class="n">01</div><h3>Flat-rate pricing</h3><p>With our up-front, flat-rate pricing we tell you the full price in advance before we start, giving you peace of mind. No extra work is done without your approval.</p></div>
+  <div class="wi rv"><div class="n">02</div><h3>Free estimates</h3><p>We provide a verbal estimate over the phone if possible, or a written estimate at no charge when we visit your home or business.</p></div>
+  <div class="wi rv"><div class="n">03</div><h3>Satisfaction guaranteed</h3><p>Our technicians take the time to answer all of your questions. They are clean-cut, presentable, and clean up the work area after every job.</p></div>
+  <div class="wi rv"><div class="n">04</div><h3>Emergency service</h3><p>Technicians are available 24/7/365 and arrive on time, at the time most convenient for you. You always speak to a live Pink employee.</p></div>
+ </div>
+</div></section>
+
+<section class="jobs" id="jobs"><div class="wrap">
+ <div class="hd rv"><div><span class="tag">Recent jobs</span><h2>Real work, across the Valley.</h2></div><p>Fresh from the field: water heaters, supply lines, slab leaks and disposals.</p></div>
+ <div class="jg rv">
+  <div class="jb"><img src="img/heater.webp" width="560" height="747" loading="lazy" alt="Tankless water heater installation"><div><small>Phoenix</small>Water heater</div></div>
+  <div class="jb"><img src="img/copper.webp" width="560" height="747" loading="lazy" alt="Copper water supply line and valves"><div><small>Scottsdale</small>Water supply line</div></div>
+  <div class="jb"><img src="img/slab.webp" width="560" height="747" loading="lazy" alt="Copper pipe under tile after a slab leak repair"><div><small>Tempe</small>Slab leak repair</div></div>
+  <div class="jb"><img src="img/disposal.webp" width="560" height="747" loading="lazy" alt="Garbage disposal installed under a sink"><div><small>Phoenix</small>Garbage disposal</div></div>
+ </div>
+</div></section>
+
+<section class="rev" id="rev"><div class="wrap">
+ <div class="hd rv"><div><span class="tag">Reviews</span><h2>On time, clean, friendly and effective.</h2></div><p>What homeowners across the Valley say.</p></div>
+ <div class="rg">
+  <article class="rc rv"><div class="st">★★★★★</div><p>Chris and his team were fantastic, I can&rsquo;t recommend them highly enough. I had a leak in our front yard; they quickly diagnosed the problem as a broken water service line. The line was completely replaced by the next day.</p><b>Matt B. &middot; Phoenix, AZ</b></article>
+  <article class="rc rv"><div class="st">★★★★★</div><p>Pink Plumbing &amp; Sewer were on time, fast, clean, friendly and effective! I was so glad to have them fix my garbage disposal. This is the most professional company I have dealt with.</p><b>Yvette O. &middot; Phoenix, AZ</b></article>
+  <article class="rc rv"><div class="st">★★★★★</div><p>Pink Plumbing was able to generate a quote from the photos I sent by email, which was convenient. They fixed the leak in a day and were very helpful with the home warranty company.</p><b>Colin S. &middot; Tempe, AZ</b></article>
+  <article class="rc rv"><div class="st">★★★★★</div><p>Called Pink Plumbing out to look into a sink and a non working garbage disposal at my office. They came on time and were wonderful. Both fixed quickly.</p><b>Amy R. &middot; Tempe, AZ</b></article>
+  <article class="rc rv"><div class="st">★★★★★</div><p>After unclogging my sink they repaired a leaking pipe under it, gave me advice on how to keep it from clogging, and left some drain cleaner to keep the line clear. Highly recommend.</p><b>D. Ross &middot; Mesa, AZ</b></article>
+  <article class="rc rv" style="background:var(--pink);border-color:var(--pink);justify-content:center;gap:20px"><div class="st" style="color:#fff">★★★★★</div><p style="color:#fff;font-size:1.35rem;font-weight:800;line-height:1.25;flex:none">Join your Phoenix valley neighbors.</p><a class="btn w" href="tel:+16025292701" style="box-shadow:none">Call 602-529-2701</a></article>
+ </div>
+</div></section>
+
+<section class="area" id="area"><div class="wrap grid">
+ <div class="rv"><span class="tag">Service area</span><h2>Serving the whole Phoenix valley.</h2><p>Licensed, bonded and insured. Call us anywhere in the Valley.</p></div>
+ <div class="chips rv"><span>Phoenix</span><span>Scottsdale</span><span>Tempe</span><span>Mesa</span><span>Chandler</span><span>Gilbert</span><span>Glendale</span><span>Peoria</span><span>Surprise</span><span>Avondale</span><span>Paradise Valley</span><span>Fountain Hills</span><span>Queen Creek</span><span>Litchfield Park</span><span>Laveen</span><span>Sun City</span><span>Sun City West</span><span>Apache Junction</span></div>
+</div></section>
+
+<section class="trust"><div class="wrap row rv">
+ <img src="img/sel-bbb.webp" width="254" height="124" alt="BBB accredited business, A+ rating" loading="lazy">
+ <img src="img/sel-expertise.webp" width="179" height="144" alt="Expertise: Best Plumbers in Phoenix" loading="lazy">
+ <img src="img/sel-best.webp" width="169" height="169" alt="Best in Phoenix" loading="lazy">
+ <div class="lic">Licensed, bonded &amp; insured<b>ROC# 299159</b></div>
+</div></section>
+
+<section class="fin" id="contact"><div class="wrap row">
+ <div class="rv"><h2>Plumbing problem? We&rsquo;ll be there.</h2><p>Call any hour. A live Pink employee answers, and we give you a flat-rate price before the work starts.</p></div>
+ <div class="cta rv"><a class="btn w" href="tel:+16025292701">Call 602-529-2701</a><small>or email pinkplumbingandsewer@gmail.com</small></div>
+</div></section>
+
+<footer><div class="wrap">
+ <div class="fg">
+  <div><b>Pink Plumbing &amp; Sewer</b>Family owned and operated plumbers and sewer line repair specialists in Phoenix, AZ. #1 in the #2 business.</div>
+  <div><b>Call</b><a href="tel:+16025292701">602-529-2701</a><b style="margin-top:18px">Email</b><a href="mailto:pinkplumbingandsewer@gmail.com">pinkplumbingandsewer@gmail.com</a></div>
+  <div><b>Hours</b>24 hours a day, 7 days a week, 365 days a year<b style="margin-top:18px">License</b>ROC# 299159</div>
+ </div>
+ <p class="fine">Design concept prepared by IsDesign (Brazil) as a sample. Pink Plumbing &amp; Sewer is not affiliated with this preview. Names, text and photos belong to their owners. Financing options (Synchrony) and the service pages are not part of this concept.</p>
+</div></footer>
+
+<div class="bar"><a href="tel:+16025292701">Call now</a><a href="#contact">Free estimate</a></div>
+
+<script>
+(function(){
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:0,rootMargin:"0px 0px -6% 0px"});
+ document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>
