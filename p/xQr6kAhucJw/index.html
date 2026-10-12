@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Crown Town Landscapes | Design concept by IsDesign</title>
+<meta name="description" content="Design concept for a faster home page. Prepared by IsDesign (Brazil). Not affiliated with Crown Town Landscapes.">
+<link rel="preload" as="image" href="img/hero.webp" fetchpriority="high">
+<style>
+:root{--ink:#17232f;--slate:#253846;--slate2:#2d3f50;--leaf:#55a980;--leaf2:#3f8c66;--mint:#dcebe2;--cream:#f6f2e9;--sand:#ebe4d3;--clay:#c9695f;--mut:#5c6b73;--ser:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;--san:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--san);color:var(--ink);background:var(--cream);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1200px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:var(--ser);font-weight:500;letter-spacing:-.015em;line-height:1.08}
+.kicker{font-size:.76rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--leaf2)}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--leaf);color:var(--ink);font-weight:700;font-size:.95rem;padding:15px 28px;border-radius:999px;transition:.25s;border:0;cursor:pointer;font-family:inherit}
+.btn:hover{background:var(--slate);color:#fff;transform:translateY(-2px)}
+.btn.dk{background:var(--slate);color:#fff}.btn.dk:hover{background:var(--leaf);color:var(--ink)}
+.btn.ln{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.5)}.btn.ln:hover{background:#fff;color:var(--slate)}
+
+.concept{background:var(--ink);color:#c3d0d8;font-size:.76rem;text-align:center;padding:8px 14px;line-height:1.4}
+.concept b{color:var(--leaf)}
+.ribbon{background:var(--leaf);color:var(--ink);text-align:center;font-size:.8rem;font-weight:700;letter-spacing:.1em;padding:7px 14px}
+
+header.nav{position:sticky;top:0;z-index:40;background:rgba(246,242,233,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(23,35,47,.1)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:78px;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;font-family:var(--ser);font-size:1.35rem;line-height:1;color:var(--slate)}
+.brand svg{width:34px;height:34px}
+.brand small{display:block;font:700 .56rem var(--san);letter-spacing:.3em;color:var(--leaf2);margin-top:4px}
+.nav ul{display:flex;gap:30px;list-style:none;font-size:.88rem;font-weight:600;color:var(--slate)}
+.nav ul a:hover{color:var(--leaf2)}
+.nav .btn{padding:11px 22px;font-size:.88rem}
+
+/* hero */
+.hero{position:relative;color:#fff;min-height:min(92vh,820px);display:flex;align-items:flex-end;background:var(--slate);overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(23,35,47,.88) 0%,rgba(23,35,47,.35) 52%,rgba(23,35,47,.1) 100%),linear-gradient(90deg,rgba(23,35,47,.55),transparent 60%)}
+.hero .wrap{position:relative;z-index:2;padding:130px 0 80px;display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end}
+.rate{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.14);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:8px 16px;font-size:.84rem;font-weight:600;margin-bottom:22px}
+.rate i{font-style:normal;color:#f6c453;letter-spacing:.1em}
+.hero h1{font-size:clamp(2.7rem,6vw,5.4rem);max-width:13ch}
+.hero h1 em{color:#a6dcbf}
+.hero p.lead{max-width:540px;font-size:1.14rem;color:#e0e9e6;margin:22px 0 32px}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap}
+.hero .side{background:rgba(246,242,233,.95);color:var(--ink);border-radius:14px;padding:26px 28px;width:290px;box-shadow:0 30px 60px rgba(0,0,0,.35)}
+.side b{font-family:var(--ser);font-size:2.6rem;font-weight:500;line-height:1;color:var(--slate);display:block}
+.side span{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);font-weight:600}
+.side hr{border:0;border-top:1px solid rgba(23,35,47,.14);margin:16px 0}
+
+/* como funciona */
+.how{padding:120px 0 80px;background:var(--mint)}
+.title{text-align:center;max-width:760px;margin:0 auto 60px}
+.title h2{font-size:clamp(2.1rem,4.4vw,3.6rem);margin:14px 0 14px;color:var(--slate)}
+.title p{color:var(--mut);font-size:1.08rem}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.st{position:relative}
+.st .ph{aspect-ratio:4/5;border-radius:200px 200px 14px 14px;overflow:hidden}
+.st img{width:100%;height:100%;object-fit:cover;transition:transform .9s}
+.st:hover img{transform:scale(1.07)}
+.st .num{position:absolute;left:50%;transform:translateX(-50%);top:-24px;width:52px;height:52px;border-radius:50%;background:var(--slate);color:#fff;display:grid;place-items:center;font-family:var(--ser);font-size:1.3rem;z-index:2;border:4px solid var(--mint)}
+.st h3{font-size:1.9rem;margin:24px 0 8px;text-align:center;color:var(--slate)}
+.st p{text-align:center;color:var(--mut);max-width:300px;margin-inline:auto}
+
+/* serviços */
+.serv{background:var(--slate);color:#fff;padding:120px 0}
+.serv .title h2{color:#fff}.serv .title p{color:#b7c8c8}.serv .kicker{color:var(--leaf)}
+.sg{display:grid;grid-template-columns:repeat(12,1fr);gap:20px}
+.sv{background:var(--slate2);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;border:1px solid rgba(255,255,255,.08);transition:.3s}
+.sv:hover{transform:translateY(-6px);border-color:rgba(85,169,128,.6)}
+.sv .ph{aspect-ratio:16/9;overflow:hidden}
+.sv .ph img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.sv:hover .ph img{transform:scale(1.07)}
+.sv .b{padding:26px 28px 30px;display:flex;flex-direction:column;gap:12px;flex:1}
+.sv h3{font-size:1.65rem}
+.sv p{color:#c3d1d1;font-size:.98rem;flex:1}
+.sv a{color:var(--leaf);font-weight:700;font-size:.92rem}
+.sv a:hover{color:#fff}
+.s1,.s2{grid-column:span 6}.s3,.s4{grid-column:span 6}
+.sv.wide{flex-direction:row}
+.sv.wide .ph{aspect-ratio:auto;flex:0 0 42%}
+
+/* porque */
+.why{padding:120px 0;background:var(--cream)}
+.why .grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:80px;align-items:start}
+.why h2{font-size:clamp(2.2rem,4.4vw,3.8rem);margin:16px 0 20px;color:var(--slate)}
+.why .lead{color:var(--mut);font-size:1.08rem;max-width:420px;margin-bottom:30px}
+.why .sticky{position:sticky;top:120px}
+.pts{list-style:none;border-top:1px solid rgba(23,35,47,.15)}
+.pts li{display:grid;grid-template-columns:54px 1fr;gap:20px;padding:28px 0;border-bottom:1px solid rgba(23,35,47,.15)}
+.pts .ic{width:46px;height:46px;border-radius:50%;background:var(--mint);display:grid;place-items:center}
+.pts svg{width:24px;height:24px;stroke:var(--leaf2);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.pts h3{font-size:1.45rem;margin-bottom:6px;color:var(--slate)}
+.pts p{color:var(--mut)}
+
+/* galeria */
+.gal{background:var(--sand);padding:110px 0}
+.mos{columns:3;column-gap:16px}
+.mos a{display:block;margin-bottom:16px;border-radius:12px;overflow:hidden;cursor:zoom-in;position:relative;break-inside:avoid}
+.mos img{width:100%;height:auto;transition:transform .8s}
+.mos a:hover img{transform:scale(1.05)}
+.lb{position:fixed;inset:0;background:rgba(10,18,24,.94);z-index:100;display:none;align-items:center;justify-content:center;padding:30px}
+.lb.on{display:flex}.lb img{max-height:90vh;max-width:94vw;border-radius:6px}
+.lb button{position:absolute;top:18px;right:22px;background:none;border:0;color:#fff;font-size:2.4rem;cursor:pointer}
+
+/* depoimentos */
+.rev{background:var(--leaf2);color:#fff;padding:110px 0}
+.rev .title h2{color:#fff}.rev .title p{color:#d9efe4}.rev .kicker{color:#cdeedd}
+.big{max-width:880px;margin:0 auto;text-align:center;min-height:300px;position:relative}
+.q{display:none}.q.on{display:block;animation:fi .6s}
+@keyframes fi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.q blockquote{font-family:var(--ser);font-size:clamp(1.3rem,2.6vw,2rem);line-height:1.4}
+.q cite{display:block;margin-top:26px;font-style:normal;font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:#d3efe1}
+.dots{display:flex;gap:10px;justify-content:center;margin-top:34px;align-items:center}
+.dots button{width:12px;height:12px;border-radius:50%;border:0;background:rgba(255,255,255,.4);cursor:pointer;padding:0}
+.dots button[aria-current=true]{background:#fff;transform:scale(1.3)}
+.dots .ar{width:46px;height:46px;border-radius:50%;border:1.5px solid rgba(255,255,255,.6);background:transparent;color:#fff;font-size:1.2rem}
+.dots .ar:hover{background:#fff;color:var(--leaf2)}
+
+/* família */
+.fam{padding:110px 0;background:var(--cream)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.fc{border-radius:16px;padding:44px 40px;background:var(--mint);display:flex;flex-direction:column;gap:14px;position:relative;overflow:hidden}
+.fc:nth-child(2){background:var(--sand)}
+.fc h3{font-size:2rem;color:var(--slate)}
+.fc p{color:var(--mut);max-width:420px;flex:1}
+.fc svg{position:absolute;right:-30px;bottom:-30px;width:190px;opacity:.14;stroke:var(--slate);fill:none;stroke-width:2}
+.fc .btn{align-self:flex-start}
+
+/* final */
+.fin{background:var(--ink);color:#fff;padding:100px 0 50px;position:relative;overflow:hidden}
+.fin .row{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center}
+.fin h2{font-size:clamp(2.2rem,4.8vw,4rem)}
+.fin h2 em{color:var(--leaf)}
+.fin p{color:#b7c8c8;margin-top:18px;max-width:460px}
+form{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:30px;display:grid;gap:14px}
+form label{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:#a9bcbc;font-weight:700;display:grid;gap:6px}
+form input,form textarea{font:inherit;padding:13px 14px;border-radius:8px;border:1px solid rgba(255,255,255,.2);background:rgba(23,35,47,.7);color:#fff}
+form input:focus,form textarea:focus{outline:2px solid var(--leaf);border-color:transparent}
+form small{color:#8aa0a0;font-size:.72rem}
+.info{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:80px;padding-top:40px;border-top:1px solid rgba(255,255,255,.14);font-size:.92rem;color:#b7c8c8}
+.info b{display:block;color:#fff;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:10px}
+.info a{color:#fff;font-weight:600}
+footer{background:#0d171f;color:#7f9494;font-size:.74rem;padding:24px 0;line-height:1.6}
+
+.bar{display:none}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s,transform .8s}
+.rv.in{opacity:1;transform:none}
+@media(max-width:980px){
+ .nav ul{display:none}
+ .hero .wrap{grid-template-columns:1fr;padding:110px 0 60px}.hero .side{display:none}
+ .how,.serv,.why,.gal,.rev,.fam{padding:80px 0}
+ .steps{grid-template-columns:1fr;gap:56px;max-width:420px;margin:0 auto}
+ .sg{grid-template-columns:1fr}.s1,.s2,.s3,.s4{grid-column:auto}
+ .sv.wide{flex-direction:column}.sv.wide .ph{aspect-ratio:16/9;flex:none}
+ .why .grid,.two,.fin .row{grid-template-columns:1fr;gap:44px}
+ .why .sticky{position:static}
+ .mos{columns:2;column-gap:12px}.mos a{margin-bottom:12px}
+ .info{grid-template-columns:1fr;gap:24px;margin-top:56px}
+ .bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--slate);padding:10px 14px;gap:10px;border-top:1px solid rgba(255,255,255,.2)}
+ .bar a{flex:1;text-align:center;padding:13px;border-radius:999px;font-weight:700;font-size:.92rem}
+ .bar a:first-child{background:var(--leaf);color:var(--ink)}.bar a:last-child{border:1px solid rgba(255,255,255,.4);color:#fff}
+ body{padding-bottom:68px}
+}
+@media(max-width:560px){.mos{columns:1}.fc{padding:34px 26px}}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.q.on{animation:none}}
+</style>
+</head>
+<body>
+<div class="concept"><b>Design concept</b> prepared by IsDesign (Brazil) for Crown Town Landscapes. Not affiliated with or endorsed by the company. Text and photos are samples from the current website.</div>
+<div class="ribbon">Your Scraps &bull; Our Farm</div>
+<header class="nav"><div class="wrap">
+ <a class="brand" href="#top" aria-label="Crown Town Landscapes"><svg viewBox="0 0 40 40" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 17l3-9 5 5 4-7 4 7 5-5 3 9z" stroke="#c9695f"/><path d="M20 22v14M20 30c-5 0-8-3-8-7 5 0 8 3 8 7zM20 30c5 0 8-3 8-7-5 0-8 3-8 7z" stroke="#55a980"/></svg><span>Crown Town<small>LANDSCAPES</small></span></a>
+ <nav aria-label="Main"><ul><li><a href="#serv">Design &amp; Installation</a></li><li><a href="#serv">Maintenance</a></li><li><a href="#serv">Fine Gardening</a></li><li><a href="#gal">Projects</a></li><li><a href="#fam">About</a></li></ul></nav>
+ <a class="btn" href="#contact">Contact</a>
+</div></header>
+
+<section class="hero" id="top">
+ <img src="img/hero.webp" width="1280" height="853" alt="Front garden with a gravel path and layered native plantings beside a brick house" fetchpriority="high">
+ <div class="wrap">
+  <div>
+   <div class="rate"><i>★★★★★</i> 4.8 &middot; 55 Google reviews</div>
+   <h1>Landscape design &amp; care in <em>Charlotte, NC.</em></h1>
+   <p class="lead">Design, installation, maintenance and gardening for yards across greater Charlotte, working with the native environment, not against it.</p>
+   <div class="cta"><a class="btn" href="#contact">Schedule a consultation</a><a class="btn ln" href="#gal">See our projects</a></div>
+  </div>
+  <aside class="side"><b>1 team</b><span>From the first plan to the hundredth mow</span><hr><b>12 months</b><span>In season, all year</span></aside>
+ </div>
+</section>
+
+<section class="how" id="how"><div class="wrap">
+ <div class="title rv"><span class="kicker">How it works</span><h2>Here&rsquo;s how we turn your yard into the one you actually want.</h2></div>
+ <div class="steps">
+  <div class="st rv"><span class="num">1</span><div class="ph"><img src="img/c1.webp" width="750" height="400" alt="Mountain mint in bloom" loading="lazy"></div><h3>Consult</h3><p>We walk your property and listen to how you want to live in it.</p></div>
+  <div class="st rv"><span class="num">2</span><div class="ph"><img src="img/c2.webp" width="750" height="400" alt="Designer holding a tablet with a landscape plan" loading="lazy"></div><h3>Design</h3><p>We plan a landscape suited to your soil, light and drainage.</p></div>
+  <div class="st rv"><span class="num">3</span><div class="ph"><img src="img/c3.webp" width="750" height="400" alt="Purple coneflower blooming in a garden bed" loading="lazy"></div><h3>Grow</h3><p>We build it, then keep it thriving season after season.</p></div>
+ </div>
+</div></section>
+
+<section class="serv" id="serv"><div class="wrap">
+ <div class="title rv"><span class="kicker">Services</span><h2>From the first plan to the hundredth mow, we&rsquo;re the only crew your yard needs.</h2></div>
+ <div class="sg">
+  <article class="sv s1 rv"><div class="ph"><img src="img/d1.webp" width="750" height="400" alt="Gravel path between native plantings" loading="lazy"></div><div class="b"><h3>Landscape design &amp; installation</h3><p>Full-property design that starts with what&rsquo;s already there: your topography, soil, drainage, sunlight and existing plantings. We select plants that look beautiful and ask little of you, then handle hardscape, lighting and irrigation to match.</p><a href="#contact">Start your project &rarr;</a></div></article>
+  <article class="sv s2 rv"><div class="ph"><img src="img/d2.webp" width="750" height="400" alt="Gardener raking a planting bed" loading="lazy"></div><div class="b"><h3>Landscape maintenance</h3><p>Turf care on all-electric equipment. Quieter mornings, cleaner air, healthier grass. We manage irrigation, soil testing, aeration, topdressing, mulching, bed maintenance and fall clean-up on a schedule that fits your property.</p><a href="#contact">Get on the schedule &rarr;</a></div></article>
+  <article class="sv s3 rv"><div class="ph"><img src="img/d3.webp" width="750" height="400" alt="Clipped shrubs and seasonal flowers in front of a modern home" loading="lazy"></div><div class="b"><h3>Fine gardening</h3><p>Skilled ornamental care from people who genuinely love this part. Expert pruning, plant health, bed maintenance and seasonal color: the fine detail work that separates a nice yard from a beautiful one.</p><a href="#contact">Get gardening &rarr;</a></div></article>
+  <article class="sv s4 rv"><div class="ph"><img src="img/d4.webp" width="750" height="400" alt="Pansies in bloom" loading="lazy"></div><div class="b"><h3>Seasonal flower installs</h3><p>Beautiful entries, window boxes and doorstep planters, refreshed with the season. Annual color that makes the front of your home the best on the block, swapped out as the weather turns so it never looks tired.</p><a href="#contact">Book your fall install &rarr;</a></div></article>
+ </div>
+</div></section>
+
+<section class="why" id="why"><div class="wrap grid">
+ <div class="sticky rv"><span class="kicker">Why Crown Town</span><h2>Yard care, done right.</h2><p class="lead">One team from the first sketch to the hundredth mow, building outdoor spaces across greater Charlotte that look right all twelve months of the year.</p><a class="btn dk" href="#contact">Talk to our team</a></div>
+ <ul class="pts">
+  <li class="rv"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.3 6.8 19.1l1-5.8L3.5 9.2l5.9-.9z"/></svg></span><div><h3>Lived expertise</h3><p>Our designers, gardeners and crews carry decades in the field between them. We&rsquo;ve got the back aches and the r&eacute;sum&eacute;s to show for it.</p></div></li>
+  <li class="rv"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M8 12l3 3 5-6"/></svg></span><div><h3>One team, one plan</h3><p>Design, install, maintenance and gardening under one roof. No handoffs, no finger-pointing, no coordinating four vendors.</p></div></li>
+  <li class="rv"><span class="ic"><svg viewBox="0 0 24 24"><path d="M13 3L6 13h5l-1 8 8-11h-5z"/></svg></span><div><h3>Quieter, cleaner crews</h3><p>All-electric turf equipment means calmer mornings and better air. Good for your street, good for the planet.</p></div></li>
+  <li class="rv"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg></span><div><h3>Concierge service</h3><p>You get a real point of contact and a clear plan from day one. The hassle-free part is the whole point.</p></div></li>
+  <li class="rv"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg></span><div><h3>In season all year</h3><p>We plan and swap plantings so your yard never hits a dead season. It looks intentional in January as much as in June.</p></div></li>
+ </ul>
+</div></section>
+
+<section class="gal" id="gal"><div class="wrap">
+ <div class="title rv"><span class="kicker">Projects</span><h2>Before, after &amp; everything between.</h2><p>A look at recent projects across greater Charlotte, from full design-and-build installs to the gardens we keep thriving year-round.</p></div>
+ <div class="mos rv">
+  <a href="img/house.webp"><img src="img/house.webp" width="1536" height="1024" alt="White house with new front planting and a crew member at work" loading="lazy"></a>
+  <a href="img/p13.webp"><img src="img/p13.webp" width="1536" height="1024" alt="Stone patio with black chairs and ornamental grasses" loading="lazy"></a>
+  <a href="img/craftsman.webp"><img src="img/craftsman.webp" width="1536" height="1024" alt="Craftsman cottage with fresh native planting beds" loading="lazy"></a>
+  <a href="img/drain.webp"><img src="img/drain.webp" width="1536" height="1024" alt="River rock swale through a planted bed" loading="lazy"></a>
+  <a href="img/p14.webp"><img src="img/p14.webp" width="1536" height="1024" alt="Newly planted bed with a mulch path along a tree-lined street" loading="lazy"></a>
+  <a href="img/path.webp"><img src="img/path.webp" width="1536" height="1024" alt="Gravel path between layered plantings by a brick house" loading="lazy"></a>
+ </div>
+</div></section>
+
+<section class="rev" id="reviews"><div class="wrap">
+ <div class="title rv"><span class="kicker">4.8 on Google &middot; 55 reviews</span><h2>We love our clients.</h2></div>
+ <div class="big" id="big">
+  <div class="q on"><blockquote>&ldquo;Mari, Jay and Charlie are all A+++++! They completely designed and planted my front yard into a magical blooming fantasy. I had a vision that they have made into a reality.&rdquo;</blockquote><cite>Jude</cite></div>
+  <div class="q"><blockquote>&ldquo;The staff and landscapers at Crown Town are top-notch: well-informed, hard-working, and accommodating and cheerful about all the work they were doing.&rdquo;</blockquote><cite>Betty</cite></div>
+  <div class="q"><blockquote>&ldquo;Crown Town created an entire new front yard for me, including an awesome stone path, great dry stack &lsquo;ledge,&rsquo; and numerous perennials and trees! I couldn&rsquo;t be happier!&rdquo;</blockquote><cite>Deborah</cite></div>
+  <div class="q"><blockquote>&ldquo;Charlie and the team did an amazing job with our landscape and went above and beyond. Their design was amazing and love everything they picked out! 10/10 recommend.&rdquo;</blockquote><cite>Ashley</cite></div>
+ </div>
+ <div class="dots"><button type="button" class="ar" id="pv" aria-label="Previous review">&larr;</button><span id="dd" style="display:flex;gap:10px"></span><button type="button" class="ar" id="nx" aria-label="Next review">&rarr;</button></div>
+</div></section>
+
+<section class="fam" id="fam"><div class="wrap">
+ <div class="title rv"><span class="kicker">The Crown Town family</span><h2>More than a landscaping company.</h2></div>
+ <div class="two">
+  <article class="fc rv"><svg viewBox="0 0 100 100"><path d="M50 10c20 15 30 35 20 60-5 12-35 12-40 0-10-25 0-45 20-60z"/></svg><h3>Crown Town Compost</h3><p>Food scraps in, nutrient-rich compost out. They make composting easy and clean for homes and businesses across Charlotte, and the compost comes back to your beds.</p><a class="btn dk" href="#contact">Start composting</a></article>
+  <article class="fc rv"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="38"/><path d="M50 12v76M12 50h76"/></svg><h3>Crown Town Farm</h3><p>Grown sustainably, harvested responsibly. Fresh produce for greater Charlotte, with fewer conventional pesticides and a lot more transparency about where your food comes from.</p><a class="btn dk" href="#contact">Join the CSA</a></article>
+ </div>
+</div></section>
+
+<section class="fin" id="contact"><div class="wrap">
+ <div class="row">
+  <div class="rv"><span class="kicker" style="color:var(--leaf)">Schedule a consultation</span><h2 style="margin-top:16px">Thinking about what your yard <em>could become?</em></h2><p>Tell us a little about your yard. We will walk the property with you and listen to how you want to live in it.</p></div>
+  <form class="rv" onsubmit="event.preventDefault();this.querySelector('small').textContent='Concept preview only: the form is not connected.';">
+   <label>Name<input type="text" autocomplete="name"></label>
+   <label>Email<input type="email" autocomplete="email"></label>
+   <label>About your yard<textarea rows="3"></textarea></label>
+   <button class="btn" type="submit">Schedule a consultation</button>
+   <small>Concept preview: this form is visual only.</small>
+  </form>
+ </div>
+ <div class="info">
+  <div><b>Where</b>Greater Charlotte, NC</div>
+  <div><b>Email</b><a href="mailto:info@crowntownlandscapes.com">info@crowntownlandscapes.com</a></div>
+  <div><b>Follow</b><a href="#top">@crowntownlandscapes</a></div>
+ </div>
+</div></section>
+<footer><div class="wrap">Design concept prepared by IsDesign (Brazil) as a sample. Crown Town Landscapes is not affiliated with this preview. Names, text and photos belong to their owners.</div></footer>
+
+<div class="bar"><a href="#contact">Schedule a consultation</a><a href="#gal">Projects</a></div>
+<div class="lb" id="lb" role="dialog" aria-label="Photo"><button type="button" aria-label="Close">&times;</button><img alt=""></div>
+
+<script>
+(function(){
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:0,rootMargin:"0px 0px -6% 0px"});
+ document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+ var qs=document.querySelectorAll('.q'),dd=document.getElementById('dd'),i=0,t;
+ qs.forEach(function(_,k){var b=document.createElement('button');b.type='button';b.setAttribute('aria-label','Review '+(k+1));b.onclick=function(){go(k,true)};dd.appendChild(b)});
+ function go(n,u){i=(n+qs.length)%qs.length;qs.forEach(function(q,k){q.classList.toggle('on',k===i)});[].forEach.call(dd.children,function(b,k){b.setAttribute('aria-current',k===i)});if(u){clearInterval(t)}}
+ document.getElementById('nx').onclick=function(){go(i+1,true)};document.getElementById('pv').onclick=function(){go(i-1,true)};
+ go(0);
+ if(!matchMedia('(prefers-reduced-motion:reduce)').matches){t=setInterval(function(){go(i+1)},7000)}
+ var lb=document.getElementById('lb'),li=lb.querySelector('img');
+ document.querySelectorAll('.mos a').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();li.src=a.getAttribute('href');li.alt=a.querySelector('img').alt;lb.classList.add('on')})});
+ lb.addEventListener('click',function(){lb.classList.remove('on')});
+ document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('on')});
+})();
+</script>
+</body>
+</html>
