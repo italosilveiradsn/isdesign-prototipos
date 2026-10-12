@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Wave Plumbing | Design concept by IsDesign</title>
+<meta name="description" content="Design concept for a faster home page. Prepared by IsDesign (Brazil). Not affiliated with Wave Plumbing, Inc.">
+<link rel="preload" as="image" href="vid/capa.webp" fetchpriority="high">
+<style>
+:root{--navy:#233446;--ink:#0b1b2b;--blue:#116dff;--deep:#0d5aa7;--aqua:#bfe9f5;--foam:#eef9fd;--white:#fff;--mut:#5d7084;--san:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;--ser:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--san);color:var(--ink);background:var(--foam);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1240px,100% - 48px);margin-inline:auto}
+.lab{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700}
+.btn{display:inline-flex;align-items:center;gap:12px;background:var(--blue);color:#fff;font-weight:700;padding:17px 30px;border-radius:999px;transition:.3s;border:0;cursor:pointer;font-family:inherit;font-size:1rem}
+.btn:hover{background:var(--navy);transform:translateY(-2px)}
+.btn.w{background:#fff;color:var(--navy)}.btn.w:hover{background:var(--navy);color:#fff}
+.concept{background:var(--ink);color:#a9bccf;font-size:.74rem;text-align:center;padding:8px 14px;line-height:1.4}
+.concept b{color:var(--aqua)}
+
+/* POSTER HERO */
+.hero{position:relative;min-height:min(100vh,940px);background:var(--aqua);overflow:hidden;display:flex;flex-direction:column}
+.hero .bg{position:absolute;inset:0}
+.hero .bg img,.hero .bg video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.28),rgba(35,52,70,.0) 40%,rgba(13,90,167,.55));z-index:1}
+header{position:relative;z-index:5}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0;gap:20px}
+.logo{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:-.04em;font-size:1.5rem;color:var(--navy);line-height:1}
+.logo svg{width:44px;height:44px}
+.logo small{display:block;font-size:.55rem;letter-spacing:.28em;color:var(--deep);font-weight:800;margin-top:3px}
+.nav ul{display:flex;gap:34px;list-style:none;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--navy)}
+.nav ul a:hover{color:var(--blue)}
+.nav .call{background:var(--navy);color:#fff;padding:12px 22px;border-radius:999px;font-weight:700;font-size:.9rem}
+.nav .call:hover{background:var(--blue)}
+.hero .big{position:relative;z-index:3;margin-top:auto;padding-bottom:0}
+.hero h1{font-weight:900;text-transform:uppercase;line-height:.74;letter-spacing:-.07em;font-size:clamp(7rem,30vw,29rem);color:#fff;margin-left:-.04em;text-shadow:0 10px 60px rgba(13,90,167,.35);mix-blend-mode:normal;white-space:nowrap}
+.hero .strap{position:relative;z-index:4;background:var(--navy);color:#fff}
+.hero .strap .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:20px 0;flex-wrap:wrap}
+.hero .strap p{font-size:clamp(1.1rem,2.2vw,1.7rem);font-weight:700;letter-spacing:-.02em;max-width:34ch;line-height:1.2}
+.hero .strap p em{font-style:normal;color:var(--aqua)}
+.hero .strap .r{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.pillr{display:flex;align-items:center;gap:10px;font-size:.84rem;font-weight:700}
+.pillr i{font-style:normal;color:#ffc94d;letter-spacing:.1em}
+
+/* manifesto */
+.man{padding:110px 0 70px}
+.man p.m{font-size:clamp(1.9rem,4.8vw,4.3rem);font-weight:800;letter-spacing:-.045em;line-height:1.02;max-width:20ch;color:var(--navy)}
+.man p.m span{color:var(--blue)}
+.man .row{display:grid;grid-template-columns:1fr 1fr;gap:70px;margin-top:60px;align-items:center}
+.man .row p{color:var(--mut);font-size:1.12rem;max-width:44ch}
+.man .row img{border-radius:0 140px 0 0;aspect-ratio:16/10;height:auto;object-fit:cover;width:100%}
+
+/* HORIZONTAL SERVICES */
+.hs{background:var(--navy);color:#fff;padding:90px 0 80px;overflow:hidden}
+.hs .top{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:40px}
+.hs h2{font-size:clamp(2.6rem,7vw,6.4rem);font-weight:900;letter-spacing:-.06em;line-height:.88;text-transform:uppercase}
+.hs h2 em{font-style:normal;color:var(--aqua)}
+.ctl{display:flex;gap:12px}
+.ctl button{width:58px;height:58px;border-radius:50%;border:1.5px solid rgba(255,255,255,.5);background:transparent;color:#fff;font-size:1.4rem;cursor:pointer;transition:.25s}
+.ctl button:hover{background:#fff;color:var(--navy)}
+.track{display:flex;gap:0;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;border-top:1px solid rgba(255,255,255,.25)}
+.track::-webkit-scrollbar{display:none}
+.pn{flex:0 0 min(460px,82vw);scroll-snap-align:start;padding:34px 34px 44px;border-right:1px solid rgba(255,255,255,.25);min-height:420px;display:flex;flex-direction:column;justify-content:space-between;transition:background .3s}
+.pn:hover{background:var(--deep)}
+.pn .n{font-size:clamp(5rem,9vw,8rem);font-weight:900;letter-spacing:-.08em;line-height:.8;color:transparent;-webkit-text-stroke:1.5px var(--aqua)}
+.pn h3{font-size:clamp(1.7rem,3vw,2.5rem);font-weight:800;letter-spacing:-.04em;line-height:1;margin:26px 0 10px}
+.pn p{color:#bcd0e0;max-width:30ch;font-size:.98rem}
+.pn.hl{background:var(--blue)}.pn.hl .n{-webkit-text-stroke:1.5px #fff}
+.hint{margin-top:22px;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:#8da7bf;font-weight:700}
+
+/* video */
+.film{position:relative;height:min(78vh,720px);overflow:hidden;background:var(--deep);color:#fff;display:flex;align-items:center}
+.film video,.film img.b{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.film:before{content:"";position:absolute;inset:0;background:rgba(13,90,167,.55);z-index:1}
+.film .in{position:relative;z-index:2}
+.film h2{font-size:clamp(2.8rem,8vw,7.5rem);font-weight:900;letter-spacing:-.065em;line-height:.86;text-transform:uppercase;max-width:12ch}
+.film p{margin-top:24px;max-width:40ch;font-size:1.15rem;color:#e2f3fb}
+
+/* promessas */
+.pr{padding:110px 0}
+.pr .hd{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:50px}
+.pr h2{font-size:clamp(2.4rem,6vw,5.4rem);font-weight:900;letter-spacing:-.06em;line-height:.9;text-transform:uppercase;color:var(--navy);max-width:14ch}
+.pr .grid{display:grid;grid-template-columns:1fr 1fr;gap:0 80px}
+.pr dl div{display:grid;grid-template-columns:1fr;padding:28px 0;border-top:2px solid var(--navy)}
+.pr dt{font-size:clamp(1.4rem,2.4vw,2rem);font-weight:800;letter-spacing:-.035em;color:var(--navy);margin-bottom:6px}
+.pr dd{color:var(--mut);max-width:44ch}
+.pr .gtag{display:inline-block;background:var(--blue);color:#fff;font-weight:800;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;padding:4px 10px;margin-left:10px;vertical-align:middle;border-radius:4px}
+
+/* equipe */
+.team{background:var(--aqua);padding:100px 0;position:relative;overflow:hidden}
+.team .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center}
+.team h2{font-size:clamp(2.4rem,6vw,5.6rem);font-weight:900;letter-spacing:-.06em;line-height:.88;text-transform:uppercase;color:var(--navy);margin:14px 0 24px}
+.team p{max-width:44ch;color:#2e4a63;font-size:1.1rem;margin-bottom:28px}
+.team .ph{position:relative}
+.team .ph img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:200px 200px 0 0}
+.team .ph .tag{position:absolute;left:-18px;bottom:30px;background:var(--navy);color:#fff;padding:16px 22px;font-weight:800;letter-spacing:-.02em;line-height:1.15}
+.team .ph .tag small{display:block;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--aqua);font-weight:700;margin-bottom:4px}
+.fam{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:70px}
+.fam img{width:100%;aspect-ratio:16/10;object-fit:cover}
+
+/* depoimento */
+.say{padding:120px 0;text-align:left}
+.say blockquote{font-size:clamp(1.8rem,4.6vw,4rem);font-weight:800;letter-spacing:-.045em;line-height:1.04;color:var(--navy);max-width:22ch}
+.say blockquote:before{content:"“";display:block;font-size:2.4em;line-height:.6;color:var(--blue);margin-bottom:.1em}
+.say cite{display:flex;align-items:center;gap:16px;margin-top:34px;font-style:normal}
+.say cite b{font-size:.84rem;letter-spacing:.18em;text-transform:uppercase}
+.say cite i{font-style:normal;color:#ffc94d;letter-spacing:.14em}
+
+/* areas */
+.areas{background:var(--deep);color:#fff;padding:90px 0}
+.areas .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:start}
+.areas h2{font-size:clamp(2.2rem,5vw,4.6rem);font-weight:900;letter-spacing:-.06em;line-height:.9;text-transform:uppercase}
+.areas p{color:#c8def2;margin-top:18px;max-width:38ch}
+.areas ul{list-style:none;columns:2;column-gap:40px}
+.areas li{font-size:clamp(1.3rem,2.4vw,2rem);font-weight:800;letter-spacing:-.035em;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.28);break-inside:avoid}
+
+/* contato */
+.cta{background:var(--navy);color:#fff;padding:100px 0 0;overflow:hidden;position:relative}
+.cta .row{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:start}
+.cta h2{font-size:clamp(2.6rem,7vw,6.2rem);font-weight:900;letter-spacing:-.065em;line-height:.86;text-transform:uppercase}
+.cta h2 em{font-style:normal;color:var(--aqua)}
+.cta p.s{color:#bcd0e0;margin:22px 0 28px;max-width:38ch}
+.cta .num{display:block;font-size:clamp(2.4rem,6vw,5rem);font-weight:900;letter-spacing:-.06em;line-height:1;margin-bottom:6px}
+.cta .num:hover{color:var(--aqua)}
+.cta .mail{font-weight:700;border-bottom:2px solid var(--aqua)}
+form{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.2);padding:30px;display:grid;gap:14px;border-radius:6px}
+form h3{font-size:1.6rem;letter-spacing:-.03em}
+form label{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:#9cb6cc;font-weight:700;display:grid;gap:6px}
+form input,form select,form textarea{font:inherit;padding:14px;border-radius:4px;border:1px solid rgba(255,255,255,.25);background:rgba(11,27,43,.6);color:#fff}
+form input:focus,form select:focus,form textarea:focus{outline:2px solid var(--aqua);border-color:transparent}
+form .r2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+form small{color:#8aa4bb;font-size:.72rem}
+.cta .wm{font-size:clamp(7rem,28vw,27rem);font-weight:900;letter-spacing:-.07em;line-height:.72;color:rgba(255,255,255,.07);text-transform:uppercase;margin:60px 0 0 -.03em;white-space:nowrap;user-select:none}
+footer{background:#06111c;color:#7b93a9;font-size:.74rem;padding:24px 0;line-height:1.6}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+.bar{display:none}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s,transform .8s}
+.rv.in{opacity:1;transform:none}
+@media(max-width:980px){
+ .nav ul{display:none}
+ .hero{min-height:88vh}
+ .hero h1{font-size:34vw}
+ .hero .strap .wrap{padding:18px 0}
+ .man{padding:80px 0 50px}.man .row,.team .grid,.areas .grid,.cta .row,.pr .grid{grid-template-columns:1fr;gap:44px}
+ .man .row img{border-radius:0 90px 0 0}
+ .hs,.pr,.team,.areas{padding:76px 0}.say{padding:80px 0}.cta{padding-top:76px}
+ .fam{grid-template-columns:1fr;margin-top:50px}
+ .areas ul{columns:1}
+ .team .ph .tag{left:10px}
+ form .r2{grid-template-columns:1fr}
+ .film{height:70vh}
+ .bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--navy);padding:10px 14px;gap:10px;border-top:1px solid rgba(255,255,255,.2)}
+ .bar a{flex:1;text-align:center;padding:14px;border-radius:999px;font-weight:700}
+ .bar a:first-child{background:var(--blue);color:#fff}.bar a:last-child{border:1px solid rgba(255,255,255,.45);color:#fff}
+ body{padding-bottom:70px}
+}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="concept"><b>Design concept</b> prepared by IsDesign (Brazil) for Wave Plumbing, Inc. Not affiliated with or endorsed by the company. Text, photos and video are samples from the current website.</div>
+
+<section class="hero" id="top">
+ <div class="bg"><img src="vid/capa.webp" width="1280" height="720" alt="A drop of water creating ripples" fetchpriority="high"><video id="hv" muted loop playsinline preload="none" aria-hidden="true"></video></div>
+ <header><div class="wrap nav">
+  <a class="logo" href="#top" aria-label="Wave Plumbing"><svg viewBox="0 0 48 48" fill="none"><rect width="48" height="48" rx="12" fill="#233446"/><path d="M6 28c4-8 8-8 12 0s8 8 12 0 8-8 12 0" stroke="#7fd0ee" stroke-width="3.5" stroke-linecap="round"/><path d="M24 8c4 5 6 8 6 11a6 6 0 0 1-12 0c0-3 2-6 6-11z" fill="#116dff"/></svg><span>Wave<br>Plumbing<small>SOLVE YOUR PROBLEM</small></span></a>
+  <nav aria-label="Main"><ul><li><a href="#serv">Services</a></li><li><a href="#about">About</a></li><li><a href="#areas">Areas</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+  <a class="call" href="tel:+13212223710">Call/Text 321-222-3710</a>
+ </div></header>
+ <div class="big wrap"><h1>Wave</h1></div>
+ <div class="strap"><div class="wrap">
+  <p>Solving all your plumbing problems <em>with care &amp; craftsmanship.</em></p>
+  <div class="r"><span class="pillr"><i>★★★★★</i>Top-rated on Google</span><a class="btn w" href="#contact">Get in touch &rarr;</a></div>
+ </div></div>
+</section>
+
+<section class="man" id="about"><div class="wrap">
+ <p class="m rv">Licensed plumbers serving <span>Central Florida</span> and beyond.</p>
+ <div class="row">
+  <p class="rv">Wave Plumbing believes great service goes beyond the job. It&rsquo;s about building relationships and being there when you need us. We show up, work hard, and treat your home like our own.</p>
+  <img class="rv" src="img/van.webp" width="1320" height="690" alt="A Wave Plumbing technician at the wheel of the company van" loading="lazy">
+ </div>
+</div></section>
+
+<section class="hs" id="serv"><div class="wrap">
+ <div class="top rv"><h2>Seven ways<br>we keep your<br><em>water moving.</em></h2><div class="ctl"><button type="button" id="pv" aria-label="Previous">&larr;</button><button type="button" id="nx" aria-label="Next">&rarr;</button></div></div>
+</div>
+<div class="track" id="track" tabindex="0" aria-label="Services">
+ <article class="pn hl"><div><span class="n">01</span><h3>Whole-home repipes</h3><p>Includes a 10-year warranty.</p></div></article>
+ <article class="pn"><div><span class="n">02</span><h3>Sewer camera inspections</h3><p>See exactly what&rsquo;s going on underground.</p></div></article>
+ <article class="pn"><div><span class="n">03</span><h3>Leak detection &amp; repairs</h3><p>Found fast, fixed right.</p></div></article>
+ <article class="pn"><div><span class="n">04</span><h3>Bath &amp; kitchen remodel plumbing</h3><p>The pipes behind the beautiful finish.</p></div></article>
+ <article class="pn"><div><span class="n">05</span><h3>New construction &amp; additions</h3><p>Plumbing planned from the first wall.</p></div></article>
+ <article class="pn"><div><span class="n">06</span><h3>General plumbing inspections</h3><p>Know your system before problems start.</p></div></article>
+ <article class="pn"><div><span class="n">07</span><h3>High-pressure jetting</h3><p>Powerful drain and line cleaning.</p></div></article>
+</div>
+<div class="wrap"><p class="hint">Scroll or use the arrows &rarr; &nbsp;&nbsp; Request a quote for any service</p></div>
+</section>
+
+<section class="film" aria-label="Video"><img class="b" src="vid/capa.webp" width="1280" height="720" alt="" loading="lazy"><video id="fv" muted loop playsinline preload="none" aria-hidden="true"></video>
+ <div class="wrap in"><h2 class="rv">Clear water. Clear communication.</h2><p class="rv">A real person will always answer your call or text. No automated systems, just real, reliable communication that makes you feel like part of the Wave Plumbing family.</p></div>
+</section>
+
+<section class="pr" id="promise"><div class="wrap">
+ <div class="hd rv"><h2>Our commitment to you.</h2><a class="btn" href="#contact">Let&rsquo;s get started &rarr;</a></div>
+ <dl class="grid">
+  <div class="rv"><dt>Personalized communication</dt><dd>A real person will always answer your call or text. Just real, reliable communication.</dd></div>
+  <div class="rv"><dt>Repipes<span class="gtag">10-year warranty</span></dt><dd>We stand by our work. Our whole-home repipe services come with a 10-year warranty for your peace of mind.</dd></div>
+  <div class="rv"><dt>Water heaters<span class="gtag">6-year warranty</span></dt><dd>Quality installations, backed by long-term protection. We make sure you&rsquo;re covered well beyond the install date.</dd></div>
+  <div class="rv"><dt>VIP pricing for long-term partners</dt><dd>Contractors and companies that work with us regularly enjoy VIP pricing and priority scheduling.</dd></div>
+ </dl>
+</div></section>
+
+<section class="team"><div class="wrap grid">
+ <div class="rv"><span class="lab" style="color:var(--deep)">Why choose Wave?</span><h2>More than a service.<br>Part of the community.</h2><p>Work ethic: we show up, work hard, and treat your home like our own. Affordable: transparent pricing with no hidden fees. Values: integrity and respect guide everything we do. Excellence: we don&rsquo;t settle for good enough.</p><a class="btn" href="#contact" style="background:var(--navy)">Learn more about us</a></div>
+ <div class="ph rv"><img src="img/tech.webp" width="808" height="724" alt="A Wave plumber at work on a water supply fixture" loading="lazy" style="object-position:70% 20%"><div class="tag"><small>Our promise</small>We don&rsquo;t settle for<br>good enough.</div></div>
+</div>
+<div class="wrap"><div class="fam"><img class="rv" src="img/family.webp" width="980" height="600" alt="The Wave Plumbing family" loading="lazy"><img class="rv" src="img/team.webp" width="900" height="600" alt="The Wave Plumbing team" loading="lazy"></div></div>
+</section>
+
+<section class="say"><div class="wrap rv">
+ <blockquote>This was our first but not going to be our last job with Wave Plumbing. David was prompt &amp; professional. The price was reasonable. Highly recommend.</blockquote>
+ <cite><i>★★★★★</i><b>Melissa M.</b></cite>
+</div></section>
+
+<section class="areas" id="areas"><div class="wrap grid">
+ <div class="rv"><h2>Areas served.</h2><p>Licensed plumbers serving Central Florida and beyond. Not sure if we cover your area? Contact us, we&rsquo;re expanding!</p></div>
+ <ul class="rv"><li>Orange County &amp; Orlando</li><li>Osceola County &amp; Kissimmee</li><li>Seminole County</li><li>Brevard County</li><li>Tampa</li><li>St. Petersburg</li><li>New Smyrna</li><li>Apopka</li></ul>
+</div></section>
+
+<section class="cta" id="contact"><div class="wrap">
+ <div class="row">
+  <div class="rv"><h2>Need a <em>plumber?</em><br>Call or text.</h2><p class="s">Whether you need a quick fix or a detailed plumbing solution, we&rsquo;re here to help. Get in touch and receive a personalized quote.</p><a class="num" href="tel:+13212223710">321-222-3710</a><a class="mail" href="mailto:office@waveplumbinginc.com">office@waveplumbinginc.com</a><p class="lab" style="margin-top:22px;color:#8aa4bb">Plumbing license # CFC1434085</p></div>
+  <form class="rv" onsubmit="event.preventDefault();this.querySelector('small').textContent='Concept preview only: the form is not connected.';">
+   <h3>Request a quote</h3>
+   <div class="r2"><label>First name<input type="text" autocomplete="given-name"></label><label>Last name<input type="text" autocomplete="family-name"></label></div>
+   <div class="r2"><label>City<input type="text"></label><label>Phone<input type="tel" autocomplete="tel"></label></div>
+   <label>Email<input type="email" autocomplete="email"></label>
+   <label>Service<select><option>Choose an option</option><option>Whole-home repipe</option><option>Leak detection</option><option>Sewer camera inspection</option><option>Water heater</option><option>Other</option></select></label>
+   <label>Explain your issue<textarea rows="3"></textarea></label>
+   <button class="btn" type="submit" style="justify-content:center">Submit</button>
+   <small>Concept preview: this form is visual only.</small>
+  </form>
+ </div>
+ <div class="wm" aria-hidden="true">Wave</div>
+</div></section>
+<footer><div class="wrap"><span>Design concept prepared by IsDesign (Brazil) as a sample. Wave Plumbing, Inc. is not affiliated with this preview. Names, text, photos and video belong to their owners.</span><span>PCI compliant</span></div></footer>
+
+<div class="bar"><a href="tel:+13212223710">Call/Text now</a><a href="#contact">Get a quote</a></div>
+
+<script>
+(function(){
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:0,rootMargin:"0px 0px -6% 0px"});
+ document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+ var t=document.getElementById('track');
+ document.getElementById('nx').onclick=function(){t.scrollBy({left:t.clientWidth*.5,behavior:'smooth'})};
+ document.getElementById('pv').onclick=function(){t.scrollBy({left:-t.clientWidth*.5,behavior:'smooth'})};
+ function play(id){var v=document.getElementById(id);if(!v||matchMedia('(prefers-reduced-motion:reduce)').matches)return;v.src='vid/wave.mp4';v.addEventListener('canplay',function(){v.play().catch(function(){})},{once:true});v.load()}
+ addEventListener('load',function(){setTimeout(function(){play('hv')},400)});
+ var f=document.getElementById('fv');
+ if(f){var o=new IntersectionObserver(function(es){if(es[0].isIntersecting){play('fv');o.disconnect()}},{rootMargin:'200px'});o.observe(f.parentNode)}
+})();
+</script>
+</body>
+</html>
