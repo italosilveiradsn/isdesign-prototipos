@@ -38,6 +38,7 @@ header{position:relative;z-index:5}
 .nav .call:hover{background:var(--blue)}
 .hero .big{position:relative;z-index:3;margin-top:auto;padding-bottom:0}
 .hero h1{font-weight:900;text-transform:uppercase;line-height:.74;letter-spacing:-.07em;font-size:clamp(7rem,30vw,29rem);color:#fff;margin-left:-.04em;text-shadow:0 10px 60px rgba(13,90,167,.35);mix-blend-mode:normal;white-space:nowrap}
+.hero h1 .w1{display:block}.hero h1 .w2{display:block;font-size:.5em;letter-spacing:-.05em;line-height:.9;margin-top:.06em}
 .hero .strap{position:relative;z-index:4;background:var(--navy);color:#fff}
 .hero .strap .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:20px 0;flex-wrap:wrap}
 .hero .strap p{font-size:clamp(1.1rem,2.2vw,1.7rem);font-weight:700;letter-spacing:-.02em;max-width:34ch;line-height:1.2}
@@ -99,8 +100,8 @@ header{position:relative;z-index:5}
 .team .ph img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:200px 200px 0 0}
 .team .ph .tag{position:absolute;left:-18px;bottom:30px;background:var(--navy);color:#fff;padding:16px 22px;font-weight:800;letter-spacing:-.02em;line-height:1.15}
 .team .ph .tag small{display:block;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--aqua);font-weight:700;margin-bottom:4px}
-.fam{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:70px}
-.fam img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.fam{display:grid;grid-template-columns:1.3fr 1fr;gap:16px;margin-top:70px;align-items:start}
+.fam img{width:100%;height:auto}
 
 /* depoimento */
 .say{padding:120px 0;text-align:left}
@@ -134,9 +135,22 @@ form input,form select,form textarea{font:inherit;padding:14px;border-radius:4px
 form input:focus,form select:focus,form textarea:focus{outline:2px solid var(--aqua);border-color:transparent}
 form .r2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 form small{color:#8aa4bb;font-size:.72rem}
-.cta .wm{font-size:clamp(7rem,28vw,27rem);font-weight:900;letter-spacing:-.07em;line-height:.72;color:rgba(255,255,255,.07);text-transform:uppercase;margin:60px 0 0 -.03em;white-space:nowrap;user-select:none}
-footer{background:#06111c;color:#7b93a9;font-size:.74rem;padding:24px 0;line-height:1.6}
-footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.cta .wm{font-size:11.3vw;font-weight:900;letter-spacing:-.07em;line-height:.76;color:rgba(255,255,255,.07);text-transform:uppercase;margin:60px 0 0 -.03em;white-space:nowrap;user-select:none}
+footer{background:#06111c;color:#9bb0c4;font-size:.8rem;padding:50px 0 24px;line-height:1.6}
+footer .fw{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;align-items:start}
+.fh{display:block;color:#fff;font-weight:900;font-size:1.1rem;letter-spacing:.08em;text-transform:uppercase;line-height:1.3;margin-bottom:14px}
+.jt{color:#fff;text-decoration:underline}
+.fb{display:grid;gap:14px;justify-items:start}
+.pci{display:inline-flex;align-items:center;gap:10px;border:1.5px solid rgba(255,255,255,.4);padding:10px 16px;border-radius:6px;color:#fff;font-weight:800;letter-spacing:.06em;font-size:.82rem;text-transform:uppercase}
+.pci svg{width:20px;height:20px;stroke:#7fd0ee;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.lic2{color:#fff;font-weight:600}
+.fr{display:grid;gap:6px;justify-items:start}
+.fr>a{color:#fff;font-size:.98rem}
+.soc{display:flex;gap:14px;margin-top:10px}
+.soc a{width:42px;height:42px;border-radius:50%;border:1.5px solid rgba(255,255,255,.4);display:grid;place-items:center;color:#fff;transition:.25s}
+.soc a:hover{background:#fff;color:var(--navy)}
+.soc svg{width:20px;height:20px;fill:currentColor}
+footer .fine{margin-top:36px;padding-top:20px;border-top:1px solid rgba(255,255,255,.14);font-size:.72rem;color:#7b93a9}
 
 .bar{display:none}
 .rv{opacity:0;transform:translateY(26px);transition:opacity .8s,transform .8s}
@@ -144,13 +158,14 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 @media(max-width:980px){
  .nav ul{display:none}
  .hero{min-height:88vh}
- .hero h1{font-size:34vw}
+ .hero h1{font-size:33vw}
  .hero .strap .wrap{padding:18px 0}
  .man{padding:80px 0 50px}.man .row,.team .grid,.areas .grid,.cta .row,.pr .grid{grid-template-columns:1fr;gap:44px}
  .man .row img{border-radius:0 90px 0 0}
  .hs,.pr,.team,.areas{padding:76px 0}.say{padding:80px 0}.cta{padding-top:76px}
  .fam{grid-template-columns:1fr;margin-top:50px}
  .areas ul{columns:1}
+ footer .fw{grid-template-columns:1fr;gap:28px}
  .team .ph .tag{left:10px}
  form .r2{grid-template-columns:1fr}
  .film{height:70vh}
@@ -172,10 +187,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
   <nav aria-label="Main"><ul><li><a href="#serv">Services</a></li><li><a href="#about">About</a></li><li><a href="#areas">Areas</a></li><li><a href="#contact">Contact</a></li></ul></nav>
   <a class="call" href="tel:+13212223710">Call/Text 321-222-3710</a>
  </div></header>
- <div class="big wrap"><h1>Wave</h1></div>
+ <div class="big wrap"><h1><span class="w1">Wave</span><span class="w2">Plumbing</span></h1></div>
  <div class="strap"><div class="wrap">
   <p>Solving all your plumbing problems <em>with care &amp; craftsmanship.</em></p>
-  <div class="r"><span class="pillr"><i>★★★★★</i>Top-rated on Google</span><a class="btn w" href="#contact">Get in touch &rarr;</a></div>
+  <div class="r"><span class="pillr"><i>★★★★★</i>Top-rated plumbing experts &middot; Google reviews</span><a class="btn w" href="#contact">Get in touch &rarr;</a></div>
  </div></div>
 </section>
 
@@ -220,7 +235,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
  <div class="rv"><span class="lab" style="color:var(--deep)">Why choose Wave?</span><h2>More than a service.<br>Part of the community.</h2><p>Work ethic: we show up, work hard, and treat your home like our own. Affordable: transparent pricing with no hidden fees. Values: integrity and respect guide everything we do. Excellence: we don&rsquo;t settle for good enough.</p><a class="btn" href="#contact" style="background:var(--navy)">Learn more about us</a></div>
  <div class="ph rv"><img src="img/tech.webp" width="808" height="724" alt="A Wave plumber at work on a water supply fixture" loading="lazy" style="object-position:70% 20%"><div class="tag"><small>Our promise</small>We don&rsquo;t settle for<br>good enough.</div></div>
 </div>
-<div class="wrap"><div class="fam"><img class="rv" src="img/family.webp" width="980" height="600" alt="The Wave Plumbing family" loading="lazy"><img class="rv" src="img/team.webp" width="900" height="600" alt="The Wave Plumbing team" loading="lazy"></div></div>
+<div class="wrap"><div class="fam"><img class="rv" src="img/family.webp" width="980" height="600" alt="The Wave Plumbing family, all four smiling on a bench" loading="lazy"><img class="rv" src="img/team.webp" width="900" height="600" alt="The Wave Plumbing team" loading="lazy"></div></div>
 </section>
 
 <section class="say"><div class="wrap rv">
@@ -247,9 +262,20 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
    <small>Concept preview: this form is visual only.</small>
   </form>
  </div>
- <div class="wm" aria-hidden="true">Wave</div>
+ <div class="wm" aria-hidden="true">Wave Plumbing</div>
 </div></section>
-<footer><div class="wrap"><span>Design concept prepared by IsDesign (Brazil) as a sample. Wave Plumbing, Inc. is not affiliated with this preview. Names, text, photos and video belong to their owners.</span><span>PCI compliant</span></div></footer>
+<footer><div class="wrap fw">
+ <div><b class="fh">Get in touch with<br>Wave Plumbing</b><a class="jt" href="#contact">Join our team</a></div>
+ <div class="fb"><span class="pci"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>PCI Compliant</span><span class="lic2">Plumbing License # CFC1434085</span></div>
+ <div class="fr"><a href="mailto:office@waveplumbinginc.com">Office@waveplumbinginc.com</a><a href="tel:+13212223710">321-222-3710</a>
+  <div class="soc" aria-label="Social media">
+   <a href="#top" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8V6.5c0-.8.3-1.2 1.3-1.2H17V2h-2.6C11.6 2 10 3.6 10 6.2V8H7.5v3.3H10V22h4V11.3h2.7L17 8z"/></svg></a>
+   <a href="#top" aria-label="Instagram"><svg viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor"/></svg></a>
+   <a href="#top" aria-label="Yelp"><svg viewBox="0 0 24 24"><path d="M12.2 2.2c-1 0-1.6.8-1.5 1.7l.6 6.6c.1.8 1 1.1 1.6.6l5.2-4.4c.6-.5.5-1.4-.1-1.8C16 3.4 14 2.2 12.2 2.2zM9.4 12.2l-5.5-2.8c-.8-.4-1.7.2-1.6 1.1.2 1.8.9 3.5 2 4.8.5.6 1.4.6 1.8 0l3.7-2.7c.7-.5.5-1.5-.4-1.6zM10.3 14.4l-1.9 6.3c-.3.9.5 1.7 1.4 1.4 1.7-.6 3.2-1.6 4.4-2.9.5-.6.3-1.4-.4-1.7l-3.2-3.4c-.6-.6-1.1-.3-.3.3zM14.4 14.4l5.2 3.5c.7.5 1.7 0 1.7-.9.1-1.8-.2-3.6-1-5.1-.4-.8-1.4-.8-1.9-.1l-3.1 2.1c-.8.5-.7.5-.9.5z"/></svg></a>
+   <a href="#top" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M16.6 2h-3.2v13.2a2.8 2.8 0 1 1-2.8-2.8c.3 0 .5 0 .8.1V9.2a6 6 0 1 0 5.2 5.9V8.5a7.2 7.2 0 0 0 4.2 1.3V6.6a4.2 4.2 0 0 1-4.2-4.6z"/></svg></a>
+  </div></div>
+</div>
+<div class="wrap fine"><span>&copy; 2025 Wave Plumbing, Inc. &middot; Design concept prepared by IsDesign (Brazil) as a sample. Not affiliated with this preview. Names, text, photos and video belong to their owners.</span></div></footer>
 
 <div class="bar"><a href="tel:+13212223710">Call/Text now</a><a href="#contact">Get a quote</a></div>
 
