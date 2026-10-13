@@ -75,9 +75,15 @@ dl{display:grid;gap:10px}dt{font-size:.68rem;letter-spacing:.12em;text-transform
 .contact h2{font:400 clamp(3rem,10vw,10rem)/.88 var(--serif);letter-spacing:-.035em}.contact h2 em{color:var(--acc)}
 .contact p.l{max-width:46ch;margin:28px 0 8px;font-size:1.15rem}.contact .roles{color:var(--mute);margin-bottom:28px}
 .contact .foot{margin-top:clamp(40px,8vh,90px);padding-top:18px;border-top:1px solid var(--line);color:var(--mute);font-size:.82rem}
+.brands{margin-top:22px;color:var(--mute);font-size:.92rem;position:relative}.brands b{color:var(--fg);font-weight:500;white-space:nowrap}.brands i{font-style:normal;color:var(--acc);margin:0 .5em}
+.exp{align-content:center}.exp .h{font:400 clamp(2.4rem,5vw,5rem)/.95 var(--serif);letter-spacing:-.03em;margin-bottom:clamp(20px,4vh,44px)}
+.exp ol{list-style:none;padding:0;border-top:1px solid var(--line)}.exp li{display:grid;grid-template-columns:minmax(120px,1fr) 3fr 3fr;gap:20px;padding:20px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.exp .y{color:var(--acc);font-size:.85rem;letter-spacing:.1em;text-transform:uppercase}.exp .r{font:400 clamp(1.5rem,2.6vw,2.4rem)/1.05 var(--serif)}.exp .c{color:#cfccc4}.exp .c small{display:block;color:var(--mute);font-size:.8rem;margin-top:2px}
+.exp .bw{margin-top:30px;color:#cfccc4;max-width:60ch}.exp .bw b{color:var(--fg);font-weight:500}
 /* motion */
 .rv{opacity:0;transform:translateY(28px);transition:opacity .8s,transform .8s}.rv.in{opacity:1;transform:none}
 @media (max-width:900px){
+ .exp li{grid-template-columns:1fr;gap:4px;padding:16px 0}
  html{scroll-snap-type:none}.rail,header nav{display:none}
  .scene{min-height:0;padding:80px 20px 60px}.work,.wp{grid-template-columns:1fr}
  .work .txt,.work .stage,.work.flip .txt,.work.flip .stage,.wp .txt,.wp .shot{grid-column:1;grid-row:auto}
@@ -88,13 +94,14 @@ dl{display:grid;gap:10px}dt{font-size:.68rem;letter-spacing:.12em;text-transform
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}.rv{opacity:1;transform:none}}
 </style></head><body>
 <a class="skip" href="#wave">Skip to work</a>
-<header><a class="mark" href="#top" aria-label="Ítalo Silveira, home"><img src="../portfolio/img/logo-white.png" width="400" height="170" alt="IS logo"></a><nav aria-label="Main"><a href="#wave">Work</a><a href="#wordpress">WordPress</a><a href="#contact">Contact</a></nav></header>
+<header><a class="mark" href="#top" aria-label="Ítalo Silveira, home"><img src="../portfolio/img/logo-white.png" width="400" height="170" alt="IS logo"></a><nav aria-label="Main"><a href="#wave">Work</a><a href="#wordpress">WordPress</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav></header>
 <nav class="rail" aria-label="Projects"><a href="#wave" aria-label="Wave Plumbing"><i></i></a><a href="#howards" aria-label="Howard's Electrical"><i></i></a><a href="#casa" aria-label="Casa Roofing"><i></i></a><a href="#tallman" aria-label="Tallman Pools"><i></i></a><a href="#redhat" aria-label="Red Hat Painting"><i></i></a><a href="#bowles" aria-label="Bowles Custom Pools"><i></i></a><a href="#crowntown" aria-label="Crown Town Landscapes"><i></i></a><a href="#pink" aria-label="Pink Plumbing & Sewer"><i></i></a><a href="#valley" aria-label="Valley Oasis Pools & Spas"><i></i></a></nav>
 
 <main id="top">
 <section class="scene hero" id="hero">
  <div><h1><span>Ítalo</span> <em>Silveira.</em></h1>
  <p class="lead">Brand-led web designer. Nine years in design, five of them building the websites.</p>
+ <p class="brands rv">Worked with <b>Peak Sports</b><i>/</i><b>Cusqueña</b><i>/</i><b>Menin</b><i>/</i><b>Condor</b></p>
  <div class="cta"><a class="btn p" href="#wave">See the work <span aria-hidden="true">&darr;</span></a><a class="btn" href="https://www.linkedin.com/in/italosilveiraa/" target="_blank" rel="noopener">LinkedIn</a></div></div>
  <div class="stats rv"><div><b data-count="9" data-plus="1">0</b><span>original layouts, none repeated</span></div><div><b><span data-count="92">0</span>&ndash;<span data-count="100">0</span></b><span>Lighthouse mobile performance (lab test)</span></div><div><b data-count="91">0</b><span>fields to edit in my WordPress theme</span></div></div>
 </section>
@@ -180,6 +187,17 @@ dl{display:grid;gap:10px}dt{font-size:.68rem;letter-spacing:.12em;text-transform
   <ul><li>Pixel match with the original design: 0.0% visual difference on desktop and mobile in my comparison test.</li><li>91 fields in Appearance &gt; Customize (copy, photos and contact data) plus six brand colors, with live preview.</li><li>Working contact form with spam protection. Lighthouse mobile: 99 performance, 100 accessibility, 96 best practices.</li><li>Not yet tested on a production host with real email delivery, and it is a one-page theme.</li></ul>
   <a class="go" href="https://github.com/italosilveiradsn/isdesign-prototipos/tree/main/wordpress" target="_blank" rel="noopener">See the theme and notes <span aria-hidden="true">&nearr;</span></a></div>
  <div class="shot rv"><img src="img/wp-customizer.webp" width="1440" height="900" loading="lazy" alt="WordPress Customizer editing the Casa Roofing theme with a live preview"></div>
+</section>
+
+<section class="scene exp" id="experience" data-dot>
+ <h2 class="h rv">Experience</h2>
+ <ol class="rv">
+  <li><span class="y">2025 &ndash; Now</span><span class="r">Senior Design Consultant</span><span class="c">V4 Company</span></li>
+  <li><span class="y">2024 &ndash; 2025</span><span class="r">Brand Strategist</span><span class="c">PHX Consulting<small>Remote</small></span></li>
+  <li><span class="y">2022 &ndash; 2025</span><span class="r">Lead Designer</span><span class="c">Novezero Negócios<small>Remote</small></span></li>
+  <li><span class="y">2017 &ndash; 2025</span><span class="r">Designer &amp; Brand Strategist</span><span class="c">Freelance<small>Itabaiana, Brazil</small></span></li>
+ </ol>
+ <p class="bw rv">Brands I&rsquo;ve worked with: <b>Peak Sports</b>, <b>Cusqueña</b>, <b>Menin</b> and <b>Condor</b>.</p>
 </section>
 
 <section class="scene how" id="how" data-dot>
