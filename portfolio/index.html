@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IsDesign White Label Portfolio</title>
+<meta name="description" content="Nine fast, original website designs for home service brands, available white label for marketing agencies.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Newsreader:ital,opsz,wght@1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#ece8df;--ink:#16130f;--mute:#6d675c;--line:#cfc9bb;--sig:#e5401a;--card:#f7f4ed}
+@media (prefers-color-scheme:dark){:root{--paper:#14120f;--ink:#efeadf;--mute:#9a9385;--line:#2e2a23;--sig:#ff6a3d;--card:#1c1914}}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font:400 16px/1.55 "Bricolage Grotesque",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}img{display:block;max-width:100%;height:auto}
+.mono{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.wrap{display:grid;grid-template-columns:minmax(300px,380px) 1fr;min-height:100vh}
+aside{position:sticky;top:0;height:100vh;padding:36px 32px;border-right:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between;overflow:auto}
+.brand{font-weight:800;letter-spacing:-.02em;font-size:15px}
+h1{font-weight:800;font-size:clamp(40px,4.4vw,64px);line-height:.95;letter-spacing:-.04em;margin:28px 0 18px}
+h1 em{font:italic 400 1.04em "Newsreader",serif;letter-spacing:-.02em;color:var(--sig)}
+.lead{color:var(--mute);max-width:32ch}
+.rail{list-style:none;padding:0;margin:26px 0;border-top:1px solid var(--line)}
+.rail a{display:flex;gap:12px;align-items:baseline;padding:7px 0;border-bottom:1px solid var(--line);text-decoration:none;font-size:14px;color:var(--mute);transition:color .2s,padding .2s}
+.rail a span{font:500 11px "IBM Plex Mono",monospace}.rail a b{margin-left:auto;font:500 12px "IBM Plex Mono",monospace}
+.rail a:hover,.rail a.on{color:var(--ink);padding-left:8px}.rail a.on b{color:var(--sig)}
+.offer{border:1px solid var(--ink);padding:16px 18px;border-radius:4px;background:var(--card)}
+.offer strong{display:block;font-size:30px;letter-spacing:-.03em;line-height:1.1}
+.offer p{font-size:13px;color:var(--mute);margin-top:6px}
+.cta{display:inline-block;margin-top:14px;background:var(--ink);color:var(--paper);padding:11px 18px;border-radius:99px;text-decoration:none;font-weight:500;font-size:14px}
+main{padding:36px clamp(20px,4vw,64px) 80px;min-width:0}
+.intro{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--ink);margin-bottom:64px}
+.intro div{padding:18px 20px 18px 0}.intro b{display:block;font-size:44px;letter-spacing:-.04em;line-height:1;font-weight:800}.intro span{color:var(--mute);font-size:14px}
+.plate{padding:44px 0 56px;border-top:1px solid var(--ink)}
+.plate>header{display:grid;grid-template-columns:auto 1fr auto;gap:20px;align-items:end;margin-bottom:26px}
+.num{font:800 clamp(64px,9vw,128px)/.8 "Bricolage Grotesque";letter-spacing:-.06em;color:transparent;-webkit-text-stroke:1.5px var(--ink)}
+h3{font-size:clamp(24px,3vw,40px);letter-spacing:-.03em;line-height:1.05;font-weight:800}.tags{color:var(--mute);font:500 12px "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.08em;margin-top:8px}
+.score{--c:calc(var(--s)*1%);width:92px;height:92px;border-radius:50%;display:grid;place-content:center;text-align:center;background:radial-gradient(closest-side,var(--paper) 78%,transparent 80%),conic-gradient(var(--sig) var(--c),var(--line) 0)}
+.score i{font:800 30px/1 "Bricolage Grotesque";font-style:normal;letter-spacing:-.03em}.score small{font:500 8px "IBM Plex Mono";text-transform:uppercase;letter-spacing:.06em;color:var(--mute)}
+.shots{position:relative;padding:0 0 0 0}
+.desk{border:1px solid var(--ink);border-radius:10px;overflow:hidden;background:var(--card);box-shadow:10px 10px 0 var(--ink)}
+.bar{display:flex;gap:6px;padding:9px 12px;border-bottom:1px solid var(--line)}.bar i{width:9px;height:9px;border-radius:50%;background:var(--line)}
+.desk img{width:100%;transition:transform .8s cubic-bezier(.2,.7,.2,1)}.plate:hover .desk img{transform:scale(1.025)}.desk{overflow:hidden}
+.phone{position:absolute;right:-14px;bottom:-34px;width:clamp(96px,17%,170px);border:5px solid var(--ink);border-radius:22px;overflow:hidden;background:#000;box-shadow:0 18px 40px rgba(0,0,0,.28)}
+.plate>footer{display:grid;grid-template-columns:1fr auto auto;gap:28px;align-items:center;margin-top:56px}
+.plate>footer p{max-width:48ch;color:var(--mute)}
+dl{display:flex;gap:26px}dt{font:500 11px "IBM Plex Mono";text-transform:uppercase;letter-spacing:.08em;color:var(--mute)}dd{font-weight:800;font-size:20px;letter-spacing:-.02em;margin:0}
+.go{background:var(--sig);color:#fff;padding:12px 20px;border-radius:99px;text-decoration:none;font-weight:500;white-space:nowrap;transition:transform .2s}.go:hover{transform:translateY(-2px)}
+.how{border-top:1px solid var(--ink);padding-top:40px;display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.how h4{font-size:22px;letter-spacing:-.02em;margin:8px 0}.how p{color:var(--mute);font-size:15px}
+.fine{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);color:var(--mute);font-size:13px;max-width:78ch}
+@media (max-width:980px){
+.wrap{display:block}aside{position:static;height:auto;border:0;border-bottom:1px solid var(--line);padding:24px 20px}.rail{display:none}.offer{margin-top:22px}
+.intro,.how{grid-template-columns:1fr}.plate>header{grid-template-columns:auto 1fr;}.score{grid-column:1/-1;width:72px;height:72px}.score i{font-size:24px}
+.plate>footer{grid-template-columns:1fr;gap:18px}.phone{right:6px;bottom:-24px;width:30%}.desk{box-shadow:6px 6px 0 var(--ink)}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
+</style></head><body>
+<div class="wrap">
+<aside><div><div class="brand">IsDesign <span class="mono" style="color:var(--mute)">/ white label</span></div>
+<h1>Sites your clients <em>would frame.</em></h1>
+<p class="lead">Original, fast websites for home service brands, delivered under your agency name.</p>
+<ul class="rail" id="rail"><li><a href="#casa"><span>01</span>Casa Roofing<b>100</b></a></li><li><a href="#wave"><span>02</span>Wave Plumbing<b>96</b></a></li><li><a href="#howards"><span>03</span>Howard's Electrical<b>99</b></a></li><li><a href="#tallman"><span>04</span>Tallman Pools<b>100</b></a></li><li><a href="#redhat"><span>05</span>Red Hat Painting<b>100</b></a></li><li><a href="#bowles"><span>06</span>Bowles Custom Pools<b>96</b></a></li><li><a href="#crowntown"><span>07</span>Crown Town Landscapes<b>98</b></a></li><li><a href="#pink"><span>08</span>Pink Plumbing & Sewer<b>98</b></a></li><li><a href="#valley"><span>09</span>Valley Oasis Pools & Spas<b>92</b></a></li></ul></div>
+<div class="offer"><span class="mono" style="color:var(--mute)">Per site, white label</span><strong>from US$ 1,200</strong><p>Home + 4 pages. Ready in 5 days. Your brand, your client, your invoice.</p>
+<a class="cta" href="https://wa.me/5579999990185" target="_blank" rel="noopener">WhatsApp +55 79 99999-0185</a></div></aside>
+<main>
+<section class="intro"><div><b>9</b><span>original layouts, none repeated</span></div><div><b>92&ndash;100</b><span>Lighthouse mobile performance, lab test</span></div><div><b>5 days</b><span>from brief to a finished site</span></div></section>
+<article class="plate" id="casa">
+<header><span class="num">01</span><div><h3>Casa Roofing</h3><p class="tags">Roofing &middot; Bento grid</p></div>
+<div class="score" style="--s:100" aria-label="Mobile speed score 100 out of 100"><i>100</i><small>mobile</small></div></header>
+<div class="shots"><div class="desk"><div class="bar"><i></i><i></i><i></i></div><img src="img/casa-d.jpg" width="1440" height="900" loading="lazy" alt="Casa Roofing design concept, desktop"></div>
+<div class="phone"><img src="img/casa-m.jpg" width="780" height="1688" loading="lazy" alt="Casa Roofing design concept, mobile"></div></div>
+<footer><p>Mixed-size blocks, real logo, brand navy and purple.</p><dl><div><dt>LCP</dt><dd>1.4 s</dd></div><div><dt>Pages</dt><dd>Home + 4</dd></div></dl><a class="go" href="https://italosilveiradsn.github.io/isdesign-prototipos/p/6HZhTfl0xkv/" target="_blank" rel="noopener">Open live site <span>&nearr;</span></a></footer></article>
+<article class="plate" id="wave">
+<header><span class="num">02</span><div><h3>Wave Plumbing</h3><p class="tags">Plumbing &middot; Typographic poster</p></div>
+<div class="score" style="--s:96" aria-label="Mobile speed score 96 out of 100"><i>96</i><small>mobile</small></div></header>
+<div class="shots"><div class="desk"><div class="bar"><i></i><i></i><i></i></div><img src="img/wave-d.jpg" width="1440" height="900" loading="lazy" alt="Wave Plumbing design concept, desktop"></div>
+<div class="phone"><img src="img/wave-m.jpg" width="780" height="1688" loading="lazy" alt="Wave Plumbing design concept, mobile"></div></div>
+<footer><p>Giant wordmark over a looping water-drop video, horizontal service scroll.</p><dl><div><dt>LCP</dt><dd>0.9 s</dd></div><div><dt>Pages</dt><dd>Home + 4</dd></div></dl><a class="go" href="https://italosilveiradsn.github.io/isdesign-prototipos/p/oBYPVyfV6Fn/" target="_blank" rel="noopener">Open live site <span>&nearr;</span></a></footer></article>
+<article class="plate" id="howards">
+<header><span class="num">03</span><div><h3>Howard's Electrical</h3><p class="tags">Electrical &middot; Editorial magazine</p></div>
+<div class="score" style="--s:99" aria-label="Mobile speed score 99 out of 100"><i>99</i><small>mobile</small></div></header>
+<div class="shots"><div class="desk"><div class="bar"><i></i><i></i><i></i></div><img src="img/howards-d.jpg" width="1440" height="900" loading="lazy" alt="Howard's Electrical design concept, desktop"></div>
+<div class="phone"><img src="img/howards-m.jpg" width="780" height="1688" loading="lazy" alt="Howard's Electrical design concept, mobile"></div></div>
+<footer><p>Oversized type, service index, no cards. Brand blue on paper.</p><dl><div><dt>LCP</dt><dd>2.1 s</dd></div><div><dt>Pages</dt><dd>Home + 4</dd></div></dl><a class="go" href="https://italosilveiradsn.github.io/isdesign-prototipos/p/DrwXj5P6OpC/" target="_blank" rel="noopener">Open live site <span>&nearr;</span></a></footer></article>
+<article class="plate" id="tallman">
+<header><span class="num">04</span><div><h3>Tallman Pools</h3><p class="tags">Pools &middot; Split tech sheet</p></div>
+<div class="score" style="--s:100" aria-label="Mobile speed score 100 out of 100"><i>100</i><small>mobile</small></div></header>
+<div class="shots"><div class="desk"><div class="bar"><i></i><i></i><i></i></div><img src="img/tallman-d.jpg" width="1440" height="900" loading="lazy" alt="Tallman Pools design concept, desktop"></div>
+<div class="phone"><img src="img/tallman-m.jpg" width="780" height="1688" loading="lazy" alt="Tallman Pools design concept, mobile"></div></div>
+<footer><p>Model spec sheets and a filterable catalog, with video.</p><dl><div><dt>LCP</dt><dd>1.8 s</dd></div><div><dt>Pages</dt><dd>Home + 4</dd></div></dl><a class="go" href="https://italosilveiradsn.github.io/isdesign-prototipos/p/JvLDQqJ1UBR/" target="_blank" rel="noopener">Open live site <span>&nearr;</span></a></footer></article>
+<article class="plate" id="redhat">
+<header><span class="num">05</span><div><h3>Red Hat Painting</h3><p class="tags">Painting &middot; Split narrative</p></div>
+<div class="score" style="--s:100" aria-label="Mobile speed score 100 out of 100"><i>100</i><small>mobile</small></div></header>
+<div class="shots"><div class="desk"><div class="bar"><i></i><i></i><i></i></div><img src="img/redhat-d.jpg" width="1440" height="900" loading="lazy" alt="Red Hat Painting design concept, desktop"></div>
+<div class="phone"><img src="img/redhat-m.jpg" width="780" height="1688" loading="lazy" alt="Red Hat Painting design concept, mobile"></div></div>
+<footer><p>Fixed red panel with numbered chapters that scroll on the right.</p><dl><div><dt>LCP</dt><dd>1.8 s</dd></div><div><dt>Pages</dt><dd>Home + 4</dd></div></dl><a class="go" href="https://italosilveiradsn.github.io/isdesign-prototipos/p/ARDbw2jRZvZ/" target="_blank" rel="noopener">Open live site <span>&nearr;</span></a></footer></article>
+<article class="plate" id="bowles">
+<header><span class="num">06</span><div><h3>Bowles Custom Pools</h3><p class="tags">Pools &middot; Full-bleed photo</p></div>
+<div class="score" style="--s:96" aria-label="Mobile speed score 96 out of 100"><i>96</i><small>mobile</small></div></header>
+<div class="shots"><div class="desk"><div class="bar"><i></i><i></i><i></i></div><img src="img/bowles-d.jpg" width="1440" height="900" loading="lazy" alt="Bowles Custom Pools design concept, desktop"></div>
+<div class="phone"><img src="img/bowles-m.jpg" width="780" height="1688" loading="lazy" alt="Bowles Custom Pools design concept, mobile"></div></div>
+<footer><p>Full-screen photography, glass panels, review carousel.</p><dl><div><dt>LCP</dt><dd>2.7 s</dd></div><div><dt>Pages</dt><dd>Home + 4</dd></div></dl><a class="go" href="https://italosilveiradsn.github.io/isdesign-prototipos/p/HAJtAbNOfkJ/" target="_blank" rel="noopener">Open live site <span>&nearr;</span></a></footer></article>
+<article class="plate" id="crowntown">
+<header><span class="num">07</span><div><h3>Crown Town Landscapes</h3><p class="tags">Landscaping &middot; Organic cream</p></div>
+<div class="score" style="--s:98" aria-label="Mobile speed score 98 out of 100"><i>98</i><small>mobile</small></div></header>
+<div class="shots"><div class="desk"><div class="bar"><i></i><i></i><i></i></div><img src="img/crowntown-d.jpg" width="1440" height="900" loading="lazy" alt="Crown Town Landscapes design concept, desktop"></div>
+<div class="phone"><img src="img/crowntown-m.jpg" width="780" height="1688" loading="lazy" alt="Crown Town Landscapes design concept, mobile"></div></div>
+<footer><p>Soft arches and a warm cream palette.</p><dl><div><dt>LCP</dt><dd>2.3 s</dd></div><div><dt>Pages</dt><dd>Home + 4</dd></div></dl><a class="go" href="https://italosilveiradsn.github.io/isdesign-prototipos/p/xQr6kAhucJw/" target="_blank" rel="noopener">Open live site <span>&nearr;</span></a></footer></article>
+<article class="plate" id="pink">
+<header><span class="num">08</span><div><h3>Pink Plumbing & Sewer</h3><p class="tags">Plumbing &middot; Diagonal navy</p></div>
+<div class="score" style="--s:98" aria-label="Mobile speed score 98 out of 100"><i>98</i><small>mobile</small></div></header>
+<div class="shots"><div class="desk"><div class="bar"><i></i><i></i><i></i></div><img src="img/pink-d.jpg" width="1440" height="900" loading="lazy" alt="Pink Plumbing & Sewer design concept, desktop"></div>
+<div class="phone"><img src="img/pink-m.jpg" width="780" height="1688" loading="lazy" alt="Pink Plumbing & Sewer design concept, mobile"></div></div>
+<footer><p>Angled sections, service cards, proof numbers.</p><dl><div><dt>LCP</dt><dd>1.7 s</dd></div><div><dt>Pages</dt><dd>Home + 4</dd></div></dl><a class="go" href="https://italosilveiradsn.github.io/isdesign-prototipos/p/blswCicOE3J/" target="_blank" rel="noopener">Open live site <span>&nearr;</span></a></footer></article>
+<article class="plate" id="valley">
+<header><span class="num">09</span><div><h3>Valley Oasis Pools & Spas</h3><p class="tags">Pools &middot; Cinema fade</p></div>
+<div class="score" style="--s:92" aria-label="Mobile speed score 92 out of 100"><i>92</i><small>mobile</small></div></header>
+<div class="shots"><div class="desk"><div class="bar"><i></i><i></i><i></i></div><img src="img/valley-d.jpg" width="1440" height="900" loading="lazy" alt="Valley Oasis Pools & Spas design concept, desktop"></div>
+<div class="phone"><img src="img/valley-m.jpg" width="780" height="1688" loading="lazy" alt="Valley Oasis Pools & Spas design concept, mobile"></div></div>
+<footer><p>Full-screen photo transitions with wave dividers.</p><dl><div><dt>LCP</dt><dd>3.3 s</dd></div><div><dt>Pages</dt><dd>Home + 4</dd></div></dl><a class="go" href="https://italosilveiradsn.github.io/isdesign-prototipos/p/jq7ovPuzKkh/" target="_blank" rel="noopener">Open live site <span>&nearr;</span></a></footer></article>
+
+<section class="how"><div><span class="mono">01</span><h4>You send the brief</h4><p>Client name, services, photos and logo. We handle the rest.</p></div><div><span class="mono">02</span><h4>We build it unbranded</h4><p>A unique layout in your client's colors. Nothing points back to us.</p></div><div><span class="mono">03</span><h4>You deliver and invoice</h4><p>Handoff in 5 days. You set the price your client pays.</p></div></section>
+<p class="fine">Design concepts prepared by IsDesign (Brazil). Not affiliated with or endorsed by any company shown. Text and photos are samples from the companies' current public sites. Speed scores are Lighthouse mobile performance results from a lab test run on Oct 13, 2026 and can vary by network and device. IsDesign, CNPJ 46.721.670/0001-06, Rua Professor Hil&aacute;rio de Melo Rezende, 442, Itabaiana/SE, 49500-088, Brazil &middot; <a href="https://www.italosilveira.com">www.italosilveira.com</a></p>
+</main></div>
+<script>
+(function(){var l=[].slice.call(document.querySelectorAll('#rail a'));if(!('IntersectionObserver' in window))return;
+var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){l.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+x.target.id)})}})},{rootMargin:'-40% 0px -55% 0px'});
+document.querySelectorAll('.plate').forEach(function(p){io.observe(p)})})();
+</script></body></html>
