@@ -80,9 +80,23 @@ dl{display:grid;gap:10px}dt{font-size:.68rem;letter-spacing:.12em;text-transform
 .exp ol{list-style:none;padding:0;border-top:1px solid var(--line)}.exp li{display:grid;grid-template-columns:minmax(120px,1fr) 3fr 3fr;gap:20px;padding:20px 0;border-bottom:1px solid var(--line);align-items:baseline}
 .exp .y{color:var(--acc);font-size:.85rem;letter-spacing:.1em;text-transform:uppercase}.exp .r{font:400 clamp(1.5rem,2.6vw,2.4rem)/1.05 var(--serif)}.exp .c{color:#cfccc4}.exp .c small{display:block;color:var(--mute);font-size:.8rem;margin-top:2px}
 .exp .bw{margin-top:30px;color:#cfccc4;max-width:60ch}.exp .bw b{color:var(--fg);font-weight:500}
+.brandsec{align-content:center}
+.brandsec .h{font:400 clamp(2.4rem,5vw,5rem)/.95 var(--serif);letter-spacing:-.03em;margin-bottom:clamp(8px,2vh,18px);max-width:16ch}.brandsec .h em{color:var(--acc)}
+.brandsec .sub{color:var(--mute);max-width:56ch;margin-bottom:clamp(22px,4vh,44px)}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(12px,1.6vw,22px)}
+.card{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--card);transition:transform .5s cubic-bezier(.2,.7,.2,1),border-color .3s}
+@media (hover:hover){.card:hover{transform:translateY(-8px);border-color:rgba(215,255,63,.5)}}
+.card .lg{background:#f2efe8;height:clamp(120px,15vh,168px);display:flex;align-items:center;justify-content:center;padding:22px;overflow:hidden}
+.card .lg img{max-height:100%;max-width:78%;width:auto;height:auto;min-height:0;object-fit:contain}
+.card .tx{padding:18px 20px 22px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card .k{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--acc)}
+.card .f{font:400 1.25rem/1.2 var(--serif);color:var(--fg)}
+.card small{color:var(--mute);font-size:.78rem;margin-top:auto;padding-top:6px}
+.brandsec .role{margin-top:clamp(18px,3vh,32px);color:#cfccc4;font-size:.95rem}
 /* motion */
 .rv{opacity:0;transform:translateY(28px);transition:opacity .8s,transform .8s}.rv.in{opacity:1;transform:none}
 @media (max-width:900px){
+ .cards{grid-template-columns:1fr 1fr}.card .lg{height:104px;padding:16px}
  .exp li{grid-template-columns:1fr;gap:4px;padding:16px 0}
  html{scroll-snap-type:none}.rail,header nav{display:none}
  .scene{min-height:0;padding:80px 20px 60px}.work,.wp{grid-template-columns:1fr}
@@ -91,10 +105,11 @@ dl{display:grid;gap:10px}dt{font-size:.68rem;letter-spacing:.12em;text-transform
  .ghost{font-size:48vw;left:-2vw;bottom:auto;top:40px}.work.flip .ghost{right:auto;left:-2vw}
  .how{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr}.hero{min-height:92svh}
 }
+@media (max-width:520px){.cards{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}.rv{opacity:1;transform:none}}
 </style></head><body>
 <a class="skip" href="#wave">Skip to work</a>
-<header><a class="mark" href="#top" aria-label="Ítalo Silveira, home"><img src="../portfolio/img/logo-white.png" width="400" height="170" alt="IS logo"></a><nav aria-label="Main"><a href="#wave">Work</a><a href="#wordpress">WordPress</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav></header>
+<header><a class="mark" href="#top" aria-label="Ítalo Silveira, home"><img src="../portfolio/img/logo-white.png" width="400" height="170" alt="IS logo"></a><nav aria-label="Main"><a href="#brands">Brands</a><a href="#wave">Work</a><a href="#wordpress">WordPress</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav></header>
 <nav class="rail" aria-label="Projects"><a href="#wave" aria-label="Wave Plumbing"><i></i></a><a href="#howards" aria-label="Howard's Electrical"><i></i></a><a href="#casa" aria-label="Casa Roofing"><i></i></a><a href="#tallman" aria-label="Tallman Pools"><i></i></a><a href="#redhat" aria-label="Red Hat Painting"><i></i></a><a href="#bowles" aria-label="Bowles Custom Pools"><i></i></a><a href="#crowntown" aria-label="Crown Town Landscapes"><i></i></a><a href="#pink" aria-label="Pink Plumbing & Sewer"><i></i></a><a href="#valley" aria-label="Valley Oasis Pools & Spas"><i></i></a></nav>
 
 <main id="top">
@@ -107,6 +122,18 @@ dl{display:grid;gap:10px}dt{font-size:.68rem;letter-spacing:.12em;text-transform
 </section>
 
 <section class="scene statement" id="about" data-dot><div><p class="rv">A brand is more than looks. <em>The website is where it gets decided.</em></p><small class="rv">I start from what the business stands for, then design and build a site that says it clearly, loads fast and looks like nobody else's. Brand strategy and web design in one pair of hands.</small></div></section>
+
+<section class="scene brandsec" id="brands" data-dot>
+ <h2 class="h rv">Campaign work for <em>brands you know.</em></h2>
+ <p class="sub rv">Strategy and creative work inside campaigns for large brands, in Brazil and across South America.</p>
+ <div class="cards">
+  <article class="card rv"><div class="lg"><img src="img/brands/condor.webp" width="780" height="215" alt="Condor Instruments logo" loading="lazy"></div><div class="tx"><span class="k">NASA &middot; Artemis II</span><p class="f">Campaign for Condor Instruments: Brazilian technology in space.</p></div></article>
+  <article class="card rv"><div class="lg"><img src="img/brands/peak.webp" width="223" height="280" alt="Peak Sports logo" loading="lazy"></div><div class="tx"><span class="k">Olympic Games</span><p class="f">Official sportswear sponsor of the Brazilian delegation at the Olympics.</p><small>Tokyo 2020 and Paris 2024</small></div></article>
+  <article class="card rv"><div class="lg"><img src="img/brands/cusquena.webp" width="685" height="260" alt="Cusqueña logo" loading="lazy"></div><div class="tx"><span class="k">AB InBev &middot; Peru</span><p class="f">Took part in the Copa Libertadores final campaign, Flamengo vs Palmeiras.</p></div></article>
+  <article class="card rv"><div class="lg"><img src="img/brands/menin.webp" width="900" height="323" alt="Menin Engenharia logo" loading="lazy"></div><div class="tx"><span class="k">Construction</span><p class="f">The 13th largest construction company in Brazil.</p><small>Ranking INTEC 2026, by built area</small></div></article>
+ </div>
+ <p class="role rv">My role: strategy and creation. Logos belong to their owners. Due to contracts, the full material is shown in a private meeting.</p>
+</section>
 
 <section class="scene work" id="wave" data-dot>
 <div class="ghost" aria-hidden="true">01</div>
@@ -197,7 +224,7 @@ dl{display:grid;gap:10px}dt{font-size:.68rem;letter-spacing:.12em;text-transform
   <li><span class="y">2022 &ndash; 2025</span><span class="r">Lead Designer</span><span class="c">Novezero Negócios<small>Remote</small></span></li>
   <li><span class="y">2017 &ndash; 2025</span><span class="r">Designer &amp; Brand Strategist</span><span class="c">Freelance<small>Itabaiana, Brazil</small></span></li>
  </ol>
- <p class="bw rv">Campaign work, in strategy and creation: <b>Condor Instruments</b> (NASA Artemis II), <b>Peak Sports</b>, <b>Cusqueña</b> (AB InBev, Peru) and <b>Menin Engenharia</b>. Due to contracts, the full material is shown in a private meeting.</p>
+ <p class="bw rv">Campaign work for Condor Instruments, Peak Sports, Cusqueña and Menin Engenharia is shown above.</p>
 </section>
 
 <section class="scene how" id="how" data-dot>
