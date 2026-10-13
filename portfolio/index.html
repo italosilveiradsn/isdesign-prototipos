@@ -14,7 +14,7 @@ a{color:inherit}img{display:block;max-width:100%;height:auto}
 .mono{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
 .wrap{display:grid;grid-template-columns:minmax(300px,380px) 1fr;min-height:100vh}
 aside{position:sticky;top:0;height:100vh;padding:36px 32px;border-right:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between;overflow:auto}
-.brand{font-weight:800;letter-spacing:-.02em;font-size:15px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:-.02em;font-size:15px}.mark{display:grid;place-items:center;width:44px;height:30px;border-radius:6px;background:#16130f;flex:none}.mark img{width:26px;height:auto}
 h1{font-weight:800;font-size:clamp(40px,4.4vw,64px);line-height:.95;letter-spacing:-.04em;margin:28px 0 18px}
 h1 em{font:italic 400 1.04em "Newsreader",serif;letter-spacing:-.02em;color:var(--sig)}
 .lead{color:var(--mute);max-width:32ch}
@@ -54,7 +54,7 @@ dl{display:flex;gap:26px}dt{font:500 11px "IBM Plex Mono";text-transform:upperca
 @media (prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
 </style></head><body>
 <div class="wrap">
-<aside><div><div class="brand">IsDesign <span class="mono" style="color:var(--mute)">/ white label</span></div>
+<aside><div><div class="brand"><span class="mark"><img src="img/logo-white.png" width="400" height="170" alt="IsDesign logo"></span>IsDesign <span class="mono" style="color:var(--mute)">/ white label</span></div>
 <h1>Sites your clients <em>would frame.</em></h1>
 <p class="lead">Original, fast websites for home service brands, delivered under your agency name.</p>
 <ul class="rail" id="rail"><li><a href="#casa"><span>01</span>Casa Roofing<b>100</b></a></li><li><a href="#wave"><span>02</span>Wave Plumbing<b>96</b></a></li><li><a href="#howards"><span>03</span>Howard's Electrical<b>99</b></a></li><li><a href="#tallman"><span>04</span>Tallman Pools<b>100</b></a></li><li><a href="#redhat"><span>05</span>Red Hat Painting<b>100</b></a></li><li><a href="#bowles"><span>06</span>Bowles Custom Pools<b>96</b></a></li><li><a href="#crowntown"><span>07</span>Crown Town Landscapes<b>98</b></a></li><li><a href="#pink"><span>08</span>Pink Plumbing & Sewer<b>98</b></a></li><li><a href="#valley"><span>09</span>Valley Oasis Pools & Spas<b>92</b></a></li></ul></div>
