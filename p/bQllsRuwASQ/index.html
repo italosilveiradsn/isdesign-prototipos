@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Best Security Fencing Co. | Design concept by IsDesign</title>
+<meta name="description" content="Design concept for a faster home page. Prepared by IsDesign (Brazil). Not affiliated with Best Security Fencing Co.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="img/logo.webp" type="image/webp">
+<link rel="preload" href="fonts/bg.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/poster.webp" fetchpriority="high">
+<style>
+@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:500 800;font-display:swap;src:url(fonts/bg.woff2) format('woff2')}
+:root{--cream:#f3eee3;--ink:#17180f;--g:#01420f;--g2:#0b5a1c;--or:#cc4a1e;--ort:#a8380f;--wood:#d6b88a;--wood2:#b8935c;--bar:58px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--cream);scroll-behavior:auto}
+body{font-family:'Bricolage Grotesque',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.5;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+.concept{background:#000;color:#cfd2c6;font-size:.74rem;text-align:center;padding:8px 14px;line-height:1.4;position:relative;z-index:50}
+.concept b{color:var(--wood)}
+.disp{font-weight:800;letter-spacing:-.04em;line-height:.88}
+.k{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--ort)}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--ort);color:#fff;font-weight:700;padding:15px 26px;border-radius:999px;transition:.2s;border:0;font:inherit;font-weight:700;cursor:pointer}
+.btn:hover{background:var(--g)}
+.btn.ghost{background:transparent;border:2px solid currentColor;color:inherit}
+.btn.ghost:hover{background:#fff;color:var(--g)}
+/* header */
+.bar{position:fixed;top:34px;left:0;right:0;z-index:40;display:flex;justify-content:space-between;align-items:center;padding:0 clamp(14px,2.4vw,34px);pointer-events:none}
+.bar>*{pointer-events:auto}
+.logo{background:#fff;border-radius:12px;padding:6px 10px;box-shadow:0 6px 22px rgba(0,0,0,.22)}
+.logo img{width:150px}
+.tel{background:var(--g);color:#fff;font-weight:700;padding:12px 20px;border-radius:999px;font-size:.92rem;box-shadow:0 6px 22px rgba(0,0,0,.22)}
+.tel:hover{background:var(--or)}
+/* stage */
+.stage{position:relative}
+.pin{position:relative}
+.track{display:flex;flex-direction:column}
+.panel{position:relative;padding:clamp(100px,14vh,140px) clamp(18px,4vw,60px) clamp(36px,6vw,70px)}
+/* hero */
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;color:#fff;background:#10200f url(img/poster.webp) center/cover;overflow:hidden}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1s}
+.hero video.on{opacity:1}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(1,30,8,.55),rgba(1,30,8,.1) 40%,rgba(1,30,8,.88));z-index:1}
+.hero>*{position:relative;z-index:2}
+.hero h1{font-size:clamp(3.4rem,13vw,13rem);margin:14px 0 26px}
+.hero h1 span{display:block;color:var(--wood);font-size:.42em;letter-spacing:-.02em;margin-top:.15em}
+.hero .row{display:flex;flex-wrap:wrap;gap:22px 40px;align-items:flex-end;justify-content:space-between}
+.hero p.lead{max-width:34ch;font-size:clamp(1.05rem,1.6vw,1.35rem);line-height:1.35}
+.facts{display:flex;gap:28px;flex-wrap:wrap}
+.fact b{display:block;font-size:2.3rem;letter-spacing:-.04em;line-height:1}
+.fact span{font-size:.78rem;opacity:.85}
+.hero .acts{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.hint{display:none}
+/* styles */
+.styles{background:var(--g);color:#fff}
+.styles h2{font-size:clamp(2.6rem,7vw,6.4rem);margin:14px 0 22px}
+.styles p{max-width:46ch;font-size:1.1rem;color:#dfe8d9}
+.pick{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px;list-style:none}
+.pick li{background:var(--wood);color:var(--ink);font-weight:800;letter-spacing:-.02em;font-size:clamp(1.15rem,2vw,1.7rem);padding:16px 22px 16px 22px;clip-path:polygon(0 14px,50% 0,100% 14px,100% 100%,0 100%);padding-top:28px;min-width:120px}
+.pick li small{display:block;font-weight:500;font-size:.72rem;letter-spacing:.02em;opacity:.7;margin-top:4px}
+/* work */
+.work{background:var(--cream)}
+.work h2{font-size:clamp(2.4rem,6vw,5.4rem);margin:12px 0 26px}
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.shot{margin:0;position:relative}
+.shot img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px}
+.shot figcaption{font-size:.84rem;margin-top:8px;display:flex;gap:10px;align-items:baseline}
+.shot figcaption b{color:var(--ort);font-size:.76rem;letter-spacing:.1em}
+/* reviews */
+.rev{background:#fff;border-block:1.5px solid var(--ink)}
+.rev h2{font-size:clamp(2.4rem,6vw,5.4rem);margin:12px 0 8px}
+.rev .score{display:flex;align-items:baseline;gap:14px;margin-bottom:26px}
+.rev .score b{font-size:clamp(4rem,10vw,8rem);letter-spacing:-.06em;color:var(--g);line-height:.8}
+.rev .score span{font-size:1rem;color:#555}
+.q{display:grid;gap:0;grid-template-columns:repeat(2,1fr)}
+.q blockquote{padding:18px 22px 22px 0;border-top:1.5px solid var(--ink);font-size:1.05rem;line-height:1.4}
+.q blockquote b{display:block;margin-top:12px;font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ort)}
+.q .big{grid-column:1/-1;font-size:clamp(1.5rem,3.2vw,2.6rem);font-weight:700;letter-spacing:-.03em;line-height:1.1;color:var(--g)}
+.glink{display:inline-block;margin-top:20px;border-bottom:2px solid var(--or);padding-bottom:2px;font-weight:700}
+/* area */
+.area{background:var(--cream)}
+.area h2{font-size:clamp(2.4rem,6vw,5.4rem);margin:12px 0 22px}
+.ag{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(18px,3vw,44px);align-items:start}
+.cities{list-style:none;columns:2;gap:20px;font-size:1.02rem;font-weight:500}
+.cities li{padding:6px 0;border-bottom:1px solid rgba(23,24,15,.22);break-inside:avoid}
+.map{position:relative;aspect-ratio:4/3;border:2px solid var(--ink);background:#e7e0cf}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:saturate(.7) sepia(.15)}
+.note{margin-top:16px;font-size:.95rem;color:#44463a}
+/* contact */
+.contact{background:var(--g);color:#fff}
+.contact h2{font-size:clamp(3rem,9vw,8.4rem);margin:12px 0 22px}
+.cg{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,60px);align-items:start}
+.cg .l p{max-width:40ch;color:#dfe8d9}
+.bigtel{display:block;margin-top:20px;font-size:clamp(1.9rem,4vw,3.4rem);font-weight:800;letter-spacing:-.04em}
+.cg dl{margin-top:20px;display:grid;grid-template-columns:auto 1fr;gap:6px 18px;font-size:.98rem}
+.cg dt{color:var(--wood);font-weight:700}
+.cg dd a:hover{text-decoration:underline}
+form{display:grid;gap:10px}
+form input,form textarea{font:inherit;padding:14px;border:0;border-bottom:2px solid var(--wood);background:rgba(255,255,255,.1);color:#fff;border-radius:0}
+form input::placeholder,form textarea::placeholder{color:#b7c9b0}
+form input:focus,form textarea:focus{outline:2px solid var(--wood)}
+form small{color:#b7c9b0;font-size:.76rem}
+footer{background:#06240c;color:#cdd8c8;padding:30px clamp(18px,4vw,60px) 26px;position:relative;z-index:2}
+.fg{display:flex;flex-wrap:wrap;gap:20px 40px;align-items:center;justify-content:space-between}
+.fg .logo{box-shadow:none}
+.badges{display:flex;gap:12px;flex-wrap:wrap}
+.badge{display:flex;gap:9px;align-items:center;border:1px solid rgba(255,255,255,.3);padding:8px 12px;border-radius:4px;font-size:.78rem;line-height:1.25}
+.fine{margin-top:20px;padding-top:14px;border-top:1px solid rgba(255,255,255,.18);font-size:.76rem;color:#93a58e}
+/* fence line + progress (desktop only) */
+.fence,.chap{display:none}
+/* DESKTOP: horizontal scroll */
+@media (min-width:901px) and (hover:hover) and (prefers-reduced-motion:no-preference){
+ .stage.h .pin{position:sticky;top:0;height:100vh;overflow:hidden}
+ .stage.h .track{flex-direction:row;height:calc(100vh - var(--bar));width:max-content;will-change:transform}
+ .stage.h .panel{height:100%;padding-top:112px;padding-bottom:30px;flex:none;overflow:hidden}
+ .stage.h .hero{width:100vw}
+ .stage.h .styles{width:92vw}
+ .stage.h .work{width:auto;display:flex;gap:2vw;align-items:center;padding-right:3vw}
+ .stage.h .work .intro{flex:none;width:34vw}
+ .stage.h .shots{display:flex;gap:1.8vw;align-items:flex-end}
+ .stage.h .shot{flex:none;width:34vw}
+ .stage.h .shot:nth-child(even){margin-bottom:6vh}
+ .stage.h .shot img{aspect-ratio:4/3}
+ .stage.h .rev{width:112vw}
+ .stage.h .q{grid-template-columns:repeat(3,1fr);gap:0 2vw}
+ .stage.h .q .big{grid-column:span 3}
+ .stage.h .area{width:96vw}
+ .stage.h .contact{width:100vw}
+ .stage.h .fence{display:block;position:absolute;left:0;right:0;bottom:0;height:var(--bar);background:var(--cream);border-top:1.5px solid var(--ink);z-index:30}
+ .stage.h .fence::before{content:"";position:absolute;inset:0 0 0 0;background:repeating-linear-gradient(90deg,var(--wood2) 0 5px,transparent 5px 15px);-webkit-mask:linear-gradient(180deg,transparent 0 14px,#000 14px);mask:linear-gradient(180deg,transparent 0 14px,#000 14px)}
+ .stage.h .fence i{position:absolute;left:0;top:7px;height:7px;background:var(--or);width:0;z-index:2}
+ .stage.h .fence em{position:absolute;top:-1px;width:26px;height:26px;margin-left:-13px;border-radius:50%;background:var(--or);box-shadow:0 0 0 5px rgba(204,74,30,.25);z-index:3;transform:translateY(-13px)}
+ .stage.h .chap{display:flex;position:absolute;left:0;right:0;bottom:calc(var(--bar) + 10px);justify-content:center;gap:6px;z-index:31}
+ .stage.h .chap a{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;background:rgba(243,238,227,.92);padding:7px 12px;border-radius:999px;border:1.5px solid var(--ink);transition:.2s}
+ .stage.h .chap a:hover,.stage.h .chap a.on{background:var(--ort);color:#fff;border-color:var(--ort)}
+ .stage.h .hint{display:block;position:absolute;right:clamp(14px,2vw,30px);top:50%;z-index:3;color:#fff;font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;font-weight:700;writing-mode:vertical-rl;opacity:.8}
+ .stage.h .hero .row{margin-bottom:46px}
+}
+@media(max-width:900px){
+ .logo img{width:112px}
+ .tel{padding:10px 14px;font-size:.84rem}
+ .shots,.q,.ag,.cg{grid-template-columns:1fr}
+ .cities{columns:2}
+ .hero h1{font-size:clamp(3.2rem,16vw,6rem)}
+}
+</style>
+</head>
+<body>
+<div class="concept"><b>Design concept</b> prepared by IsDesign (Brazil) for Best Security Fencing Co. Not affiliated with or endorsed by the company. The logo, text and photos are samples from the current website, shown only to help you picture the result.</div>
+
+<header class="bar">
+  <a class="logo" href="#top" aria-label="Best Security Fencing, top of page"><img src="img/logo.webp" alt="Best Security Fencing logo" width="150" height="45"></a>
+  <a class="tel" href="tel:+16154741536">Call (615) 474-1536</a>
+</header>
+
+<main class="stage" id="stage">
+<div class="pin" id="pin">
+<div class="track" id="track">
+
+<section class="panel hero" id="top">
+  <video id="vid" muted loop playsinline preload="none" poster="img/poster.webp" aria-hidden="true"></video>
+  <span class="k" style="color:#fff">Fences &middot; Decks &middot; Staining</span>
+  <h1 class="disp">Best Security Fencing<span>Nashville, Tennessee</span></h1>
+  <div class="row">
+    <div>
+      <p class="lead">Fences for homes and businesses, built by a crew with more than 20 years of experience. Licensed, bonded, insured.</p>
+      <div class="acts"><a class="btn" href="#contact">Get a free estimate &rarr;</a><a class="btn ghost" href="tel:+16154741536">(615) 474-1536</a></div>
+    </div>
+    <div class="facts">
+      <div class="fact"><b>5.0</b><span>Google rating</span></div>
+      <div class="fact"><b>95</b><span>customer reviews</span></div>
+      <div class="fact"><b>20+</b><span>years of experience</span></div>
+    </div>
+  </div>
+  <div class="hint" aria-hidden="true">Keep scrolling &rarr;</div>
+</section>
+
+<section class="panel styles" id="build">
+  <span class="k" style="color:var(--wood)">What we build</span>
+  <h2 class="disp">Many fence styles. One crew.</h2>
+  <p>We offer many types of fence styles for your home and business. But we are not limited to fences only: we also provide deck building and staining of existing fences and decks.</p>
+  <ul class="pick">
+    <li>Wood</li><li>Aluminum</li><li>Steel</li><li>Pool fencing</li><li>Vinyl</li><li>Deck building</li><li>Staining<small>fences and decks</small></li>
+  </ul>
+</section>
+
+<section class="panel work" id="work">
+  <div class="intro"><span class="k">Our work</span><h2 class="disp">Built along the line.</h2><p class="note">A few of the fences this crew has put up around Middle Tennessee.</p></div>
+  <div class="shots">
+    <figure class="shot"><img src="img/p1.webp" alt="Wood privacy fence with lattice top along a sidewalk" loading="lazy" width="760" height="570"><figcaption><b>01</b>Privacy fence with lattice top</figcaption></figure>
+    <figure class="shot"><img src="img/p2.webp" alt="Cedar privacy fence with lattice top" loading="lazy" width="760" height="481"><figcaption><b>02</b>Cedar privacy fence</figcaption></figure>
+    <figure class="shot"><img src="img/p3.webp" alt="Horizontal board fence with gate beside a brick house" loading="lazy" width="760" height="570"><figcaption><b>03</b>Horizontal boards with a gate</figcaption></figure>
+    <figure class="shot"><img src="img/p4.webp" alt="Horizontal board corner with a latched gate" loading="lazy" width="760" height="570"><figcaption><b>04</b>Corner run with gate</figcaption></figure>
+    <figure class="shot"><img src="img/p5.webp" alt="Horizontal boards set between black posts" loading="lazy" width="760" height="570"><figcaption><b>05</b>Horizontal boards, black posts</figcaption></figure>
+    <figure class="shot"><img src="img/p6.webp" alt="Gated side yard fence beside a brick house" loading="lazy" width="760" height="570"><figcaption><b>06</b>Side yard fence and gate</figcaption></figure>
+    <figure class="shot"><img src="img/p7.webp" alt="Wood driveway gate and fence line" loading="lazy" width="760" height="570"><figcaption><b>07</b>Driveway gate</figcaption></figure>
+    <figure class="shot"><img src="img/p8.webp" alt="Lattice-top fence along a street" loading="lazy" width="760" height="570"><figcaption><b>08</b>Lattice top along the street</figcaption></figure>
+    <figure class="shot"><img src="img/p9.webp" alt="Horizontal board fence around a back yard" loading="lazy" width="760" height="570"><figcaption><b>09</b>Backyard enclosure</figcaption></figure>
+  </div>
+</section>
+
+<section class="panel rev" id="reviews">
+  <span class="k">Reviews</span>
+  <h2 class="disp">Customers on Google.</h2>
+  <div class="score"><b>5.0</b><span>95 reviews</span></div>
+  <div class="q">
+    <blockquote class="big">&ldquo;Texted on a Sunday, quoted on a Monday, started Wednesday and done Thursday! The quality of work was outstanding as well.&rdquo;<b>Todd K.</b></blockquote>
+    <blockquote>&ldquo;They had the best price out of 3-4 other quotes and were professional and easy to work with. Our fence was up in 1 day and his lead time was exceptional compared to others.&rdquo;<b>Allison S.</b></blockquote>
+    <blockquote>&ldquo;Ricki and his crew did a phenomenal job, I couldn't be more pleased. He communicated well with me each step of the process.&rdquo;<b>Richard H.</b></blockquote>
+    <blockquote>&ldquo;They did an amazing job. They rented a machine and broke through the rocks in my yard so the post could set correctly.&rdquo;<b>Tonya T.</b></blockquote>
+    <blockquote>&ldquo;These guys get the job done! Very reasonable prices. Quick and efficient work. They were very respectful of property.&rdquo;<b>Adam P.</b></blockquote>
+  </div>
+  <a class="glink" href="https://maps.google.com/?cid=10638877612291561005" target="_blank" rel="noopener">Read all reviews on Google &nearr;</a>
+</section>
+
+<section class="panel area" id="area">
+  <span class="k">Where we work</span>
+  <h2 class="disp">Nashville and around.</h2>
+  <div class="ag">
+    <div>
+      <ul class="cities"><li>Nashville</li><li>Madison</li><li>Franklin</li><li>Brentwood</li><li>Hendersonville</li><li>Gallatin</li><li>Mt. Juliet</li><li>Hermitage</li><li>Lebanon</li><li>Clarksville</li><li>Spring Hill</li><li>Bellevue</li><li>Green Hills</li><li>Portland</li><li>White House</li><li>Murfreesboro</li><li>Smyrna</li><li>Columbia</li></ul>
+      <p class="note">And more. Online estimates and onsite services.</p>
+    </div>
+    <div class="map"><iframe title="Map of Best Security Fencing, Madison TN" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=213+Dupont+Ave,+Madison,+TN+37115&amp;output=embed"></iframe></div>
+  </div>
+</section>
+
+<section class="panel contact" id="contact">
+  <span class="k" style="color:var(--wood)">Free estimate</span>
+  <h2 class="disp">Let's build your fence.</h2>
+  <div class="cg">
+    <div class="l">
+      <p>Contact us today for a free estimate, online or onsite.</p>
+      <a class="bigtel" href="tel:+16154741536">(615) 474-1536</a>
+      <dl>
+        <dt>Also</dt><dd><a href="tel:+16159720339">(615) 972-0339</a></dd>
+        <dt>Email</dt><dd><a href="mailto:sanchez@bestfencingco.com">sanchez@bestfencingco.com</a></dd>
+        <dt>Visit</dt><dd>213 Dupont Ave, Madison, TN 37115</dd>
+        <dt>Hours</dt><dd>Mon to Sat, 7:00 AM to 7:00 PM<br>Sunday closed</dd>
+      </dl>
+    </div>
+    <form onsubmit="event.preventDefault();this.querySelector('small').textContent='Concept preview only: the form is not connected.';">
+      <input type="text" placeholder="Name" aria-label="Name"><input type="tel" placeholder="Phone" aria-label="Phone"><input type="email" placeholder="Email" aria-label="Email"><textarea rows="3" placeholder="Tell us about your fence" aria-label="Message"></textarea>
+      <button class="btn" type="submit" style="justify-content:center">Send</button><small>Concept preview: this form is visual only.</small>
+    </form>
+  </div>
+</section>
+
+</div>
+<div class="chap" id="chap" aria-label="Sections"><a href="#top">Start</a><a href="#build">Styles</a><a href="#work">Work</a><a href="#reviews">Reviews</a><a href="#area">Area</a><a href="#contact">Estimate</a></div>
+<div class="fence" aria-hidden="true"><i id="fi"></i><em id="fm"></em></div>
+</div>
+</main>
+
+<footer>
+  <div class="fg">
+    <a class="logo" href="#top"><img src="img/logo.webp" alt="Best Security Fencing" loading="lazy" width="150" height="45"></a>
+    <div class="badges">
+      <div class="badge"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d6b88a" stroke-width="1.8" aria-hidden="true"><path d="M12 2l8 3v6c0 5-3.4 9-8 11-4.6-2-8-6-8-11V5z"/><path d="M8.5 12l2.4 2.4L15.6 9.6"/></svg><span>Licensed, bonded<br>and insured</span></div>
+      <div class="badge"><svg width="22" height="22" viewBox="0 0 24 24" fill="#d6b88a" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.700 1.400 6.800L12 17.100 5.900 20.600l1.400-6.800L2.200 9.100l6.900-.8z"/></svg><span>5.0 on Google<br>95 reviews</span></div>
+      <div class="badge"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d6b88a" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Free estimates<br>online and onsite</span></div>
+    </div>
+  </div>
+  <div class="fine">&copy; 2026 Best Security Fencing Co. &middot; Design concept prepared by IsDesign (Brazil) as a sample. Not affiliated with this preview. Names, logos, text and photos belong to their owners.</div>
+</footer>
+
+<script>
+(function(){
+ var mq=window.matchMedia('(min-width:901px) and (hover:hover) and (prefers-reduced-motion:no-preference)');
+ var stage=document.getElementById('stage'),track=document.getElementById('track'),fi=document.getElementById('fi'),fm=document.getElementById('fm'),chap=[].slice.call(document.querySelectorAll('#chap a'));
+ var panels=chap.map(function(a){return document.querySelector(a.getAttribute('href'))});
+ var dist=0,top=0,ticking=false;
+ function setup(){
+  if(mq.matches){stage.classList.add('h');dist=Math.max(0,track.scrollWidth-window.innerWidth);stage.style.height=(dist+window.innerHeight)+'px';top=stage.getBoundingClientRect().top+window.scrollY}
+  else{stage.classList.remove('h');stage.style.height='';track.style.transform=''}
+  update();
+ }
+ function update(){
+  ticking=false;if(!stage.classList.contains('h'))return;
+  var p=Math.min(1,Math.max(0,(window.scrollY-top)/(dist||1)));
+  track.style.transform='translate3d('+(-p*dist)+'px,0,0)';
+  fi.style.width=(p*100)+'%';fm.style.left=(p*100)+'%';
+  var x=p*dist+window.innerWidth*.4,cur=0;panels.forEach(function(el,i){if(el.offsetLeft<=x)cur=i});
+  chap.forEach(function(a,i){a.classList.toggle('on',i===cur)});
+ }
+ window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(update)}},{passive:true});
+ window.addEventListener('resize',setup);
+ mq.addEventListener&&mq.addEventListener('change',setup);
+ chap.forEach(function(a,i){a.addEventListener('click',function(e){
+  if(!stage.classList.contains('h'))return;e.preventDefault();
+  var tgt=Math.min(dist,panels[i].offsetLeft);window.scrollTo({top:top+tgt,behavior:'smooth'})})});
+ window.addEventListener('load',function(){
+  setup();
+  var c=navigator.connection;if(mq.matches&&!(c&&c.saveData)){var v=document.getElementById('vid');v.src='media/fence.mp4';v.addEventListener('canplay',function(){v.classList.add('on');v.play().catch(function(){})},{once:true});v.load()}
+  setTimeout(setup,600);
+ });
+ setup();
+})();
+</script>
+</body>
+</html>
