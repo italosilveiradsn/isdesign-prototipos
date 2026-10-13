@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>My Critter Pro LLC | Design concept by IsDesign</title>
+<meta name="description" content="Design concept for a faster home page. Prepared by IsDesign (Brazil). Not affiliated with My Critter Pro LLC.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="img/icon.png" type="image/png">
+<link rel="preload" href="fonts/it.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Inter Tight';font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/it.woff2) format('woff2')}
+:root{--g:#184f2e;--gd:#0d301d;--tan:#ccc9a5;--cream:#fffdec;--paper:#f2f0d9;--ink:#1b1f1a;--mut:#5d6657}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter Tight',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;background:var(--cream);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+.w{width:min(1320px,100% - clamp(32px,6vw,96px));margin-inline:auto}
+.concept{background:#000;color:#cfd2c6;font-size:.74rem;text-align:center;padding:8px 14px;line-height:1.4}
+.concept b{color:var(--tan)}
+/* top band */
+.top{background:var(--gd);color:#fff;position:sticky;top:0;z-index:20}
+.top .w{display:flex;align-items:center;justify-content:space-between;gap:18px;padding-block:12px}
+.top img{width:92px}
+.top nav{display:flex;gap:clamp(14px,2.4vw,34px);font-size:.86rem;font-weight:600}
+.top nav a{opacity:.82;border-bottom:1.5px solid transparent;padding-bottom:2px}
+.top nav a:hover{opacity:1;border-color:var(--tan)}
+.tel{background:var(--tan);color:var(--gd);font-weight:800;padding:10px 18px;border-radius:2px;font-size:.9rem;white-space:nowrap}
+.tel:hover{background:#fff}
+@media(max-width:820px){.top nav{display:none}}
+/* hero */
+.hero{padding-block:clamp(28px,5vw,64px) 0;border-bottom:1.5px solid var(--ink)}
+.meta{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--mut);padding-bottom:14px;border-bottom:1px solid var(--ink)}
+h1{font-weight:800;letter-spacing:-.045em;line-height:.84;font-size:clamp(3.6rem,15.6vw,15.4rem);color:var(--g);margin:clamp(14px,3vw,34px) 0 clamp(18px,3vw,40px);margin-left:-.04em}
+.hgrid{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(14px,2vw,28px);align-items:end;padding-bottom:clamp(28px,4vw,56px)}
+.hgrid .lead{grid-column:1/6;font-size:clamp(1.1rem,1.7vw,1.5rem);font-weight:500;line-height:1.3;letter-spacing:-.01em}
+.hgrid .facts{grid-column:6/10;display:grid;gap:0;border-top:1px solid var(--ink)}
+.fact{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:10px 0;border-bottom:1px solid var(--ink);font-size:.9rem}
+.fact b{font-size:1.6rem;letter-spacing:-.03em;color:var(--g)}
+.hgrid figure{grid-column:10/13}
+.hgrid figure img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.hgrid figcaption{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-top:6px}
+.cta{display:inline-flex;gap:12px;align-items:center;background:var(--g);color:#fff;font-weight:700;padding:16px 26px;margin-top:22px;border-radius:2px;transition:.2s}
+.cta:hover{background:var(--gd)}
+.cta.line{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.cta.line:hover{background:var(--ink);color:#fff}
+@media(max-width:900px){
+ .hgrid .lead{grid-column:1/13}.hgrid .facts{grid-column:1/8}.hgrid figure{grid-column:8/13}
+}
+/* sections */
+section{padding-block:clamp(48px,8vw,110px)}
+.sh{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(14px,2vw,28px);margin-bottom:clamp(24px,4vw,48px);align-items:end}
+.sh .n{grid-column:1/3;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--g)}
+.sh h2{grid-column:3/13;font-size:clamp(2rem,5.6vw,5rem);font-weight:800;letter-spacing:-.04em;line-height:.95}
+@media(max-width:700px){.sh .n{grid-column:1/13}.sh h2{grid-column:1/13}}
+/* services accordion */
+#services{border-bottom:1.5px solid var(--ink)}
+.rows{border-top:1.5px solid var(--ink)}
+.row{border-bottom:1.5px solid var(--ink)}
+.row button{all:unset;box-sizing:border-box;cursor:pointer;width:100%;display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(14px,2vw,28px);align-items:baseline;padding:clamp(14px,2vw,26px) 0;transition:background .25s,color .25s,padding .25s}
+.row button:hover,.row.open button{background:var(--g);color:#fff;padding-inline:clamp(12px,1.5vw,22px)}
+.row button:focus-visible{outline:3px solid var(--tan);outline-offset:-3px}
+.row .no{grid-column:1/3;font-size:clamp(1.4rem,3vw,2.6rem);font-weight:800;letter-spacing:-.04em}
+.row .nm{grid-column:3/10;font-size:clamp(2.2rem,7vw,6.4rem);font-weight:800;letter-spacing:-.045em;line-height:.9}
+.row .pl{grid-column:12/13;justify-self:end;font-size:2rem;transition:transform .3s}
+.row.open .pl{transform:rotate(45deg)}
+.panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s ease}
+.row.open .panel{grid-template-rows:1fr}
+.panel>div{overflow:hidden}
+.pin{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(14px,2vw,28px);padding:clamp(18px,3vw,36px) 0 clamp(24px,4vw,48px)}
+.pin .tx{grid-column:3/9;font-size:1.05rem;max-width:56ch}
+.pin .tx p+p{margin-top:12px}
+.pin .tx ul{margin:12px 0 0;padding-left:1.1em;color:var(--mut)}
+.pin figure{grid-column:9/13}
+.pin figure img{width:100%;aspect-ratio:4/5;object-fit:cover;clip-path:inset(0 0 100% 0);transition:clip-path .6s .15s}
+.row.open .pin figure img{clip-path:inset(0)}
+@media(max-width:760px){
+ .row .no{grid-column:1/4}.row .nm{grid-column:4/12}.row .pl{grid-column:12/13}
+ .pin .tx{grid-column:1/13}.pin figure{grid-column:1/9}
+}
+/* inspection */
+#inspect{background:var(--paper);border-bottom:1.5px solid var(--ink)}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);border-top:1.5px solid var(--ink)}
+.st{padding:16px 14px 22px 0;border-right:1px solid var(--ink);margin-right:14px}
+.st:last-child{border:0;margin:0}
+.st b{display:block;font-size:clamp(3.4rem,8vw,7.5rem);font-weight:800;letter-spacing:-.06em;line-height:.85;color:var(--g)}
+.st span{display:block;margin-top:12px;font-size:.95rem;font-weight:700}
+.two{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(14px,2vw,28px);margin-top:clamp(28px,5vw,60px)}
+.two div{grid-column:span 5;font-size:1.02rem}
+.two div:first-child{grid-column:3/8}
+.two h3{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--g);margin-bottom:8px}
+@media(max-width:820px){.steps{grid-template-columns:repeat(2,1fr)}.st{border:0;border-top:1px solid var(--ink);margin:0}.two div,.two div:first-child{grid-column:1/13}}
+/* owner */
+#owner{border-bottom:1.5px solid var(--ink)}
+.og{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(18px,3vw,40px);align-items:start}
+.og figure{grid-column:1/6}
+.og figure img{width:100%;height:auto}
+.og figcaption{margin-top:10px;font-size:.85rem;font-weight:700;border-top:1px solid var(--ink);padding-top:8px}
+.og figcaption span{display:block;font-weight:500;color:var(--mut)}
+.og .bio{grid-column:7/13;font-size:1.1rem}
+.og .bio p+p{margin-top:14px}
+.og .big{font-size:clamp(1.7rem,3.2vw,2.8rem);font-weight:800;letter-spacing:-.035em;line-height:1.05;margin-bottom:22px;color:var(--g)}
+@media(max-width:820px){.og figure{grid-column:1/10}.og .bio{grid-column:1/13}}
+/* reviews */
+#reviews{background:var(--g);color:#fff;border-bottom:1.5px solid var(--ink)}
+#reviews .sh .n{color:var(--tan)}
+.score{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;margin-bottom:clamp(24px,4vw,48px)}
+.score b{font-size:clamp(5rem,16vw,14rem);font-weight:800;letter-spacing:-.06em;line-height:.8}
+.score span{font-size:1.05rem;color:var(--tan)}
+.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid rgba(255,255,255,.5)}
+.rv blockquote{padding:20px 22px 26px 0;border-right:1px solid rgba(255,255,255,.35);margin-right:22px;font-size:1.02rem;line-height:1.45}
+.rv blockquote:nth-child(3n){border:0;margin:0}
+.rv cite{display:block;margin-top:14px;font-style:normal;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--tan);font-weight:700}
+.rv blockquote:nth-child(n+4){border-top:1px solid rgba(255,255,255,.35)}
+.glink{display:inline-block;margin-top:26px;border-bottom:2px solid var(--tan);padding-bottom:2px;font-weight:700}
+@media(max-width:820px){.rv{grid-template-columns:1fr}.rv blockquote{border:0!important;margin:0!important;border-top:1px solid rgba(255,255,255,.35)!important;padding-right:0}}
+/* area */
+#area{border-bottom:1.5px solid var(--ink)}
+.ag{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(18px,3vw,40px)}
+.ag .info{grid-column:1/5;font-size:1.02rem}
+.ag .info p+p{margin-top:12px}
+.ag .map{grid-column:5/13;position:relative;aspect-ratio:16/10;border:1.5px solid var(--ink);background:var(--paper)}
+.ag iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(.55) contrast(1.05) sepia(.15)}
+@media(max-width:820px){.ag .info,.ag .map{grid-column:1/13}}
+/* contact */
+#contact{background:var(--gd);color:#fff}
+.cg{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(18px,3vw,48px)}
+.cg .l{grid-column:1/7}
+.cg .l h2{font-size:clamp(2.6rem,8.4vw,8rem);font-weight:800;letter-spacing:-.05em;line-height:.88;color:var(--tan)}
+.cg .l p{margin-top:20px;max-width:42ch;color:#dfe2d6}
+.big-tel{display:block;margin-top:22px;font-size:clamp(1.8rem,4vw,3.4rem);font-weight:800;letter-spacing:-.04em}
+.cg .l .sm{font-size:.92rem;color:#cdd2c3;margin-top:10px}
+.cg form{grid-column:8/13;display:grid;gap:10px;align-content:start}
+form input,form textarea{font:inherit;padding:14px 14px;border:0;border-bottom:1.5px solid var(--tan);background:rgba(255,255,255,.07);color:#fff;border-radius:0}
+form input::placeholder,form textarea::placeholder{color:#b5baab}
+form input:focus,form textarea:focus{outline:2px solid var(--tan);outline-offset:0}
+form button{font:inherit;font-weight:800;border:0;background:var(--tan);color:var(--gd);padding:16px;cursor:pointer;border-radius:2px}
+form button:hover{background:#fff}
+form small{color:#b5baab;font-size:.76rem}
+@media(max-width:820px){.cg .l,.cg form{grid-column:1/13}}
+footer{background:#08200f;color:#cdd2c3;padding-block:34px 28px}
+.fg{display:flex;flex-wrap:wrap;gap:24px 40px;align-items:center;justify-content:space-between}
+.fg img{width:96px}
+.badges{display:flex;flex-wrap:wrap;gap:10px}
+.badge{display:flex;gap:9px;align-items:center;border:1px solid rgba(255,255,255,.35);padding:8px 12px;font-size:.76rem;line-height:1.25;border-radius:2px}
+.badge svg{flex:none}
+.soc{display:flex;gap:10px}
+.soc a{width:40px;height:40px;border:1px solid rgba(255,255,255,.35);display:grid;place-items:center;border-radius:50%;transition:.2s}
+.soc a:hover{background:var(--tan);color:var(--gd)}
+.fine{margin-top:22px;padding-top:16px;border-top:1px solid rgba(255,255,255,.2);font-size:.76rem;color:#9ea594}
+.hide{display:none}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="concept"><b>Design concept</b> prepared by IsDesign (Brazil) for My Critter Pro LLC. Not affiliated with or endorsed by the company. The logo, text and photos are samples from the current website, shown only to help you picture the result.</div>
+
+<header class="top"><div class="w">
+  <a href="#top" aria-label="My Critter Pro, nuisance wildlife control"><img src="img/logo.webp" alt="My Critter Pro nuisance wildlife control logo" width="92" height="49"></a>
+  <nav aria-label="Main"><a href="#services">Services</a><a href="#inspect">Inspection</a><a href="#owner">Meet Jim</a><a href="#reviews">Reviews</a><a href="#area">Service area</a><a href="#contact">Contact</a></nav>
+  <a class="tel" href="tel:+16142301520">Call or text 614-230-1520</a>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="w">
+  <div class="meta"><span>Nuisance wildlife control</span><span>Columbus, Ohio</span><span>Family-owned &middot; Licensed &middot; Insured</span></div>
+  <h1>My Critter Pro</h1>
+  <div class="hgrid">
+    <div class="lead">Solving Central Ohio's wildlife problems, honestly and on time. Mice, bats, squirrels, raccoons and more, handled humanely by an expert.<br><a class="cta" href="#contact">Schedule an inspection &rarr;</a></div>
+    <div class="facts">
+      <div class="fact"><span>Google rating</span><b>4.9</b></div>
+      <div class="fact"><span>Customer reviews</span><b>61</b></div>
+      <div class="fact"><span>Open every day</span><b>8 to 6</b></div>
+    </div>
+    <figure><img src="img/hero.webp" alt="Autumn trees in Central Ohio" width="400" height="533" fetchpriority="high"><figcaption>Central Ohio</figcaption></figure>
+  </div>
+</div></section>
+
+<section id="services"><div class="w">
+  <div class="sh"><span class="n">01 / Services</span><h2>Four ways we solve it.</h2></div>
+  <div class="rows">
+    <div class="row open"><button aria-expanded="true"><span class="no">01</span><span class="nm">Mice</span><span class="pl" aria-hidden="true">+</span></button>
+      <div class="panel"><div><div class="pin"><div class="tx"><p>Mice are one of the most common pests a homeowner can experience. They reproduce year-round and can squeeze through openings about 1/4 inch and larger.</p><p>Signs we look for during an inspection:</p><ul><li>Tunneling or nesting in insulation</li><li>Droppings, runways and gnaw marks</li><li>Grease marks and odor</li></ul><p style="margin-top:12px">We control mice at a population level, not just one by one.</p></div><figure><img src="img/mice.webp" alt="Rodent bait station beside a brick path" loading="lazy" width="420" height="560"></figure></div></div></div></div>
+    <div class="row"><button aria-expanded="false"><span class="no">02</span><span class="nm">Bats</span><span class="pl" aria-hidden="true">+</span></button>
+      <div class="panel"><div><div class="pin"><div class="tx"><p>The most common bat in Ohio homes is the big brown bat. Bats are valuable to agriculture and vulnerable to disease, so professional, humane help matters.</p><p>If you have a bat in your home, we capture it so you can submit it to your local health department for rabies testing. We remove bats with one-way exits and seal the entry points.</p></div><figure><img src="img/bats.webp" alt="Bat captured in a clear container" loading="lazy" width="520" height="390"></figure></div></div></div></div>
+    <div class="row"><button aria-expanded="false"><span class="no">03</span><span class="nm">Trapping</span><span class="pl" aria-hidden="true">+</span></button>
+      <div class="panel"><div><div class="pin"><div class="tx"><p>In some cases we recommend trapping and relocating animals to prevent further damage to your home. Every animal is treated humanely, and every job begins with an inspection.</p></div><figure><img src="img/trap.webp" alt="Live trap set at a roof gable vent" loading="lazy" width="520" height="514"></figure></div></div></div></div>
+    <div class="row"><button aria-expanded="false"><span class="no">04</span><span class="nm">Exclusion</span><span class="pl" aria-hidden="true">+</span></button>
+      <div class="panel"><div><div class="pin"><div class="tx"><p>Exclusion is an effective strategy for bats, squirrels, raccoons, birds, groundhogs, skunks, rats and insects. A squirrel in your soffit, a raccoon in a gable vent, a groundhog under your deck: we provide long-term solutions.</p><p>Many exclusions include one-way exits so critters can leave before the final fixes. Call today to get yours started.</p></div><figure><img src="img/excl.webp" alt="Black mesh guard installed over a roof vent" loading="lazy" width="420" height="414"></figure></div></div></div></div>
+  </div>
+</div></section>
+
+<section id="inspect"><div class="w">
+  <div class="sh"><span class="n">02 / Inspection</span><h2>Every job starts by looking.</h2></div>
+  <div class="steps">
+    <div class="st"><b>01</b><span>Attic</span></div>
+    <div class="st"><b>02</b><span>Basement</span></div>
+    <div class="st"><b>03</b><span>Crawl space</span></div>
+    <div class="st"><b>04</b><span>Deck</span></div>
+    <div class="st"><b>05</b><span>Perimeter of the home</span></div>
+  </div>
+  <div class="two">
+    <div><h3>What to expect</h3><p>We perform a thorough inspection, provide photos of any wildlife evidence, and use the facts we find to put together a plan to solve your problem. Even if your wildlife looks straightforward, an inspection is still necessary.</p></div>
+    <div><h3>How to prepare</h3><p>Know where your access areas are: attic hatches, pipe access panels, crawl space doors. Recording the noise you are hearing can help, but it is not necessary. We bring all the equipment.</p></div>
+  </div>
+</div></section>
+
+<section id="owner"><div class="w"><div class="og">
+  <figure><img src="img/jim.webp" alt="Jim Anderson, founder of My Critter Pro" loading="lazy" width="560" height="747"><figcaption>Jim Anderson<span>Wildlife control specialist &middot; Founder, My Critter Pro LLC</span></figcaption></figure>
+  <div class="bio">
+    <p class="big">"We aren't scared, and you shouldn't be either!"</p>
+    <p>Jim graduated from Ohio State University with a degree in Wildlife Sciences. After graduating, he worked as a technician for a wildlife control company in Michigan, then followed his dream of becoming a business owner and founded My Critter Pro.</p>
+    <p>He enjoys the work because it combines his love of meeting new people, working with his hands, and knowledge of wildlife. Jim grew up outdoors, worked on a farm as a young man, and learned home maintenance and construction skills from a builder.</p>
+    <p>As a specialized wildlife company, My Critter Pro is not spread thin trying to chase every pest in Central Ohio, so it can respond quickly.</p>
+    <a class="cta line" href="#contact">Talk to Jim &rarr;</a>
+  </div>
+</div></div></section>
+
+<section id="reviews"><div class="w">
+  <div class="sh"><span class="n">03 / Reviews</span><h2>What customers say on Google.</h2></div>
+  <div class="score"><b>4.9</b><span>out of 5 &middot; 61 reviews</span></div>
+  <div class="rv">
+    <blockquote>I called about squirrels getting into my attic, and Jim came out the same day. He thoroughly inspected the situation, set traps, and took the time to explain everything.<cite>Samantha W.</cite></blockquote>
+    <blockquote>Jim, the owner, handled our issue himself, and it truly shows in the quality, care, and professionalism he brings to the process.<cite>Sarah P.</cite></blockquote>
+    <blockquote>Jim and Anthony were great to work with when we had a skunk move in under our front porch! They were upfront about costs, responsive to our texts and calls, and professional from start to finish.<cite>RJ E.</cite></blockquote>
+    <blockquote>Jim came out to inspect our house. Upon evidence of bats in the attic, he set up one way traps to evacuate them safely and sealed up all potential entry points. Jim was respectful, professional.<cite>Jamie L.</cite></blockquote>
+    <blockquote>A friend of ours recommended My Critter Pro, and I was very pleased with the entire experience. I highly recommend Jim and My Critter Pro.<cite>Paula C.</cite></blockquote>
+    <blockquote class="hide" aria-hidden="true"></blockquote>
+  </div>
+  <a class="glink" href="https://maps.google.com/?cid=2821426139251037531" target="_blank" rel="noopener">Read all reviews on Google &nearr;</a>
+</div></section>
+
+<section id="area"><div class="w">
+  <div class="sh"><span class="n">04 / Service area</span><h2>Central Ohio, around Columbus.</h2></div>
+  <div class="ag">
+    <div class="info"><p>Service areas are approximate. Please call <a href="tel:+16142301520"><b>614-230-1520</b></a> if you are in or near our area.</p><p>We offer trapping, animal exclusion, mouse and bat services across the region.</p><p>Hours: Monday to Sunday, 8 AM to 6 PM.</p></div>
+    <div class="map"><iframe title="Map of Columbus, Ohio service area" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Columbus,+OH&amp;z=9&amp;output=embed"></iframe></div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="w"><div class="cg">
+  <div class="l">
+    <h2>Schedule an inspection.</h2>
+    <p>If you would like a fast response, please call or text. Otherwise, fill out the form and we will get back to you, usually within 24 hours.</p>
+    <a class="big-tel" href="tel:+16142301520">614-230-1520</a>
+    <p class="sm"><a href="mailto:mycritterpro@gmail.com">mycritterpro@gmail.com</a></p>
+  </div>
+  <form onsubmit="event.preventDefault();this.querySelector('small').textContent='Concept preview only: the form is not connected.';">
+    <input type="text" placeholder="Name" aria-label="Name"><input type="tel" placeholder="Phone number" aria-label="Phone number"><input type="email" placeholder="Email" aria-label="Email"><input type="text" placeholder="Subject" aria-label="Subject"><textarea rows="4" placeholder="Message" aria-label="Message"></textarea>
+    <button type="submit">Send</button><small>Concept preview: this form is visual only.</small>
+  </form>
+</div></div></section>
+</main>
+
+<footer><div class="w">
+  <div class="fg">
+    <img src="img/logo.webp" alt="My Critter Pro" loading="lazy" width="96" height="51">
+    <div class="badges">
+      <div class="badge"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ccc9a5" stroke-width="1.8" aria-hidden="true"><path d="M12 2l8 3v6c0 5-3.4 9-8 11-4.6-2-8-6-8-11V5z"/><path d="M8.5 12l2.4 2.4L15.6 9.6"/></svg><span>Fully licensed<br>and insured in Ohio</span></div>
+      <div class="badge"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ccc9a5" stroke-width="1.8" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><span>Nuisance wildlife<br>control permit</span></div>
+      <div class="badge"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ccc9a5" stroke-width="1.8" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><span>Business pesticide<br>application license</span></div>
+      <div class="badge"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ccc9a5" stroke-width="1.8" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><span>Individual pesticide<br>application license</span></div>
+    </div>
+    <div class="soc" aria-label="Social links">
+      <a href="https://www.facebook.com/profile.php?id=100090243397700" target="_blank" rel="noopener" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M14 8V6.500c0-.7.2-1 1.100-1H17V2h-2.800C11.200 2 10 3.700 10 6.200V8H8v3.500h2V22h4V11.500h2.700L17 8z"/></svg></a>
+      <a href="https://www.instagram.com/mycritterpro/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.500" cy="6.500" r="1" fill="currentColor"/></svg></a>
+    </div>
+  </div>
+  <div class="fine">&copy; 2026 My Critter Pro LLC &middot; Design concept prepared by IsDesign (Brazil) as a sample. Not affiliated with this preview. Names, logos, text and photos belong to their owners.</div>
+</div></footer>
+
+<script>
+document.querySelectorAll('.row button').forEach(function(b){b.addEventListener('click',function(){
+  var r=b.parentNode,open=r.classList.contains('open');
+  document.querySelectorAll('.row').forEach(function(x){x.classList.remove('open');x.querySelector('button').setAttribute('aria-expanded','false')});
+  if(!open){r.classList.add('open');b.setAttribute('aria-expanded','true')}
+})});
+</script>
+</body>
+</html>
