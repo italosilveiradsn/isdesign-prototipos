@@ -1155,7 +1155,7 @@ Hi Christos,
 
 I read how you describe Rise Marketing HQ: founded in 2021 to do digital marketing the way you always thought it should be done, month to month. It's a refreshing way to run an agency, and the local businesses you serve, home services among them, benefit from that kind of honesty.
 
-I'm Ítalo, a web designer in Brazil. I build original, fast websites for local service businesses, especially home services and I'd like to offer extra capacity white label, under your agency's name, for the weeks when your own queue is full.
+I'm Ítalo, a web designer in Brazil. I build original, fast websites for local service businesses, especially home services, and I'd like to offer extra capacity white label, under your agency's name, for the weeks when your own queue is full.
 
 - A unique layout for each client, never a reused template
 - Home + 4 pages, delivered in 5 days
@@ -1188,7 +1188,7 @@ Olá Christos,
 
 Li como você descreve a Rise Marketing HQ: fundada em 2021 para fazer marketing digital do jeito que você sempre achou que deveria ser feito, mês a mês. É um jeito renovador de tocar uma agência, e os negócios locais que vocês atendem, entre eles home services, se beneficiam desse tipo de honestidade.
 
-Sou o Ítalo, web designer no Brasil. Crio sites originais e rápidos para negócios locais de serviço, principalmente home services e gostaria de oferecer capacidade extra em white label, sob o nome da sua agência, para as semanas em que a fila de vocês estiver cheia.
+Sou o Ítalo, web designer no Brasil. Crio sites originais e rápidos para negócios locais de serviço, principalmente home services, e gostaria de oferecer capacidade extra em white label, sob o nome da sua agência, para as semanas em que a fila de vocês estiver cheia.
 
 - Um layout único para cada cliente, nunca um modelo repetido
 - Home + 4 páginas, entregues em 5 dias
@@ -1226,7 +1226,7 @@ Hi Tristin,
 
 I read your story: reselling sneakers in junior high, building a first website early on, and now running a Fort Worth agency for local businesses (home services among them) with SEO, Google Ads and web design. It's a path that clearly shapes how you work.
 
-I'm Ítalo, a web designer in Brazil. I build original, fast websites for local service businesses, including home services and I'd like to offer extra capacity white label, under your agency's name, for the weeks when your own queue is full.
+I'm Ítalo, a web designer in Brazil. I build original, fast websites for local service businesses, including home services, and I'd like to offer extra capacity white label, under your agency's name, for the weeks when your own queue is full.
 
 - A unique layout for each client, never a reused template
 - Home + 4 pages, delivered in 5 days
@@ -1259,7 +1259,7 @@ Olá Tristin,
 
 Li a sua história: revender tênis no ensino fundamental, construir o primeiro site cedo e hoje tocar uma agência em Fort Worth para negócios locais (home services entre eles) com SEO, Google Ads e web design. É um caminho que claramente molda a forma como vocês trabalham.
 
-Sou o Ítalo, web designer no Brasil. Crio sites originais e rápidos para negócios locais de serviço, incluindo home services e gostaria de oferecer capacidade extra em white label, sob o nome da sua agência, para as semanas em que a fila de vocês estiver cheia.
+Sou o Ítalo, web designer no Brasil. Crio sites originais e rápidos para negócios locais de serviço, incluindo home services, e gostaria de oferecer capacidade extra em white label, sob o nome da sua agência, para as semanas em que a fila de vocês estiver cheia.
 
 - Um layout único para cada cliente, nunca um modelo repetido
 - Home + 4 páginas, entregues em 5 dias
