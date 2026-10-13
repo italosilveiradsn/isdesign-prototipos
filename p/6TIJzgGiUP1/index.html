@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nashville Tree Service | Design concept by IsDesign</title>
+<meta name="description" content="Design concept for a faster home page. Prepared by IsDesign (Brazil). Not affiliated with Nashville Tree Service.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="img/icon.webp" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="img/hero-sm.webp" imagesrcset="img/hero-sm.webp 800w, img/hero.webp 1500w" imagesizes="100vw" fetchpriority="high">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet"></noscript>
+<style>
+:root{--ink:#14141b;--ink2:#1e1e2c;--or:#fa7d21;--or2:#ff9a4d;--gr:#6b6b6b;--bone:#f6f1ea;--line:rgba(255,255,255,.18)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;background:var(--ink)}
+@media(min-width:901px){html{scroll-snap-type:y proximity}}
+body{font-family:'Hanken Grotesk',system-ui,sans-serif;color:#fff;background:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.disp{font-family:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;font-weight:900;text-transform:uppercase;line-height:.84;letter-spacing:-.01em}
+.concept{background:#000;color:#cfcfd8;font-size:.74rem;text-align:center;padding:8px 14px;line-height:1.4;position:relative;z-index:30}
+.concept b{color:var(--or2)}
+.pane{position:relative;min-height:100svh;display:flex;overflow:hidden;scroll-snap-align:start}
+.pane>.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.shade{position:absolute;inset:0;z-index:1}
+.in{position:relative;z-index:2;width:100%;padding:clamp(22px,4vw,56px);padding-top:clamp(120px,15vh,150px);display:flex;flex-direction:column}
+/* top bar */
+.bar{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:34px clamp(16px,3vw,40px) 0;pointer-events:none}
+.bar>*{pointer-events:auto}
+.bar a.chip{background:rgba(20,20,27,.86);border-radius:14px;padding:6px 9px;display:block;box-shadow:0 4px 18px rgba(0,0,0,.35)}.bar .lg{width:56px;height:auto}
+.call{background:var(--or);color:#14141b;font-weight:700;padding:12px 20px;border-radius:999px;font-size:.95rem;display:inline-flex;gap:10px;align-items:center;transition:.2s}
+.call:hover{background:#fff}
+.call small{font-weight:500;opacity:.75}
+/* rail */
+.rail{position:fixed;right:clamp(10px,1.6vw,26px);top:50%;transform:translateY(-50%);z-index:20;display:flex;flex-direction:column;gap:14px}
+.rail a{display:flex;align-items:center;justify-content:flex-end;gap:10px;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:#fff;opacity:.55}
+.rail a i{width:9px;height:9px;border-radius:50%;border:1.5px solid #fff;display:block;transition:.25s}
+.rail a span{opacity:0;transform:translateX(6px);transition:.25s;text-shadow:0 1px 6px #000}
+.rail a:hover span,.rail a.on span{opacity:1;transform:none}
+.rail a.on{opacity:1}.rail a.on i{background:var(--or);border-color:var(--or);transform:scale(1.35)}
+@media(max-width:900px){.rail{display:none}}
+/* 1 hero */
+#storm .shade{background:linear-gradient(180deg,rgba(20,20,27,.55) 0%,rgba(20,20,27,.05) 38%,rgba(20,20,27,.9) 100%)}
+#storm .in{justify-content:flex-end;padding-bottom:clamp(22px,5vh,60px)}
+.k{display:block;margin-bottom:30px;font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--or2);font-weight:700}
+.big{font-size:clamp(3.6rem,15.5vw,15rem)}
+.big em{font-style:normal;color:transparent;-webkit-text-stroke:2px var(--or)}
+.herorow{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-top:26px;flex-wrap:wrap}
+.herorow p{max-width:36ch;font-size:1.05rem;color:#e8e6e0}
+.marks{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.mk{display:flex;align-items:center;gap:10px;font-size:.78rem;line-height:1.25;border-left:1px solid var(--line);padding-left:14px}
+.mk:first-child{border:0;padding:0}
+.mk b{display:block;font-size:.8rem}
+.mk svg{flex:none}
+.scroll{position:absolute;left:50%;bottom:14px;z-index:3;font-size:.65rem;letter-spacing:.3em;text-transform:uppercase;opacity:.55;transform:translateX(-50%)}
+/* 2 chooser */
+#cut{background:var(--ink)}
+#cut .slides{position:absolute;inset:0;z-index:0}
+#cut .slides img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity .7s,transform 1.4s}
+#cut .slides img.on{opacity:1;transform:scale(1)}
+#cut .shade{background:linear-gradient(90deg,rgba(20,20,27,.94) 0%,rgba(20,20,27,.75) 38%,rgba(20,20,27,.15) 100%)}
+#cut .in{flex-direction:row;align-items:center;gap:6vw;padding-top:110px}
+.menu{flex:none;width:min(46vw,520px);display:flex;flex-direction:column}
+.menu button{all:unset;cursor:pointer;display:flex;align-items:baseline;gap:16px;padding:10px 0;border-bottom:1px solid var(--line);font-family:'Big Shoulders Display',Impact,sans-serif;font-weight:900;text-transform:uppercase;font-size:clamp(1.8rem,4.2vw,3.6rem);line-height:1;color:rgba(255,255,255,.4);transition:.25s}
+.menu button sup{font-family:'Hanken Grotesk',sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.1em;color:var(--or2)}
+.menu button:hover{color:#fff}
+.menu button[aria-selected=true]{color:#fff;padding-left:14px;border-bottom-color:var(--or);box-shadow:inset 4px 0 0 var(--or)}
+.menu button:focus-visible{outline:2px solid var(--or);outline-offset:2px}
+.detail{max-width:42ch}
+.detail h3{font-size:clamp(2.4rem,5vw,4.6rem);margin:8px 0 14px}
+.detail p{font-size:1.1rem;color:#e8e6e0;margin-bottom:22px}
+.also{margin-top:28px;font-size:.84rem;color:#cfcfd8;border-top:1px solid var(--line);padding-top:14px}
+.also b{color:var(--or2)}
+.btn{display:inline-flex;gap:10px;align-items:center;background:var(--or);color:#14141b;font-weight:700;padding:14px 24px;border-radius:999px;transition:.2s}
+.btn:hover{background:#fff}
+.btn.ghost{background:transparent;color:#fff;border:1.5px solid #fff}
+.btn.ghost:hover{background:#fff;color:#14141b}
+@media(max-width:900px){
+ #cut .in{flex-direction:column;align-items:stretch;gap:20px;padding-top:130px}
+ .menu{width:100%;flex-direction:row;overflow-x:auto;gap:8px;scrollbar-width:none}
+ .menu::-webkit-scrollbar{display:none}
+ .menu button{flex:none;border:1.5px solid var(--line);border-radius:999px;padding:8px 16px;font-size:1.15rem}
+ .menu button sup{display:none}
+ .menu button[aria-selected=true]{background:var(--or);color:#14141b;border-color:var(--or);padding-left:16px;box-shadow:none}
+ #cut .shade{background:linear-gradient(180deg,rgba(20,20,27,.7),rgba(20,20,27,.92))}
+}
+/* 3 crew */
+#crew{background:var(--bone);color:var(--ink)}
+#crew .in{flex-direction:row;padding:0!important;gap:0}
+.crewimg{flex:0 0 42%;position:relative;min-height:100%}
+.crewimg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.crewimg .tag{position:absolute;left:22px;bottom:22px;background:var(--ink);color:#fff;padding:10px 16px;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;z-index:2}
+.crewtxt{flex:1;padding:clamp(110px,14vh,140px) clamp(28px,5vw,72px) clamp(28px,5vw,72px);display:flex;flex-direction:column;justify-content:center}
+.crewtxt h2{font-size:clamp(2.6rem,6vw,5.6rem);margin:10px 0 24px}
+.crewtxt h2 em{font-style:normal;color:var(--or)}
+.lines{list-style:none;counter-reset:n}
+.lines li{counter-increment:n;display:grid;grid-template-columns:54px 1fr;align-items:baseline;border-top:1.5px solid var(--ink);padding:13px 0;font-family:'Big Shoulders Display',Impact,sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(1.35rem,2.6vw,2.2rem);line-height:1}
+.lines li::before{content:"0" counter(n);font-family:'Hanken Grotesk',sans-serif;font-size:.78rem;color:var(--or);font-weight:700;letter-spacing:.1em}
+.lines li:last-child{border-bottom:1.5px solid var(--ink)}
+.crewtxt p{margin-top:22px;max-width:50ch;color:#3a3a46}
+@media(max-width:900px){#crew .in{flex-direction:column}.crewimg{flex:none;height:46svh}}
+/* 4 reviews */
+#voices{background:var(--ink2)}
+#voices .bg{opacity:.28}
+#voices .shade{background:radial-gradient(ellipse at 20% 30%,rgba(250,125,33,.2),transparent 55%),linear-gradient(180deg,rgba(20,20,27,.6),rgba(20,20,27,.95))}
+#voices .in{justify-content:center;max-width:1280px;margin:0 auto}
+.score{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;margin-bottom:18px}
+.score .n{font-size:clamp(4.5rem,11vw,9rem);color:var(--or)}
+.stars{color:var(--or);letter-spacing:.14em;font-size:1.3rem}
+.q{min-height:15em;position:relative}
+.q figure{position:absolute;inset:0;opacity:0;transform:translateY(14px);transition:.6s;pointer-events:none}
+.q figure.on{opacity:1;transform:none;pointer-events:auto}
+.q blockquote{font-size:clamp(1.3rem,2.9vw,2.4rem);font-weight:500;line-height:1.28;max-width:30em;letter-spacing:-.01em}
+.q figcaption{margin-top:20px;font-size:.84rem;letter-spacing:.14em;text-transform:uppercase;color:var(--or2)}
+.ctl{display:flex;gap:10px;align-items:center;margin-top:10px}
+.ctl button{all:unset;cursor:pointer;width:46px;height:46px;border:1.5px solid #fff;border-radius:50%;display:grid;place-items:center;font-size:1.1rem;transition:.2s}
+.ctl button:hover{background:#fff;color:#14141b}
+.ctl button:focus-visible{outline:2px solid var(--or);outline-offset:2px}
+.prog{flex:1;max-width:240px;height:2px;background:var(--line);margin-left:14px;position:relative;overflow:hidden}
+.prog i{position:absolute;inset:0;background:var(--or);transform-origin:left;transform:scaleX(0)}
+.prog i.run{animation:fill 7s linear forwards}
+@keyframes fill{to{transform:scaleX(1)}}
+.link{display:inline-block;margin-top:26px;border-bottom:1.5px solid var(--or);padding-bottom:2px;font-weight:700;font-size:.9rem}
+@media(max-width:900px){.q{min-height:23em}}
+/* 5 map */
+#find{background:var(--ink)}
+#find .in{padding:0!important;flex-direction:row}
+.mapbox{flex:1;position:relative;min-height:60svh}
+.mapbox iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(.4) contrast(1.05)}
+.card{flex:0 0 min(38vw,480px);padding:clamp(120px,15vh,150px) clamp(28px,4vw,60px) clamp(28px,4vw,60px);display:flex;flex-direction:column;justify-content:center;background:var(--or);color:var(--ink)}
+.card .k{color:var(--ink)}
+.card h2{font-size:clamp(2.8rem,5.6vw,5rem);margin:10px 0 20px}
+.card address{font-style:normal;font-size:1.15rem;font-weight:700;margin-bottom:16px}
+.card p{margin-bottom:6px}
+.card .btn{background:var(--ink);color:#fff;margin-top:22px;align-self:flex-start}
+.card .btn:hover{background:#fff;color:var(--ink)}
+@media(max-width:900px){#find .in{flex-direction:column-reverse}.card{flex:none}}
+/* 6 contact */
+#book{background:var(--bone);color:var(--ink);min-height:100svh}
+#book .in{justify-content:flex-end;gap:44px}
+.bookrow{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(24px,5vw,80px);align-items:end}
+#book h2{font-size:clamp(3rem,9vw,8.5rem)}
+#book h2 em{font-style:normal;color:var(--or)}
+#book p.lead{margin-top:18px;max-width:40ch;color:#3a3a46;font-size:1.05rem}
+form{display:grid;gap:10px}
+form input,form textarea{font:inherit;padding:14px 16px;border:1.5px solid var(--ink);background:#fff;border-radius:6px;color:var(--ink)}
+form input:focus,form textarea:focus{outline:2px solid var(--or);outline-offset:1px}
+form .btn{border:0;cursor:pointer;font:inherit;font-weight:700;justify-content:center;background:var(--ink);color:#fff}
+form .btn:hover{background:var(--or);color:var(--ink)}
+form small{color:#5a5a66;font-size:.76rem}
+.blog{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.blog a{display:grid;grid-template-columns:96px 1fr;gap:14px;align-items:center;border-top:1.5px solid var(--ink);padding-top:14px}
+.blog img{width:96px;height:72px;object-fit:cover}
+.blog b{display:block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--or)}
+.blog span{font-weight:700;line-height:1.25;font-size:.95rem}
+footer{background:var(--ink);color:#cfcfd8;padding:34px clamp(22px,4vw,56px);scroll-snap-align:end}
+.fgrid{display:flex;flex-wrap:wrap;gap:26px 44px;align-items:center;justify-content:space-between}
+.fgrid .lg{width:96px}
+.badges{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.soc{display:flex;gap:10px}
+.soc a{width:38px;height:38px;border:1.5px solid var(--line);border-radius:50%;display:grid;place-items:center;transition:.2s}
+.soc a:hover{background:var(--or);border-color:var(--or);color:var(--ink)}
+.fine{margin-top:26px;padding-top:18px;border-top:1px solid var(--line);font-size:.78rem;line-height:1.5;color:#a4a4b2}
+@media(max-width:900px){.bookrow{grid-template-columns:1fr}.blog{grid-template-columns:1fr}.bar{padding-top:40px}.bar a.chip{padding:5px 8px}.call small{display:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="concept"><b>Design concept</b> prepared by IsDesign (Brazil) for Nashville Tree Service. Not affiliated with or endorsed by the company. The logo, text and photos are samples from the current website, shown only to help you picture the result.</div>
+
+<header class="bar">
+  <a class="chip" href="#storm" aria-label="Nashville Tree Service, top of page"><img class="lg" src="img/logo.webp" alt="Nashville Tree Service logo" width="46" height="49"></a>
+  <a class="call" href="tel:+16152940211">Call now <small>(615) 294-0211</small></a>
+</header>
+
+<nav class="rail" aria-label="Sections">
+  <a href="#storm" class="on"><span>Storm</span><i></i></a>
+  <a href="#cut"><span>Services</span><i></i></a>
+  <a href="#crew"><span>The crew</span><i></i></a>
+  <a href="#voices"><span>Neighbors</span><i></i></a>
+  <a href="#find"><span>Find us</span><i></i></a>
+  <a href="#book"><span>Estimate</span><i></i></a>
+</nav>
+
+<main>
+<!-- 1 -->
+<section class="pane" id="storm">
+  <img class="bg" src="img/hero.webp" srcset="img/hero-sm.webp 800w, img/hero.webp 1500w" sizes="100vw" alt="Tree snapped at the trunk after a storm in a Nashville yard" width="1600" height="900" fetchpriority="high">
+  <div class="shade"></div>
+  <div class="in">
+    <span class="k">Locally owned and operated &middot; Nashville, TN</span>
+    <h1 class="disp big">Nashville<br><em>Tree</em> Service</h1>
+    <div class="herorow">
+      <p>Hit hard by a storm? We have the crew, the experience and the ability you need during severe weather. We specialize in high-risk tree removal.</p>
+      <div class="marks">
+        <div class="mk"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#fa7d21" stroke-width="1.8" aria-hidden="true"><path d="M12 2l8 3v6c0 5-3.4 9-8 11-4.6-2-8-6-8-11V5z"/><path d="M8.5 12l2.4 2.4L15.6 9.6"/></svg><div><b>Licensed</b>Bonded &middot; Insured</div></div>
+        <div class="mk"><svg width="34" height="34" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#34a853"/><path d="M11 20.5l6 6L29 14" fill="none" stroke="#fff" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Google Guaranteed</b>Local Services</div></div>
+        <div class="mk"><div class="disp" style="font-size:2.4rem;color:#fa7d21">4.8</div><div><b>&#9733;&#9733;&#9733;&#9733;&#9733;</b>64 Google reviews</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll">Scroll</div>
+</section>
+
+<!-- 2 -->
+<section class="pane" id="cut">
+  <div class="slides" aria-hidden="true">
+    <img class="on" src="img/trunk.webp" alt="" width="960" height="640">
+    <img src="img/trim.webp" alt="" loading="lazy" width="1200" height="777">
+    <img src="img/plant.webp" alt="" loading="lazy" width="900" height="900">
+    <img src="img/prune.webp" alt="" loading="lazy" width="1400" height="1000">
+    <img src="img/clear.webp" alt="" loading="lazy" width="1000" height="750">
+    <img src="img/storm.webp" alt="" loading="lazy" width="600" height="600">
+    <img src="img/gutter.webp" alt="" loading="lazy" width="800" height="448">
+  </div>
+  <div class="shade"></div>
+  <div class="in">
+    <div class="menu" role="tablist" aria-label="Tree services">
+      <button role="tab" aria-selected="true" data-i="0"><sup>01</sup>Tree Removal</button>
+      <button role="tab" aria-selected="false" data-i="1"><sup>02</sup>Tree Trimming</button>
+      <button role="tab" aria-selected="false" data-i="2"><sup>03</sup>Tree Planting</button>
+      <button role="tab" aria-selected="false" data-i="3"><sup>04</sup>Pruning</button>
+      <button role="tab" aria-selected="false" data-i="4"><sup>05</sup>Land Clearing</button>
+      <button role="tab" aria-selected="false" data-i="5"><sup>06</sup>Storm Damage</button>
+      <button role="tab" aria-selected="false" data-i="6"><sup>07</sup>Gutters</button>
+    </div>
+    <div class="detail" aria-live="polite">
+      <span class="k" id="dk">Service 01</span>
+      <h3 class="disp" id="dh">Tree Removal</h3>
+      <p id="dp">We specialize in the removal of large and hazardous trees. Our skilled climbers have years of experience with limited access, nearby utility lines and trees with extreme decay.</p>
+      <a class="btn" href="#book">Book a consultation &rarr;</a>
+      <div class="also"><b>Also available:</b> excavation and water mitigation, concrete driveways, retaining walls, Christmas lighting.</div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 -->
+<section class="pane" id="crew">
+  <div class="in">
+    <div class="crewimg">
+      <img src="img/truck.webp" alt="Nashville Tree Service truck with the aerial lift raised beside a home" loading="lazy" width="900" height="987">
+      <span class="tag">Our approach</span>
+    </div>
+    <div class="crewtxt">
+      <span class="k" style="color:var(--or)">How we work</span>
+      <h2 class="disp">Precision, safety, <em>efficiency</em></h2>
+      <ul class="lines">
+        <li>Professional on-site master climber</li>
+        <li>Lawn-friendly equipment</li>
+        <li>Total tree removal</li>
+        <li>Brush and lot clearing</li>
+        <li>Hazardous limbs</li>
+        <li>Storm damage recovery</li>
+      </ul>
+      <p>Tree projects large and small, with very competitive pricing. Emergency tree service when the weather turns.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 4 -->
+<section class="pane" id="voices">
+  <img class="bg" src="img/maple.webp" alt="" loading="lazy" width="900" height="660">
+  <div class="shade"></div>
+  <div class="in">
+    <div class="score"><span class="disp n">4.8</span><div><div class="stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><span class="k">64 reviews on Google</span></div></div>
+    <div class="q" id="q">
+      <figure class="on"><blockquote>&ldquo;Great experience all around. I had three estimates, and theirs was not only the most reasonable, but they were out here the next morning. Very professional, quick, and cleaned up really well too.&rdquo;</blockquote><figcaption>Trevor K.</figcaption></figure>
+      <figure><blockquote>&ldquo;They went above and beyond what they quoted, and kept us informed every step of the way. They were so polite too! I definitely would use them again.&rdquo;</blockquote><figcaption>Google review</figcaption></figure>
+      <figure><blockquote>&ldquo;Joe and Jeff did a great job removing several trees near my home! They were timely, responsive, and careful. Their prices are reasonable, and I plan on using them again.&rdquo;</blockquote><figcaption>Thomas M.</figcaption></figure>
+      <figure><blockquote>&ldquo;Awesome service! Very professional. On time and finished the work ahead of schedule. I had a few huge trees that were 85 years old next to the house and they got them out without any issues.&rdquo;</blockquote><figcaption>Ed Cawthon</figcaption></figure>
+    </div>
+    <div class="ctl"><button id="pv" aria-label="Previous review">&larr;</button><button id="nx" aria-label="Next review">&rarr;</button><div class="prog"><i id="pg"></i></div></div>
+    <a class="link" href="https://maps.google.com/?cid=9963273034094164181" target="_blank" rel="noopener">Read all reviews on Google &nearr;</a>
+  </div>
+</section>
+
+<!-- 5 -->
+<section class="pane" id="find">
+  <div class="in">
+    <div class="mapbox"><iframe title="Map of Nashville Tree Service" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=4864+Mccool+Rd,+Nashville,+TN+37218&amp;output=embed"></iframe></div>
+    <div class="card">
+      <span class="k">Find us</span>
+      <h2 class="disp">Right here in Nashville</h2>
+      <address>Nashville Tree Service<br>4864 Mccool Rd<br>Nashville, TN 37218</address>
+      <p><a href="tel:+16152940211"><b>(615) 294-0211</b></a></p>
+      <p><a href="mailto:info@nashtreeservice.co">info@nashtreeservice.co</a></p>
+      <a class="btn" href="https://maps.google.com/?cid=9963273034094164181" target="_blank" rel="noopener">Open in Google Maps &nearr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- 6 -->
+<section class="pane" id="book">
+  <div class="in">
+    <div class="bookrow">
+      <div>
+        <span class="k" style="color:var(--or)">Free consultation</span>
+        <h2 class="disp">Tell us about <em>the tree</em></h2>
+        <p class="lead">Large or small, one tree or a whole lot. Send a few details and call right away if it is an emergency.</p>
+      </div>
+      <form onsubmit="event.preventDefault();this.querySelector('small').textContent='Concept preview only: the form is not connected.';">
+        <input type="text" placeholder="Full name" aria-label="Full name">
+        <input type="email" placeholder="Email address" aria-label="Email">
+        <input type="tel" placeholder="Phone number" aria-label="Phone">
+        <textarea rows="3" placeholder="What does the tree look like? Where is it?" aria-label="Message"></textarea>
+        <button class="btn" type="submit">Book a consultation</button>
+        <small>Concept preview: this form is visual only.</small>
+      </form>
+    </div>
+    <div class="blog">
+      <a href="#book"><img src="img/plant.webp" alt="" loading="lazy" width="96" height="72"><div><b>Blog</b><span>Why Fall Is the Best Time to Plant New Trees in Nashville</span></div></a>
+      <a href="#book"><img src="img/trunk.webp" alt="" loading="lazy" width="96" height="72"><div><b>Blog</b><span>The Real Cost of Ignoring a Damaged or Dying Tree</span></div></a>
+      <a href="#book"><img src="img/storm.webp" alt="" loading="lazy" width="96" height="72"><div><b>Blog</b><span>Surviving Nashville's Summer Storms: Prepare Your Trees</span></div></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="fgrid">
+    <img class="lg" src="img/logo.webp" alt="Nashville Tree Service" loading="lazy" width="96" height="102">
+    <div class="badges">
+      <div class="mk"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#fa7d21" stroke-width="1.8" aria-hidden="true"><path d="M12 2l8 3v6c0 5-3.4 9-8 11-4.6-2-8-6-8-11V5z"/><path d="M8.5 12l2.4 2.4L15.6 9.6"/></svg><div><b>Licensed &middot; Bonded &middot; Insured</b>Quality to the last cut</div></div>
+      <div class="mk"><svg width="34" height="34" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#34a853"/><path d="M11 20.5l6 6L29 14" fill="none" stroke="#fff" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Google Guaranteed</b>&#9733;&#9733;&#9733;&#9733;&#9733;</div></div>
+    </div>
+    <div class="soc" aria-label="Social links">
+      <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M14 8V6.5c0-.7.2-1 1.1-1H17V2h-2.8C11.2 2 10 3.700 10 6.200V8H8v3.500h2V22h4V11.500h2.700L17 8z"/></svg></a>
+      <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.500" cy="6.500" r="1" fill="currentColor"/></svg></a>
+      <a href="https://maps.google.com/?cid=9963273034094164181" target="_blank" rel="noopener" aria-label="Google"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M21.800 10H12v4h5.600c-.8 2.400-2.800 3.700-5.600 3.700a5.700 5.700 0 110-11.400c1.400 0 2.600.5 3.500 1.300l2.800-2.800A9.700 9.700 0 0012 2.300a9.700 9.700 0 100 19.400c5.600 0 9.700-3.900 9.700-9.500 0-.7-.1-1.400-.2-2.200z"/></svg></a>
+    </div>
+  </div>
+  <div class="fine">&copy; 2026 Nashville Tree Service (NTS) &middot; Design concept prepared by IsDesign (Brazil) as a sample. Not affiliated with this preview. Names, logos, text and photos belong to their owners.</div>
+</footer>
+
+<script>
+(function(){
+ var S=[
+  ["Service 01","Tree Removal","We specialize in the removal of large and hazardous trees. Our skilled climbers have years of experience with limited access, nearby utility lines and trees with extreme decay."],
+  ["Service 02","Tree Trimming","Trimming helps trees, shrubs and hedges grow in a healthy manner and makes a property more attractive. We focus on removing green shoots to encourage healthier growth."],
+  ["Service 03","Tree Planting","Maximize the value of your property by planting the right tree in the right place, using the right methods. A new tree adds value to your home with each passing year."],
+  ["Service 04","Pruning","Selective removal of dead, diseased or misdirected branches and roots, including growth pushing toward electrical wires or structures."],
+  ["Service 05","Land Clearing","Trees removed, stumps cleared, brush cut back and stones moved, so the land is ready for a construction project or simply opened up."],
+  ["Service 06","Storm Damage","After high winds and heavy snow we assess your property, cut back damaged limbs and clean up the debris. Emergency service available."],
+  ["Service 07","Gutters","Gutter cleaning, repair and maintenance to keep your home protected and your gutters in peak condition."]
+ ];
+ var tabs=[].slice.call(document.querySelectorAll('.menu button')),imgs=[].slice.call(document.querySelectorAll('#cut .slides img'));
+ function go(i){tabs.forEach(function(t,j){t.setAttribute('aria-selected',j==i)});imgs.forEach(function(m,j){m.classList.toggle('on',j==i)});
+  document.getElementById('dk').textContent=S[i][0];document.getElementById('dh').textContent=S[i][1];document.getElementById('dp').textContent=S[i][2];
+  if(window.innerWidth<=900)tabs[i].scrollIntoView({inline:'center',block:'nearest',behavior:'smooth'});}
+ tabs.forEach(function(t,i){t.addEventListener('mouseenter',function(){if(window.innerWidth>900)go(i)});t.addEventListener('click',function(){go(i)});
+  t.addEventListener('keydown',function(e){var k=e.key;if(k=='ArrowDown'||k=='ArrowRight'){go((i+1)%tabs.length);tabs[(i+1)%tabs.length].focus();e.preventDefault()}if(k=='ArrowUp'||k=='ArrowLeft'){var p=(i+tabs.length-1)%tabs.length;go(p);tabs[p].focus();e.preventDefault()}})});
+ // reviews
+ var f=[].slice.call(document.querySelectorAll('#q figure')),c=0,tm,pg=document.getElementById('pg');
+ function show(n){c=(n+f.length)%f.length;f.forEach(function(x,j){x.classList.toggle('on',j==c)});pg.classList.remove('run');void pg.offsetWidth;pg.classList.add('run');clearTimeout(tm);tm=setTimeout(function(){show(c+1)},7000)}
+ document.getElementById('nx').onclick=function(){show(c+1)};document.getElementById('pv').onclick=function(){show(c-1)};
+ var vis=false;new IntersectionObserver(function(e){if(e[0].isIntersecting&&!vis){vis=true;show(0)}else if(!e[0].isIntersecting&&vis){vis=false;clearTimeout(tm);pg.classList.remove('run')}},{threshold:.4}).observe(document.getElementById('voices'));
+ // rail
+ var links=[].slice.call(document.querySelectorAll('.rail a')),ids=links.map(function(a){return a.getAttribute('href').slice(1)});
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var i=ids.indexOf(e.target.id);links.forEach(function(a,j){a.classList.toggle('on',j==i)})}})},{threshold:.55});
+ ids.forEach(function(id){io.observe(document.getElementById(id))});
+})();
+</script>
+</body>
+</html>
