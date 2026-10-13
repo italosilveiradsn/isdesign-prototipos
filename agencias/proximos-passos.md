@@ -14,3 +14,7 @@ Ordem sugerida: 1) Austrália, 2) Reino Unido, 3) Canadá, 4) Irlanda e Nova Zel
 
 ## Fila de agências ainda não enviadas (da lista de 20)
 Plumber Webmasters, Landscape Marketer, Digital Marketing Concern, Roofers Going Digital, Roofing Success Marketing, DM. Digital, M16 Marketing, Future Site Designs.
+
+## Preço novo (13/10/2026)
+US$ 900 por site (home + 4 páginas), US$ 750 no primeiro site de cada agência. Página nova: /parceiros/ (a /portfolio/ continua com o preço antigo, US$ 1.200, para os e-mails já enviados). Páginas extras: US$ 150 cada. 2 rodadas de ajustes incluídas. Pagamento 50% adiantado e 50% na entrega.
+E-mails com o preço novo: agencias/emails-v2.md.
