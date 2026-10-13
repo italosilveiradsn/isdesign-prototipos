@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Casa Roofing LLC | Design concept by IsDesign</title>
+<meta name="description" content="Design concept for a faster home page. Prepared by IsDesign (Brazil). Not affiliated with Casa Roofing LLC.">
+<link rel="preload" as="image" href="img/truck.webp" fetchpriority="high">
+<style>
+:root{--navy:#121862;--navy2:#0b1040;--pur:#7a4df0;--pur2:#c9b8ff;--lil:#efeaff;--sun:#ffb347;--ink:#12142b;--mut:#5b5f82;--bg:#f4f2fb;--disp:"Avenir Next","Futura","Century Gothic","Trebuchet MS",sans-serif;--san:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--san);color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1280px,100% - 40px);margin-inline:auto}
+.d{font-family:var(--disp);font-weight:800;letter-spacing:-.04em;line-height:.95}
+.lab{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;font-weight:800}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--pur);color:#fff;font-weight:800;padding:15px 26px;border-radius:14px;transition:.25s;font-size:.95rem;border:0;cursor:pointer;font-family:inherit}
+.btn:hover{background:var(--sun);color:var(--navy2);transform:translateY(-2px)}
+.btn.w{background:#fff;color:var(--navy)}.btn.w:hover{background:var(--sun)}
+.btn.o{background:transparent;border:2px solid rgba(255,255,255,.5);color:#fff}.btn.o:hover{background:#fff;color:var(--navy)}
+.concept{background:var(--navy2);color:#aab0e6;font-size:.74rem;text-align:center;padding:8px 14px;line-height:1.4}
+.concept b{color:var(--pur2)}
+
+header{position:sticky;top:0;z-index:40;background:rgba(244,242,251,.9);backdrop-filter:blur(12px);border-bottom:1px solid rgba(18,24,98,.1)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:78px;gap:18px}
+.nav .logo img{height:50px;width:auto;border-radius:6px}
+.nav ul{display:flex;gap:28px;list-style:none;font-weight:700;font-size:.9rem;color:var(--navy)}
+.nav ul a:hover{color:var(--pur)}
+.nav .r{display:flex;gap:14px;align-items:center}
+.nav .lic{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:var(--mut)}
+.nav .btn{padding:12px 20px}
+
+.bento{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;margin:18px auto}
+.t{border-radius:26px;padding:30px;position:relative;overflow:hidden}
+.t.photo{padding:0;min-height:260px}
+.t.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.t.navy{background:var(--navy);color:#fff}
+.t.pur{background:var(--pur);color:#fff}
+.t.lil{background:var(--lil)}
+.t.wh{background:#fff}
+.t.sun{background:var(--sun);color:var(--navy2)}
+.t h2{font-family:var(--disp);font-weight:800;letter-spacing:-.04em;line-height:.95}
+.t p{max-width:46ch}.t.pt p{max-width:none}
+
+/* hero */
+.h1{grid-column:span 7;grid-row:span 2;min-height:640px;gap:28px;display:flex;flex-direction:column;justify-content:space-between}
+.h1:before{content:"";position:absolute;right:-60px;top:-60px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(122,77,240,.55),transparent 65%)}
+.h1 h1{font-size:clamp(3rem,5.6vw,5.5rem);position:relative;max-width:9ch}
+.h1 h1 em{font-style:normal;color:var(--pur2)}
+.h1 .low{position:relative}
+.h1 p{color:#c9ceff;font-size:1.1rem;margin-bottom:22px}
+.h1 .cta{display:flex;gap:12px;flex-wrap:wrap}
+.h2t{grid-column:span 5;min-height:330px}
+.h2t .badge{position:absolute;left:16px;bottom:16px;right:16px;background:rgba(18,24,98,.82);backdrop-filter:blur(6px);color:#fff;padding:14px 18px;border-radius:16px;font-weight:700;font-size:.9rem;line-height:1.35}
+.h3t{grid-column:span 3;display:flex;flex-direction:column;justify-content:space-between;min-height:180px}
+.h3t b{font-family:var(--disp);font-weight:800;font-size:3rem;line-height:.9;letter-spacing:-.05em}
+.h4t{grid-column:span 2;display:flex;flex-direction:column;justify-content:space-between;min-height:180px}
+.h4t b{font-size:1.15rem;line-height:1.15;font-weight:800;letter-spacing:-.02em}
+.rate3{display:flex;gap:12px;margin-top:10px;align-items:center}
+.rate3 img{height:34px;width:auto;border-radius:6px}
+.stars{color:#ffb347;letter-spacing:.14em}
+
+/* servicos */
+.sec{padding:70px 0 20px}
+.sh{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:24px}
+.sh h2{font-size:clamp(2.4rem,5.6vw,5rem)}
+.sh p{color:var(--mut);max-width:40ch}
+.s-big{grid-column:span 4;min-height:420px;color:#fff;display:flex;align-items:flex-end}
+.s-big:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(11,16,64,.92) 8%,rgba(11,16,64,.1) 65%)}
+.s-big .in{position:relative;z-index:2;padding:30px}
+.s-big h3{font-family:var(--disp);font-weight:800;font-size:1.8rem;letter-spacing:-.03em;line-height:1;margin-bottom:10px}
+.s-big p{font-size:.92rem;color:#d9dcff}
+.chips{grid-column:span 12;display:flex;flex-wrap:wrap;gap:10px}
+.chips span{background:#fff;border:1.5px solid var(--navy);color:var(--navy);font-weight:800;padding:12px 20px;border-radius:999px;font-size:.92rem;transition:.2s}
+.chips span:hover{background:var(--navy);color:#fff}
+
+/* why */
+.w1{grid-column:span 5;min-height:380px;display:flex;flex-direction:column;justify-content:space-between}
+.w1 h2{font-size:clamp(2.2rem,4vw,3.8rem)}
+.w1 p{color:#c9ceff}
+.w2{grid-column:span 4}
+.w2 ul{list-style:none;display:grid;gap:14px;margin-top:16px}
+.w2 li{display:grid;grid-template-columns:26px 1fr;gap:12px;font-size:.95rem}
+.w2 li:before{content:"✓";width:26px;height:26px;border-radius:50%;background:var(--pur);color:#fff;font-weight:900;display:grid;place-items:center;font-size:.8rem}
+.w3{grid-column:span 3;display:flex;flex-direction:column;gap:12px}
+.w3 .gs{background:#fff;border-radius:16px;overflow:hidden}
+.w3 .gs img{width:100%}
+.w3 h3{font-family:var(--disp);font-weight:800;font-size:1.5rem;letter-spacing:-.03em;line-height:1}
+.w3 small{color:var(--mut);font-size:.8rem}
+
+/* avaliacoes */
+.r1{grid-column:span 6;min-height:260px;display:flex;flex-direction:column;justify-content:space-between}
+.r1 blockquote{font-family:var(--disp);font-weight:700;font-size:clamp(1.3rem,2.2vw,1.9rem);line-height:1.2;letter-spacing:-.025em}
+.r1 cite{font-style:normal;font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;font-weight:800;margin-top:18px;display:block;opacity:.85}
+.r2{grid-column:span 3;display:flex;flex-direction:column;justify-content:space-between;min-height:260px}
+.r2 blockquote{font-size:1rem;line-height:1.4;font-weight:600}
+.r2 cite{font-style:normal;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:800;margin-top:14px;display:block;color:var(--mut)}
+
+/* parceiros */
+.pt{grid-column:span 12;display:flex;align-items:center;justify-content:center;gap:clamp(20px,3.5vw,54px);flex-wrap:wrap;padding:28px 30px}
+.pt .lab{width:100%;text-align:center;color:var(--mut);margin-bottom:-4px}
+.pt img{height:62px;width:auto;object-fit:contain}
+.pt img.wide{height:34px}
+
+/* areas + contato */
+.a1{grid-column:span 5}
+.a1 h2{font-size:clamp(2rem,3.6vw,3.2rem);margin-bottom:14px}
+.cty{list-style:none;display:grid;gap:8px;margin-top:16px}
+.cty li{display:flex;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.2);padding:8px 0;font-weight:700}
+.cty li span{color:var(--pur2);font-size:.78rem;font-weight:600}
+.c1{grid-column:span 7;display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start}
+.c1 h2{font-size:clamp(2.2rem,4vw,3.6rem);margin-bottom:12px}
+.c1 .num{font-family:var(--disp);font-weight:800;font-size:clamp(1.8rem,3vw,2.6rem);letter-spacing:-.04em;display:block;margin:12px 0 4px}
+.c1 .num:hover{color:var(--sun)}
+.c1 dl{margin-top:18px;font-size:.9rem}
+.c1 dt{font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;font-weight:800;opacity:.75;margin-top:12px}
+.c1 dd a{border-bottom:2px solid var(--sun)}
+form{display:grid;gap:10px}
+form input,form textarea{font:inherit;padding:13px;border-radius:12px;border:0;background:rgba(255,255,255,.14);color:#fff}
+form input::placeholder,form textarea::placeholder{color:#d8d0ff}
+form input:focus,form textarea:focus{outline:2px solid var(--sun)}
+form small{font-size:.72rem;opacity:.85}
+footer{background:var(--navy2);color:#9aa0d6;font-size:.74rem;padding:24px 0;margin-top:30px;line-height:1.6}
+
+.bar{display:none}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+.rv.in{opacity:1;transform:none}
+@media(max-width:980px){
+ .nav ul,.nav .lic{display:none}
+ .bento{gap:10px}
+ .t{padding:24px;border-radius:22px}
+ .h1,.h2t,.h3t,.h4t,.s-big,.w1,.w2,.w3,.r1,.r2,.a1,.c1{grid-column:span 12}
+ .h3t,.h4t{grid-column:span 6}
+ .h1{min-height:460px;grid-row:auto}
+ .s-big{min-height:320px}
+ .r2{grid-column:span 6}
+ .c1{grid-template-columns:1fr}
+ .sec{padding:50px 0 10px}
+ .bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--navy);padding:10px 14px;gap:10px}
+ .bar a{flex:1;text-align:center;padding:14px;border-radius:14px;font-weight:800}
+ .bar a:first-child{background:var(--pur);color:#fff}.bar a:last-child{border:1.5px solid rgba(255,255,255,.4);color:#fff}
+ body{padding-bottom:70px}
+}
+@media(max-width:560px){.r2{grid-column:span 12}.h4t{grid-column:span 12}.pt img{height:50px}}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="concept"><b>Design concept</b> prepared by IsDesign (Brazil) for Casa Roofing LLC. Not affiliated with or endorsed by the company. The logo, text and photos are samples from the current website, shown only to help you picture the result.</div>
+
+<header><div class="wrap nav">
+ <a class="logo" href="#top" aria-label="Casa Roofing LLC"><img src="img/sel-logo.webp" width="280" height="100" alt="Casa Roofing LLC"></a>
+ <nav aria-label="Main"><ul><li><a href="#serv">Roofing services</a></li><li><a href="#why">Why Casa</a></li><li><a href="#rev">Reviews</a></li><li><a href="#areas">Areas we service</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+ <div class="r"><span class="lic">License ROC#339914</span><a class="btn" href="tel:+16234183204">(623) 418-3204</a></div>
+</div></header>
+
+<main class="wrap" id="top">
+ <section class="bento" aria-label="Introduction">
+  <div class="t navy h1">
+   <span class="lab" style="color:var(--pur2);position:relative">Top-rated roofing contractor &middot; Phoenix, Arizona</span>
+   <h1 class="d">Protecting what <em>matters the most.</em></h1>
+   <div class="low"><p>Whether you&rsquo;re in need of a full roof replacement or a roof repair, you can count on our expert team to get the job done.</p><div class="cta"><a class="btn" href="#contact">Get a quote within 15 minutes</a><a class="btn o" href="tel:+16234183204">Text or call (623) 418-3204</a></div></div>
+  </div>
+  <div class="t photo h2t"><img src="img/truck.webp" width="1200" height="584" alt="Casa Roofing truck parked in front of a Phoenix home" fetchpriority="high" style="object-position:30% 50%"><div class="badge">Tile &middot; Foam &middot; Shingle<br><span style="font-weight:600;opacity:.85">Residential &amp; commercial roofing</span></div></div>
+  <div class="t sun h3t"><span class="lab">Rated by customers</span><b>5.0<br><span class="stars" style="color:var(--navy2);font-size:1.2rem">★★★★★</span></b><span style="font-weight:700;font-size:.9rem">Google &middot; Angi &middot; Facebook</span></div>
+  <div class="t lil h4t"><span class="lab" style="color:var(--mut)">Licensed</span><b>ROC#<br>339914</b></div>
+ </section>
+
+ <section class="sec" id="serv">
+  <div class="sh rv"><h2 class="d">Our roofing<br>services</h2><p>Residential and commercial roofing across the Arizona area, installed by a local roofing company with a commitment to quality and excellence.</p></div>
+  <div class="bento">
+   <div class="t photo navy s-big rv"><img src="img/repair.webp" width="750" height="374" alt="Tile roof under repair with protective sheeting" loading="lazy"><div class="in"><h3>Roof repair</h3><p>Concerns about the condition of your roof, noticeable damage or leaks? Our professional contractors inspect the damage and provide an estimate.</p></div></div>
+   <div class="t photo navy s-big rv"><img src="img/insp.webp" width="750" height="374" alt="Asphalt shingle roof ridge up close" loading="lazy"><div class="in"><h3>Roof inspections</h3><p>Routine inspections can save money and prevent safety hazards. Call today for a free estimate.</p></div></div>
+   <div class="t photo navy s-big rv"><img src="img/newroof.webp" width="750" height="374" alt="Clay tile new roof installation on a Phoenix home" loading="lazy"><div class="in"><h3>Residential &amp; commercial new roofs</h3><p>The roof is the main protective barrier between your property and the elements. It deserves quality and excellence.</p></div></div>
+   <div class="chips rv"><span>Roof repair</span><span>Tile roofing</span><span>Roof installation</span><span>Roof leak repair</span><span>Coatings</span><span>Residential roofing</span><span>Commercial roofing</span></div>
+  </div>
+ </section>
+
+ <section class="sec" id="why">
+  <div class="bento">
+   <div class="t navy w1 rv"><div><span class="lab" style="color:var(--pur2)">Why hire Casa Roofing LLC?</span><h2 style="margin-top:14px">More than just a roofing company.</h2></div><p>Top-quality roofing at a reasonable price. We communicate with the homeowner every step of the way, and we always stay on our timeline and budget without compromising quality.</p></div>
+   <div class="t wh w2 rv"><span class="lab" style="color:var(--pur)">How our team keeps you safe</span><ul><li>Our team makes it their mission to ensure the safety of our customers and our contractors.</li><li>We follow strict industry-approved safety techniques. We never cut corners and we train our team.</li><li>Fully licensed and insured roofing contractors, expertly screened and trained for your protection.</li></ul></div>
+   <div class="t lil w3 rv"><h3>Flexible payment options</h3><small>Financing available for qualifying roof repairs and replacements through GreenSky.</small><div class="gs"><img src="img/sel-gs-roof.webp" width="320" height="100" alt="Finance your project with GreenSky" loading="lazy"></div><div class="gs"><img src="img/sel-gs-head.webp" width="320" height="105" alt="Financing options from GreenSky" loading="lazy"></div></div>
+  </div>
+ </section>
+
+ <section class="sec" id="rev">
+  <div class="sh rv"><h2 class="d">Our reputation<br>speaks for itself</h2><p>What our happy customers say about working with us.</p></div>
+  <div class="bento">
+   <div class="t pur r1 rv"><blockquote>&ldquo;Randy and his team were very responsive and helpful. They did a fantastic job and left the jobsite clean and pristine. I highly recommend the professionals at Casa Roofing!&rdquo;</blockquote><cite>Ruth R. &middot; Phoenix, AZ</cite></div>
+   <div class="t lil r2 rv"><blockquote>&ldquo;I am very happy with this company. Very professional, with great business ethics and enthusiasm.&rdquo;</blockquote><cite>Paul Y. &middot; Scottsdale</cite></div>
+   <div class="t wh r2 rv"><blockquote>&ldquo;Fair pricing and not pushy. He was very patient as we were still working with the insurance company.&rdquo;</blockquote><cite>Ethan S. &middot; Scottsdale</cite></div>
+   <div class="t navy r1 rv" style="grid-column:span 12;min-height:0"><blockquote style="font-size:clamp(1.2rem,2vw,1.7rem)">&ldquo;Randy has been great to work with. He and his crew are very helpful and knowledgeable. If you live in Phoenix, Arizona, Casa Roofing is the roofing company to call for your roof.&rdquo;</blockquote><cite>David G. &middot; Phoenix, AZ</cite></div>
+   <div class="t wh pt rv"><p class="lab">Brands we install &amp; ratings</p><img src="img/sel-malarkey.webp" width="164" height="161" alt="Malarkey Roofing Products" loading="lazy"><img src="img/sel-eagle.webp" width="164" height="161" alt="Eagle Roofing Products" loading="lazy"><img src="img/sel-gaf.webp" width="164" height="161" alt="GAF Materials Corporation" loading="lazy"><img src="img/sel-oc.webp" width="349" height="353" alt="Owens Corning" loading="lazy"><img class="wide" src="img/sel-polyglass.webp" width="600" height="171" alt="Polyglass" loading="lazy"><img class="wide" src="img/sel-westlake.webp" width="522" height="96" alt="Westlake Royal Roofing" loading="lazy"><img src="img/sel-google.webp" width="164" height="161" alt="Google reviews" loading="lazy"><img src="img/sel-angi.webp" width="402" height="239" alt="Angi" loading="lazy" style="height:46px"></div>
+  </div>
+ </section>
+
+ <section class="sec" id="areas" style="padding-bottom:0">
+  <div class="bento">
+   <div class="t navy a1 rv"><span class="lab" style="color:var(--pur2)">Areas we service</span><h2 style="margin-top:12px">Across Arizona.</h2><ul class="cty"><li>Maricopa County <span>Phoenix, Scottsdale, Mesa, Chandler&hellip;</span></li><li>Pima County <span>Tucson, Oro Valley, Marana&hellip;</span></li><li>Pinal County <span>Casa Grande, San Tan Valley&hellip;</span></li><li>Yavapai County <span>Prescott, Cottonwood&hellip;</span></li><li>Coconino County <span>Flagstaff, Sedona, Page&hellip;</span></li></ul></div>
+   <div class="t pur c1 rv" id="contact">
+    <div><span class="lab" style="color:var(--pur2)">Get a free estimate</span><h2 class="d" style="margin-top:12px">Get a quote within 15 minutes.</h2><a class="num" href="tel:+16234183204">(623) 418-3204</a><span style="opacity:.9">Just text or call.</span>
+     <dl><dt>Email</dt><dd><a href="mailto:casaroofingservices@gmail.com">casaroofingservices@gmail.com</a></dd><dt>Business hours</dt><dd>Monday to Saturday, 6:00 am &ndash; 6:00 pm<br>Sunday closed</dd><dt>License</dt><dd>ROC#339914</dd></dl></div>
+    <form onsubmit="event.preventDefault();this.querySelector('small').textContent='Concept preview only: the form is not connected.';"><input type="text" placeholder="Full name" aria-label="Full name"><input type="email" placeholder="Email address" aria-label="Email"><input type="tel" placeholder="Phone number" aria-label="Phone"><textarea rows="3" placeholder="Add a message..." aria-label="Message"></textarea><button class="btn w" type="submit" style="justify-content:center">Send</button><small>Concept preview: this form is visual only.</small></form>
+   </div>
+  </div>
+ </section>
+</main>
+<footer><div class="wrap">&copy; 2026 Casa Roofing LLC &middot; Design concept prepared by IsDesign (Brazil) as a sample. Not affiliated with this preview. Names, logos, text and photos belong to their owners.</div></footer>
+
+<div class="bar"><a href="tel:+16234183204">Call or text</a><a href="#contact">Free quote</a></div>
+<script>
+(function(){
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:0,rootMargin:"0px 0px -6% 0px"});
+ document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>
