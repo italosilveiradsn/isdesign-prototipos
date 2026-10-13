@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Red Hat Painting | Design concept by IsDesign</title>
+<meta name="description" content="Design concept for a faster home page. Prepared by IsDesign (Brazil). Not affiliated with Red Hat Painting.">
+<link rel="preload" as="image" href="img/hero.webp" fetchpriority="high">
+<style>
+:root{--red:#ee1c1c;--red2:#b80f0f;--char:#3a3a3a;--ink:#1d1d1d;--paper:#faf7f2;--sand:#f0eae0;--mut:#6a6660;--line:#ddd5c8;--ser:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;--san:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--san);color:var(--ink);background:var(--paper);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--ser);font-weight:500;letter-spacing:-.02em;line-height:1.05}
+.lab{font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:#fff;font-weight:700;padding:16px 28px;border-radius:999px;transition:.3s;font-size:.95rem;border:0;cursor:pointer;font-family:inherit}
+.btn:hover{background:var(--red)}
+.btn.r{background:var(--red)}.btn.r:hover{background:var(--ink)}
+.btn.w{background:#fff;color:var(--red2)}.btn.w:hover{background:var(--ink);color:#fff}
+.concept{background:#111;color:#b3afa7;font-size:.74rem;text-align:center;padding:8px 14px;line-height:1.4;position:relative;z-index:30}
+.concept b{color:#ff8a8a}
+
+.shell{display:grid;grid-template-columns:minmax(380px,41%) 1fr;align-items:start}
+/* painel fixo */
+.side{position:sticky;top:0;height:100vh;background:var(--red);color:#fff;display:flex;flex-direction:column;padding:28px 38px 30px;overflow:hidden}
+.side:after{content:"";position:absolute;right:-90px;top:30%;width:260px;height:260px;border-radius:50%;background:rgba(255,255,255,.07);pointer-events:none}
+.brand{display:flex;align-items:center;gap:12px;font-family:var(--ser);font-size:1.5rem;line-height:1;letter-spacing:-.01em}
+.brand svg{width:46px;height:46px}
+.brand small{display:block;font:700 .55rem var(--san);letter-spacing:.34em;margin-top:5px}
+.side h1{font-size:clamp(2.2rem,4.1vw,4.2rem);margin:auto 0 22px;max-width:11ch}
+.side h1 em{font-style:italic;color:#ffe3e3}
+.side .rate{display:flex;align-items:center;gap:14px;border-top:1px solid rgba(255,255,255,.4);padding-top:18px;margin-bottom:22px}
+.side .rate b{font-family:var(--ser);font-size:2.6rem;font-weight:500;line-height:1}
+.side .rate span{font-size:.78rem;line-height:1.4}
+.side .rate i{display:block;font-style:normal;color:#ffd24d;letter-spacing:.14em;font-size:.95rem}
+.side .row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:22px}
+.chs{list-style:none;display:flex;flex-direction:column;gap:2px;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700}
+.chs a{display:flex;gap:12px;padding:7px 0;border-top:1px solid rgba(255,255,255,.22);opacity:.72;transition:.25s}
+.chs a:hover,.chs a.on{opacity:1;padding-left:8px}
+.chs a span{width:22px}
+/* conteúdo */
+.main{background:var(--paper)}
+.ch{padding:110px clamp(24px,5vw,80px) 100px;border-bottom:1px solid var(--line);position:relative}
+.ch .no{font-family:var(--ser);font-size:clamp(5rem,10vw,9rem);line-height:.8;color:transparent;-webkit-text-stroke:1.5px var(--red);font-weight:500;margin-bottom:24px;display:block}
+.ch h2{font-size:clamp(2.3rem,4.6vw,4.4rem);margin-bottom:22px;max-width:14ch}
+.ch p.l{color:var(--mut);font-size:1.12rem;max-width:52ch;margin-bottom:34px}
+
+/* 01 */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--ink)}
+.two article{padding:34px 30px 38px}
+.two article+article{border-left:1px solid var(--ink);background:var(--ink);color:#fff}
+.two h3{font-size:1.9rem;margin-bottom:10px}
+.two p{color:inherit;opacity:.82;margin-bottom:20px;max-width:34ch}
+.two a{font-weight:800;font-size:.84rem;letter-spacing:.14em;text-transform:uppercase;border-bottom:2px solid var(--red)}
+.two .tg{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.two .tg span{font-size:.74rem;border:1px solid currentColor;padding:4px 11px;border-radius:999px;opacity:.85}
+.pic2{display:grid;grid-template-columns:1.1fr .9fr;gap:14px;margin-top:14px}
+.pic2 img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+
+/* 02 */
+.cm{list-style:none;border-top:2px solid var(--ink)}
+.cm li{display:grid;grid-template-columns:60px 1fr;gap:20px;padding:24px 0;border-bottom:1px solid var(--line)}
+.cm .sw{width:46px;height:46px;border-radius:4px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.12)}
+.cm li:nth-child(1) .sw{background:#ee1c1c}.cm li:nth-child(2) .sw{background:#3a3a3a}.cm li:nth-child(3) .sw{background:#f3d9b0}.cm li:nth-child(4) .sw{background:#c9d6cf}.cm li:nth-child(5) .sw{background:#7c2a2a}
+.cm h3{font-size:1.5rem;margin-bottom:4px}
+.cm p{color:var(--mut);max-width:50ch}
+.guar{margin-top:30px;background:var(--sand);padding:22px 26px;border-left:6px solid var(--red);font-family:var(--ser);font-style:italic;font-size:1.25rem;line-height:1.35}
+
+/* 03 galeria cores */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.gal a{position:relative;display:block;overflow:hidden;background:var(--sand);aspect-ratio:3/2;cursor:zoom-in}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.gal a:hover img{transform:scale(1.07)}
+.gal a:nth-child(1){grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+.gl2{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.lb{position:fixed;inset:0;background:rgba(15,15,15,.95);z-index:100;display:none;align-items:center;justify-content:center;padding:30px}
+.lb.on{display:flex}.lb img{max-height:88vh;max-width:92vw}
+.lb button{position:absolute;top:18px;right:22px;background:none;border:0;color:#fff;font-size:2.4rem;cursor:pointer}
+
+/* 04 processo */
+.pstep{list-style:none;counter-reset:s}
+.pstep li{counter-increment:s;display:grid;grid-template-columns:70px 1fr;gap:16px;padding:22px 0;border-top:1px solid var(--line);align-items:center}
+.pstep li:before{content:counter(s);font-family:var(--ser);font-size:2.6rem;color:var(--red);line-height:1}
+.pstep li b{font-family:var(--ser);font-weight:500;font-size:1.45rem;letter-spacing:-.01em}
+.pimg{margin-top:26px}.pimg img{width:100%;aspect-ratio:2/1;object-fit:cover}
+
+/* 05 financiamento */
+.fin{background:var(--ink);color:#fff;border:0}
+.fin h2{color:#fff}.fin p.l{color:#c9c4bb}
+.fin .no{-webkit-text-stroke-color:#fff}
+.opts{display:grid;grid-template-columns:1fr auto 1fr;gap:20px;align-items:center;margin:10px 0 30px}
+.opts div{border:1px solid rgba(255,255,255,.35);padding:28px 24px;text-align:center}
+.opts b{display:block;font-family:var(--ser);font-weight:500;font-size:clamp(2.2rem,4vw,3.4rem);line-height:1;color:#ff8a8a}
+.opts span{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;display:block;margin-top:8px}
+.opts em{font-style:normal;color:#9e998f;font-size:.8rem;letter-spacing:.2em}
+.fin .up{display:flex;align-items:center;gap:18px;margin-bottom:12px}
+.fin .up img{background:#fff;padding:10px 14px;height:56px;width:auto}
+.fin small{display:block;color:#9e998f;font-size:.72rem;max-width:70ch;line-height:1.5}
+
+/* 06 reviews */
+.rv{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.rv blockquote{font-family:var(--ser);font-size:1.3rem;line-height:1.38;border-top:2px solid var(--ink);padding-top:20px}
+.rv cite{display:block;margin-top:14px;font-style:normal;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;font-weight:800}
+.rv cite span{color:var(--red)}
+.big{display:flex;align-items:center;gap:20px;margin-bottom:40px}
+.big b{font-family:var(--ser);font-weight:500;font-size:5rem;line-height:.8;color:var(--red)}
+.big i{display:block;font-style:normal;color:#e6a100;letter-spacing:.16em;font-size:1.1rem}
+.sel{display:flex;align-items:center;gap:clamp(24px,4vw,56px);flex-wrap:wrap;margin-top:50px;padding-top:30px;border-top:1px solid var(--line)}
+.sel p{width:100%;margin:0 0 -6px}
+.sel img{height:46px;width:auto;filter:grayscale(1);opacity:.75;transition:.3s}
+.sel img:hover{filter:none;opacity:1}
+
+/* contato */
+.ct{background:var(--red);color:#fff;border:0;padding-bottom:70px}
+.ct h2{color:#fff;max-width:12ch}.ct .no{-webkit-text-stroke-color:#fff}
+.ct dl{border-top:1px solid rgba(255,255,255,.5);margin:30px 0}
+.ct dl div{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.4)}
+.ct dt{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;padding-top:5px}
+.ct dd{font-size:1.15rem;font-weight:600}
+form{display:grid;gap:12px;background:rgba(0,0,0,.14);padding:26px;margin-bottom:30px}
+form label{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;display:grid;gap:6px}
+form input,form textarea,form select{font:inherit;padding:13px;border:0;background:#fff;color:var(--ink)}
+form small{opacity:.85;font-size:.72rem}
+footer{background:#111;color:#8f8a82;font-size:.74rem;padding:22px clamp(24px,5vw,80px);line-height:1.6}
+
+.bar{display:none}
+.rvl{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+.rvl.in{opacity:1;transform:none}
+@media(max-width:980px){
+ .shell{display:block}
+ .side{position:relative;height:auto;padding:22px 20px 28px}
+ .side h1{margin:34px 0 20px;font-size:clamp(2.4rem,11vw,3.6rem);max-width:none}
+ .chs{display:none}
+ .ch{padding:70px 24px 64px}
+ .two,.pic2,.rv,.opts{grid-template-columns:1fr}
+ .two article+article{border-left:0;border-top:1px solid var(--ink)}
+ .opts em{text-align:center}
+ .gal{grid-template-columns:1fr 1fr}.gal a:nth-child(1){grid-column:span 2;grid-row:auto;aspect-ratio:3/2}
+ .ct dl div{grid-template-columns:1fr;gap:2px}
+ .bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--ink);padding:10px 14px;gap:10px;border-top:2px solid var(--red)}
+ .bar a{flex:1;text-align:center;padding:14px;border-radius:999px;font-weight:700}
+ .bar a:first-child{background:var(--red);color:#fff}.bar a:last-child{border:1px solid rgba(255,255,255,.45);color:#fff}
+ body{padding-bottom:70px}
+}
+@media(prefers-reduced-motion:reduce){.rvl{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="concept"><b>Design concept</b> prepared by IsDesign (Brazil) for Red Hat Painting. Not affiliated with or endorsed by the company. Text and photos are samples from the current website.</div>
+
+<div class="shell">
+ <aside class="side" id="top">
+  <a class="brand" href="#top" aria-label="Red Hat Painting"><svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="23" fill="#fff"/><path d="M10 30c0-9 6-16 14-16s14 7 14 16z" fill="#ee1c1c"/><rect x="7" y="29" width="34" height="5" rx="2.5" fill="#b80f0f"/></svg><span>Red Hat<br>Painting<small>ATLANTA &middot; JACKSONVILLE</small></span></a>
+  <h1>Beautiful spaces start with <em>expert painting.</em></h1>
+  <div class="rate"><b>4.74</b><span><i>★★★★★</i>227 Google reviews</span></div>
+  <div class="row"><a class="btn w" href="#contact">Schedule a free estimate</a><a class="btn" href="#work" style="background:rgba(0,0,0,.28)">See our work</a></div>
+  <ul class="chs" id="chs"><li><a href="#c1"><span>01</span>Residential &amp; commercial</a></li><li><a href="#c2"><span>02</span>The Red Hat difference</a></li><li><a href="#work"><span>03</span>Our work</a></li><li><a href="#c4"><span>04</span>Our process</a></li><li><a href="#c5"><span>05</span>Financing</a></li><li><a href="#c6"><span>06</span>Reviews</a></li><li><a href="#contact"><span>07</span>Contact</a></li></ul>
+ </aside>
+
+ <main class="main">
+  <section class="ch" id="c1" style="padding-top:0;border-bottom:0"><img src="img/hero.webp" width="1300" height="761" alt="Row of freshly painted townhomes on a sunny street" fetchpriority="high" style="max-width:none;width:calc(100% + 2*clamp(24px,5vw,80px));margin:0 calc(-1*clamp(24px,5vw,80px)) 80px;aspect-ratio:16/9;object-fit:cover">
+   <span class="no">01</span>
+   <h2 class="rvl">The Red Hat difference.</h2>
+   <p class="l rvl">Red Hat Painting is the preeminent local painting contractor in the Atlanta, Georgia and Jacksonville, Florida areas, offering top-notch residential and commercial painting. Quality you can see, trust you can feel.</p>
+   <div class="two rvl">
+    <article><h3>Residential painting</h3><p>Looking to spruce up your home&rsquo;s interior or exterior? We have the tools, expertise and experienced painters to get the job done.</p><div class="tg"><span>Interior</span><span>Cabinets</span><span>Popcorn removal</span><span>Drywall repair</span><span>Garage epoxy</span><span>Exterior</span><span>Deck &amp; fence stain</span><span>Pressure washing</span><span>Brick &amp; stucco</span></div><a href="#contact">Residential services &rarr;</a></article>
+    <article><h3>Commercial painting</h3><p>From multi-family communities to shopping centers, we&rsquo;ve done it all, with quality and care.</p><div class="tg"><span>Multi-family</span><span>Shopping centers</span><span>Industrial</span><span>HOA</span><span>Apartments</span><span>Offices</span><span>Warehouses</span><span>Highrise</span></div><a href="#contact" style="border-color:#fff">Commercial services &rarr;</a></article>
+   </div>
+   <div class="pic2 rvl"><img src="img/painter.webp" width="768" height="512" alt="A Red Hat painter rolling a ceiling in a bright room" loading="lazy"><img src="img/consult.webp" width="768" height="576" alt="Choosing paint colors from a fan deck with a Red Hat painter" loading="lazy"></div>
+  </section>
+
+  <section class="ch" id="c2">
+   <span class="no">02</span>
+   <h2 class="rvl">Our commitment to excellence.</h2>
+   <p class="l rvl">As a customer-oriented company, we put your satisfaction and privacy first, and take great care of your space and belongings.</p>
+   <ul class="cm">
+    <li class="rvl"><span class="sw"></span><div><h3>Expertise &amp; knowledge</h3><p>We take the guesswork out of the painting process. Our experience is our greatest asset.</p></div></li>
+    <li class="rvl"><span class="sw"></span><div><h3>Unmatched quality</h3><p>We prepare each job site and use the right tools to create the longest-lasting jobs in the industry.</p></div></li>
+    <li class="rvl"><span class="sw"></span><div><h3>Clean work site</h3><p>Our painters believe a clean job site yields the best possible results, with a nightly clean up and walk-around.</p></div></li>
+    <li class="rvl"><span class="sw"></span><div><h3>Time matters</h3><p>We show up on time to scheduled estimates, job site walk-arounds and customer meetings.</p></div></li>
+    <li class="rvl"><span class="sw"></span><div><h3>Price commitment</h3><p>Our pricing is honored from start to finish. We will not change it at the completion of the job. No surprises.</p></div></li>
+   </ul>
+   <p class="guar rvl">&ldquo;Our goal is your goal: 100% customer satisfaction. We provide a written guarantee on every job.&rdquo;</p>
+  </section>
+
+  <section class="ch" id="work">
+   <span class="no">03</span>
+   <h2 class="rvl">See our work.</h2>
+   <p class="l rvl">Residential and commercial projects across Atlanta and Jacksonville. Tap any photo to enlarge.</p>
+   <div class="gal rvl">
+    <a href="img/ext.webp"><img src="img/ext.webp" width="768" height="504" alt="Modern white exterior with black windows at dusk" loading="lazy"></a>
+    <a href="img/g1.webp"><img src="img/g1.webp" width="300" height="200" alt="Blue and yellow trimmed apartment building" loading="lazy"></a>
+    <a href="img/g3.webp"><img src="img/g3.webp" width="300" height="200" alt="Freshly stained red wood deck" loading="lazy"></a>
+    <a href="img/g4.webp"><img src="img/g4.webp" width="300" height="200" alt="Front porch with white columns and gray siding" loading="lazy"></a>
+    <a href="img/g5.webp"><img src="img/g5.webp" width="300" height="200" alt="Coral painted ranch home" loading="lazy"></a>
+    <a href="img/g6.webp"><img src="img/g6.webp" width="300" height="200" alt="Dark purple building with orange accents" loading="lazy"></a>
+    <a href="img/g8.webp"><img src="img/g8.webp" width="300" height="200" alt="Green craftsman style house" loading="lazy"></a>
+    <a href="img/g9.webp"><img src="img/g9.webp" width="300" height="200" alt="Shopping center painted in cream tones" loading="lazy"></a>
+    <a href="img/g10.webp"><img src="img/g10.webp" width="300" height="200" alt="Commercial building with white and tan paint" loading="lazy"></a>
+   </div>
+   <div class="gl2"><a class="btn" href="#contact">Residential gallery &rarr;</a><a class="btn" href="#contact" style="background:var(--char)">Commercial gallery &rarr;</a></div>
+  </section>
+
+  <section class="ch" id="c4">
+   <span class="no">04</span>
+   <h2 class="rvl">Our process for best-in-class results.</h2>
+   <ol class="pstep">
+    <li class="rvl"><b>Schedule your free estimate</b></li><li class="rvl"><b>Schedule a start date</b></li><li class="rvl"><b>Begin prep work</b></li><li class="rvl"><b>Complete the painting project</b></li><li class="rvl"><b>Clean up &amp; walk-around</b></li><li class="rvl"><b>Project completed on time &amp; on budget</b></li>
+   </ol>
+   <div class="pimg rvl"><img src="img/process.webp" width="768" height="384" alt="Large home with a freshly painted exterior" loading="lazy"></div>
+  </section>
+
+  <section class="ch fin" id="c5">
+   <span class="no">05</span>
+   <h2 class="rvl">Financing available.</h2>
+   <p class="l rvl">Home improvement loans offered through Upgrade, so the project starts when you&rsquo;re ready.</p>
+   <div class="opts rvl"><div><b>12 months</b><span>Same-as-cash*<br>No payment, no interest for 12 months</span></div><em>OR</em><div><b>7.99%</b><span>APR &middot; 5 year loan</span></div></div>
+   <div class="up rvl"><img src="img/sel-upgrade.webp" width="147" height="33" alt="Upgrade" loading="lazy"></div>
+   <small class="rvl">*Loans are subject to credit approval. Home Improvement Loans offered through Upgrade are made by Cross River Bank, Member FDIC, Equal Housing Lender. Upgrade, Inc. (NMLS #1548935). Lowest rates require Autopay. Actual loan terms may vary.</small>
+  </section>
+
+  <section class="ch" id="c6">
+   <span class="no">06</span>
+   <h2 class="rvl">Painters people recommend.</h2>
+   <div class="big rvl"><b>4.74</b><div><i>★★★★★</i><span class="lab">227 Google reviews</span></div></div>
+   <div class="rv">
+    <figure class="rvl"><blockquote>I&rsquo;m really pleased with Red Hat Painting. From the beginning there was never any pressure to buy their services. I was completely satisfied with the final product. Would definitely recommend.</blockquote><cite>Irving B. <span>&middot; Google</span></cite></figure>
+    <figure class="rvl"><blockquote>Great job at a fair price. The crew was professional, worked extremely hard and truly cared about the quality of their work. They also provided a few color consultant. Highly recommend!</blockquote><cite>Jeff H. <span>&middot; Google</span></cite></figure>
+   </div>
+   <div class="sel rvl"><p class="lab" style="color:var(--mut)">Find us also on</p><img src="img/sel-yelp.webp" width="188" height="94" alt="Yelp" loading="lazy"><img src="img/sel-angi.webp" width="220" height="80" alt="Angi" loading="lazy"><img src="img/sel-nextdoor.webp" width="160" height="53" alt="Nextdoor" loading="lazy"><img src="img/sel-thumbtack.webp" width="600" height="310" alt="Thumbtack" loading="lazy" style="height:56px"></div>
+  </section>
+
+  <section class="ch ct" id="contact">
+   <span class="no">07</span>
+   <h2 class="rvl">Schedule your free estimate.</h2>
+   <form class="rvl" onsubmit="event.preventDefault();this.querySelector('small').textContent='Concept preview only: the form is not connected.';">
+    <label>Name<input type="text" autocomplete="name"></label><label>Email<input type="email" autocomplete="email"></label>
+    <label>Project<select><option>Interior painting</option><option>Exterior painting</option><option>Commercial painting</option><option>Cabinets</option><option>Other</option></select></label>
+    <label>Tell us about it<textarea rows="3"></textarea></label>
+    <button class="btn" type="submit" style="justify-content:center">Request estimate</button><small>Concept preview: this form is visual only.</small>
+   </form>
+   <dl class="rvl"><div><dt>Email</dt><dd><a href="mailto:info@redhatpainting.com">info@redhatpainting.com</a></dd></div><div><dt>Hours of operation</dt><dd>Monday&ndash;Sunday, 7am&ndash;7pm</dd></div><div><dt>Serving</dt><dd>Atlanta, Georgia &amp; Jacksonville, Florida</dd></div><div><dt>Careers</dt><dd><a href="#contact" style="border-bottom:2px solid #fff">Join the Red Hat team</a></dd></div></dl>
+  </section>
+  <footer>&copy; 2026 Red Hat Painting &middot; Design concept prepared by IsDesign (Brazil) as a sample. Not affiliated with this preview. Names, text and photos belong to their owners.</footer>
+ </main>
+</div>
+
+<div class="bar"><a href="#contact">Free estimate</a><a href="#work">See our work</a></div>
+<div class="lb" id="lb" role="dialog" aria-label="Photo"><button type="button" aria-label="Close">&times;</button><img alt=""></div>
+
+<script>
+(function(){
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:0,rootMargin:"0px 0px -6% 0px"});
+ document.querySelectorAll('.rvl').forEach(function(el){io.observe(el)});
+ var secs=['c1','c2','work','c4','c5','c6','contact'].map(function(i){return document.getElementById(i)}),links=document.querySelectorAll('#chs a');
+ var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var id=e.target.id;links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+id)})}})},{rootMargin:'-45% 0px -50% 0px'});
+ secs.forEach(function(s){if(s)so.observe(s)});
+ var lb=document.getElementById('lb'),li=lb.querySelector('img');
+ document.querySelectorAll('.gal a').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();li.src=a.getAttribute('href');li.alt=a.querySelector('img').alt;lb.classList.add('on')})});
+ lb.addEventListener('click',function(){lb.classList.remove('on')});
+ document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('on')});
+})();
+</script>
+</body>
+</html>
