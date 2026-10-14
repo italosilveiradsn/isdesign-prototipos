@@ -2,7 +2,7 @@
 
 Como usar: envie o E-mail 1 (versão A ou B, alternando para comparar). Se não houver resposta, 4 dias depois envie o E-mail 2 na mesma conversa (responda ao próprio e-mail, assunto vazio). Mais 4 dias depois, o E-mail 3. Texto simples, sem imagens, sem rastreamento de abertura ou de link.
 
-Preço: US$ 900 por site, US$ 750 no primeiro. Link do portfólio (só do e-mail 2 em diante): https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
+Preço: US$ 900 por site, US$ 497 no primeiro. Link do portfólio (só do e-mail 2 em diante): https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
 
 
 ## 1. Pool Builder Marketing (info@poolbuildermarketing.com)
@@ -58,7 +58,7 @@ Brett,
 
 one more idea for Pool Builder Marketing: a free homepage concept for one of your current prospects, built under your brand.
 Samples and speed scores: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-If you like it, the first full site is US$ 750 (US$ 900 after that).
+If you like it, the first full site is US$ 497 (US$ 900 after that).
 Want me to send the details?
 
 Ítalo Silveira
@@ -76,7 +76,7 @@ Brett,
 
 mais uma ideia para a Pool Builder Marketing: um conceito de home grátis para um prospect atual de vocês, feito sob a sua marca.
 Amostras e notas de velocidade: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-Se gostarem, o primeiro site completo custa US$ 750 (US$ 900 depois).
+Se gostarem, o primeiro site completo custa US$ 497 (US$ 900 depois).
 Quer que eu envie os detalhes?
 
 Ítalo Silveira
@@ -179,7 +179,7 @@ Gary,
 
 one more idea for HighPoint Digital: a free homepage concept for one of your current prospects, built under your brand.
 Samples and speed scores: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-If you like it, the first full site is US$ 750 (US$ 900 after that).
+If you like it, the first full site is US$ 497 (US$ 900 after that).
 Want me to send the details?
 
 Ítalo Silveira
@@ -197,7 +197,7 @@ Gary,
 
 mais uma ideia para a HighPoint Digital: um conceito de home grátis para um prospect atual de vocês, feito sob a sua marca.
 Amostras e notas de velocidade: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-Se gostarem, o primeiro site completo custa US$ 750 (US$ 900 depois).
+Se gostarem, o primeiro site completo custa US$ 497 (US$ 900 depois).
 Quer que eu envie os detalhes?
 
 Ítalo Silveira
@@ -300,7 +300,7 @@ Stefan,
 
 one more idea for Real People Real SEO: a free homepage concept for one of your current prospects, built under your brand.
 Samples and speed scores: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-If you like it, the first full site is US$ 750 (US$ 900 after that).
+If you like it, the first full site is US$ 497 (US$ 900 after that).
 Want me to send the details?
 
 Ítalo Silveira
@@ -318,7 +318,7 @@ Stefan,
 
 mais uma ideia para a Real People Real SEO: um conceito de home grátis para um prospect atual de vocês, feito sob a sua marca.
 Amostras e notas de velocidade: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-Se gostarem, o primeiro site completo custa US$ 750 (US$ 900 depois).
+Se gostarem, o primeiro site completo custa US$ 497 (US$ 900 depois).
 Quer que eu envie os detalhes?
 
 Ítalo Silveira
@@ -421,7 +421,7 @@ Hi there,
 
 one more idea for Lokal Media House: a free homepage concept for one of your current prospects, built under your brand.
 Samples and speed scores: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-If you like it, the first full site is US$ 750 (US$ 900 after that).
+If you like it, the first full site is US$ 497 (US$ 900 after that).
 Want me to send the details?
 
 Ítalo Silveira
@@ -439,7 +439,7 @@ Olá,
 
 mais uma ideia para a Lokal Media House: um conceito de home grátis para um prospect atual de vocês, feito sob a sua marca.
 Amostras e notas de velocidade: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-Se gostarem, o primeiro site completo custa US$ 750 (US$ 900 depois).
+Se gostarem, o primeiro site completo custa US$ 497 (US$ 900 depois).
 Quer que eu envie os detalhes?
 
 Ítalo Silveira
@@ -542,7 +542,7 @@ Tony,
 
 one more idea for Lawnline Marketing: a free homepage concept for one of your current prospects, built under your brand.
 Samples and speed scores: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-If you like it, the first full site is US$ 750 (US$ 900 after that).
+If you like it, the first full site is US$ 497 (US$ 900 after that).
 Want me to send the details?
 
 Ítalo Silveira
@@ -560,7 +560,7 @@ Tony,
 
 mais uma ideia para a Lawnline Marketing: um conceito de home grátis para um prospect atual de vocês, feito sob a sua marca.
 Amostras e notas de velocidade: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-Se gostarem, o primeiro site completo custa US$ 750 (US$ 900 depois).
+Se gostarem, o primeiro site completo custa US$ 497 (US$ 900 depois).
 Quer que eu envie os detalhes?
 
 Ítalo Silveira
@@ -663,7 +663,7 @@ Kyle,
 
 one more idea for Service Ranker: a free homepage concept for one of your current prospects, built under your brand.
 Samples and speed scores: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-If you like it, the first full site is US$ 750 (US$ 900 after that).
+If you like it, the first full site is US$ 497 (US$ 900 after that).
 Want me to send the details?
 
 Ítalo Silveira
@@ -681,7 +681,7 @@ Kyle,
 
 mais uma ideia para a Service Ranker: um conceito de home grátis para um prospect atual de vocês, feito sob a sua marca.
 Amostras e notas de velocidade: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-Se gostarem, o primeiro site completo custa US$ 750 (US$ 900 depois).
+Se gostarem, o primeiro site completo custa US$ 497 (US$ 900 depois).
 Quer que eu envie os detalhes?
 
 Ítalo Silveira
@@ -784,7 +784,7 @@ Pam,
 
 one more idea for Pool Marketing Site: a free homepage concept for one of your current prospects, built under your brand.
 Samples and speed scores: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-If you like it, the first full site is US$ 750 (US$ 900 after that).
+If you like it, the first full site is US$ 497 (US$ 900 after that).
 Want me to send the details?
 
 Ítalo Silveira
@@ -802,7 +802,7 @@ Pam,
 
 mais uma ideia para a Pool Marketing Site: um conceito de home grátis para um prospect atual de vocês, feito sob a sua marca.
 Amostras e notas de velocidade: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-Se gostarem, o primeiro site completo custa US$ 750 (US$ 900 depois).
+Se gostarem, o primeiro site completo custa US$ 497 (US$ 900 depois).
 Quer que eu envie os detalhes?
 
 Ítalo Silveira
@@ -905,7 +905,7 @@ Paul,
 
 one more idea for Search Strength SEO: a free homepage concept for one of your current prospects, built under your brand.
 Samples and speed scores: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-If you like it, the first full site is US$ 750 (US$ 900 after that).
+If you like it, the first full site is US$ 497 (US$ 900 after that).
 Want me to send the details?
 
 Ítalo Silveira
@@ -923,7 +923,7 @@ Paul,
 
 mais uma ideia para a Search Strength SEO: um conceito de home grátis para um prospect atual de vocês, feito sob a sua marca.
 Amostras e notas de velocidade: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-Se gostarem, o primeiro site completo custa US$ 750 (US$ 900 depois).
+Se gostarem, o primeiro site completo custa US$ 497 (US$ 900 depois).
 Quer que eu envie os detalhes?
 
 Ítalo Silveira
@@ -1026,7 +1026,7 @@ Hi there,
 
 one more idea for Leads to Project: a free homepage concept for one of your current prospects, built under your brand.
 Samples and speed scores: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-If you like it, the first full site is US$ 750 (US$ 900 after that).
+If you like it, the first full site is US$ 497 (US$ 900 after that).
 Want me to send the details?
 
 Ítalo Silveira
@@ -1044,7 +1044,7 @@ Olá,
 
 mais uma ideia para a Leads to Project: um conceito de home grátis para um prospect atual de vocês, feito sob a sua marca.
 Amostras e notas de velocidade: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-Se gostarem, o primeiro site completo custa US$ 750 (US$ 900 depois).
+Se gostarem, o primeiro site completo custa US$ 497 (US$ 900 depois).
 Quer que eu envie os detalhes?
 
 Ítalo Silveira
@@ -1151,7 +1151,7 @@ Hi there,
 
 one more idea for Hook Agency: a free homepage concept for one of your current prospects, built under your brand.
 Samples and speed scores: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-If you like it, the first full site is US$ 750 (US$ 900 after that).
+If you like it, the first full site is US$ 497 (US$ 900 after that).
 Want me to send the details?
 
 Ítalo Silveira
@@ -1169,7 +1169,7 @@ Olá,
 
 mais uma ideia para a Hook Agency: um conceito de home grátis para um prospect atual de vocês, feito sob a sua marca.
 Amostras e notas de velocidade: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-Se gostarem, o primeiro site completo custa US$ 750 (US$ 900 depois).
+Se gostarem, o primeiro site completo custa US$ 497 (US$ 900 depois).
 Quer que eu envie os detalhes?
 
 Ítalo Silveira
@@ -1272,7 +1272,7 @@ Marcia,
 
 one more idea for Valve+Meter: a free homepage concept for one of your current prospects, built under your brand.
 Samples and speed scores: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-If you like it, the first full site is US$ 750 (US$ 900 after that).
+If you like it, the first full site is US$ 497 (US$ 900 after that).
 Want me to send the details?
 
 Ítalo Silveira
@@ -1290,7 +1290,7 @@ Marcia,
 
 mais uma ideia para a Valve+Meter: um conceito de home grátis para um prospect atual de vocês, feito sob a sua marca.
 Amostras e notas de velocidade: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-Se gostarem, o primeiro site completo custa US$ 750 (US$ 900 depois).
+Se gostarem, o primeiro site completo custa US$ 497 (US$ 900 depois).
 Quer que eu envie os detalhes?
 
 Ítalo Silveira
@@ -1393,7 +1393,7 @@ Hi there,
 
 one more idea for Contractor Marketing Pros: a free homepage concept for one of your current prospects, built under your brand.
 Samples and speed scores: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-If you like it, the first full site is US$ 750 (US$ 900 after that).
+If you like it, the first full site is US$ 497 (US$ 900 after that).
 Want me to send the details?
 
 Ítalo Silveira
@@ -1411,7 +1411,7 @@ Olá,
 
 mais uma ideia para a Contractor Marketing Pros: um conceito de home grátis para um prospect atual de vocês, feito sob a sua marca.
 Amostras e notas de velocidade: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-Se gostarem, o primeiro site completo custa US$ 750 (US$ 900 depois).
+Se gostarem, o primeiro site completo custa US$ 497 (US$ 900 depois).
 Quer que eu envie os detalhes?
 
 Ítalo Silveira
@@ -1514,7 +1514,7 @@ Hi there,
 
 one more idea for Lightning Leads Pro: a free homepage concept for one of your current prospects, built under your brand.
 Samples and speed scores: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-If you like it, the first full site is US$ 750 (US$ 900 after that).
+If you like it, the first full site is US$ 497 (US$ 900 after that).
 Want me to send the details?
 
 Ítalo Silveira
@@ -1532,7 +1532,7 @@ Olá,
 
 mais uma ideia para a Lightning Leads Pro: um conceito de home grátis para um prospect atual de vocês, feito sob a sua marca.
 Amostras e notas de velocidade: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-Se gostarem, o primeiro site completo custa US$ 750 (US$ 900 depois).
+Se gostarem, o primeiro site completo custa US$ 497 (US$ 900 depois).
 Quer que eu envie os detalhes?
 
 Ítalo Silveira
@@ -1635,7 +1635,7 @@ Hi there,
 
 one more idea for Construction Marketing Partners: a free homepage concept for one of your current prospects, built under your brand.
 Samples and speed scores: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-If you like it, the first full site is US$ 750 (US$ 900 after that).
+If you like it, the first full site is US$ 497 (US$ 900 after that).
 Want me to send the details?
 
 Ítalo Silveira
@@ -1653,7 +1653,7 @@ Olá,
 
 mais uma ideia para a Construction Marketing Partners: um conceito de home grátis para um prospect atual de vocês, feito sob a sua marca.
 Amostras e notas de velocidade: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-Se gostarem, o primeiro site completo custa US$ 750 (US$ 900 depois).
+Se gostarem, o primeiro site completo custa US$ 497 (US$ 900 depois).
 Quer que eu envie os detalhes?
 
 Ítalo Silveira
@@ -1756,7 +1756,7 @@ Brian,
 
 one more idea for Foxxr: a free homepage concept for one of your current prospects, built under your brand.
 Samples and speed scores: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-If you like it, the first full site is US$ 750 (US$ 900 after that).
+If you like it, the first full site is US$ 497 (US$ 900 after that).
 Want me to send the details?
 
 Ítalo Silveira
@@ -1774,7 +1774,7 @@ Brian,
 
 mais uma ideia para a Foxxr: um conceito de home grátis para um prospect atual de vocês, feito sob a sua marca.
 Amostras e notas de velocidade: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-Se gostarem, o primeiro site completo custa US$ 750 (US$ 900 depois).
+Se gostarem, o primeiro site completo custa US$ 497 (US$ 900 depois).
 Quer que eu envie os detalhes?
 
 Ítalo Silveira
@@ -1877,7 +1877,7 @@ Chris,
 
 one more idea for Garage Door Marketers: a free homepage concept for one of your current prospects, built under your brand.
 Samples and speed scores: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-If you like it, the first full site is US$ 750 (US$ 900 after that).
+If you like it, the first full site is US$ 497 (US$ 900 after that).
 Want me to send the details?
 
 Ítalo Silveira
@@ -1895,7 +1895,7 @@ Chris,
 
 mais uma ideia para a Garage Door Marketers: um conceito de home grátis para um prospect atual de vocês, feito sob a sua marca.
 Amostras e notas de velocidade: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-Se gostarem, o primeiro site completo custa US$ 750 (US$ 900 depois).
+Se gostarem, o primeiro site completo custa US$ 497 (US$ 900 depois).
 Quer que eu envie os detalhes?
 
 Ítalo Silveira
@@ -1998,7 +1998,7 @@ Christos,
 
 one more idea for Rise Marketing HQ: a free homepage concept for one of your current prospects, built under your brand.
 Samples and speed scores: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-If you like it, the first full site is US$ 750 (US$ 900 after that).
+If you like it, the first full site is US$ 497 (US$ 900 after that).
 Want me to send the details?
 
 Ítalo Silveira
@@ -2016,7 +2016,7 @@ Christos,
 
 mais uma ideia para a Rise Marketing HQ: um conceito de home grátis para um prospect atual de vocês, feito sob a sua marca.
 Amostras e notas de velocidade: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-Se gostarem, o primeiro site completo custa US$ 750 (US$ 900 depois).
+Se gostarem, o primeiro site completo custa US$ 497 (US$ 900 depois).
 Quer que eu envie os detalhes?
 
 Ítalo Silveira
@@ -2119,7 +2119,7 @@ Tristin,
 
 one more idea for Momentum Marketing DFW: a free homepage concept for one of your current prospects, built under your brand.
 Samples and speed scores: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-If you like it, the first full site is US$ 750 (US$ 900 after that).
+If you like it, the first full site is US$ 497 (US$ 900 after that).
 Want me to send the details?
 
 Ítalo Silveira
@@ -2137,7 +2137,7 @@ Tristin,
 
 mais uma ideia para a Momentum Marketing DFW: um conceito de home grátis para um prospect atual de vocês, feito sob a sua marca.
 Amostras e notas de velocidade: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-Se gostarem, o primeiro site completo custa US$ 750 (US$ 900 depois).
+Se gostarem, o primeiro site completo custa US$ 497 (US$ 900 depois).
 Quer que eu envie os detalhes?
 
 Ítalo Silveira
@@ -2240,7 +2240,7 @@ Nick,
 
 one more idea for Icepick Web Design & SEO: a free homepage concept for one of your current prospects, built under your brand.
 Samples and speed scores: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-If you like it, the first full site is US$ 750 (US$ 900 after that).
+If you like it, the first full site is US$ 497 (US$ 900 after that).
 Want me to send the details?
 
 Ítalo Silveira
@@ -2258,7 +2258,7 @@ Nick,
 
 mais uma ideia para a Icepick Web Design & SEO: um conceito de home grátis para um prospect atual de vocês, feito sob a sua marca.
 Amostras e notas de velocidade: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
-Se gostarem, o primeiro site completo custa US$ 750 (US$ 900 depois).
+Se gostarem, o primeiro site completo custa US$ 497 (US$ 900 depois).
 Quer que eu envie os detalhes?
 
 Ítalo Silveira

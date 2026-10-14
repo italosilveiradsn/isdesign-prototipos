@@ -1,6 +1,6 @@
 # E-mails white label (versão 2, preço novo e link novo)
 
-Preço: US$ 900 por site, US$ 750 no primeiro. Link do portfólio: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
+Preço: US$ 900 por site, US$ 497 no primeiro. Link do portfólio: https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
 O link antigo (/portfolio/) continua no ar com o preço antigo, para os e-mails já enviados.
 
 
@@ -21,7 +21,7 @@ I'm Ítalo, a web designer in Brazil. I build original, fast websites for home s
 - Home + 4 pages, delivered in 5 days
 - Lighthouse mobile performance of 92 to 100 on the samples
 - Your brand only: nothing points back to me
-- US$ 900 per site (US$ 750 for your first one), and you set the price your client pays
+- US$ 900 per site (US$ 497 pilot for your first one), and you set the price your client pays
 
 Nine recent design concepts (three of them pool companies), each with its speed score and a live link:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
@@ -54,7 +54,7 @@ Sou o Ítalo, web designer no Brasil. Crio sites originais e rápidos para empre
 - Home + 4 páginas, entregues em 5 dias
 - Nota de desempenho Lighthouse no celular entre 92 e 100 nas amostras
 - Só a marca de vocês: nada aponta para mim
-- US$ 900 por site (US$ 750 no primeiro), e vocês definem o preço que o cliente paga
+- US$ 900 por site (US$ 497 de piloto no primeiro), e vocês definem o preço que o cliente paga
 
 Nove conceitos recentes (três deles de empresas de piscinas), cada um com nota de velocidade e link ao vivo:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
@@ -92,7 +92,7 @@ I'm Ítalo, a web designer in Brazil. I build original, fast websites for home s
 - Home + 4 pages, delivered in 5 days
 - Lighthouse mobile performance of 92 to 100 on the samples
 - Your brand only: nothing points back to me
-- US$ 900 per site (US$ 750 for your first one), and you set the price your client pays
+- US$ 900 per site (US$ 497 pilot for your first one), and you set the price your client pays
 
 Nine recent design concepts, each with its speed score and a live link:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
@@ -125,7 +125,7 @@ Sou o Ítalo, web designer no Brasil. Crio sites originais e rápidos para empre
 - Home + 4 páginas, entregues em 5 dias
 - Nota de desempenho Lighthouse no celular entre 92 e 100 nas amostras
 - Só a marca de vocês: nada aponta para mim
-- US$ 900 por site (US$ 750 no primeiro), e vocês definem o preço que o cliente paga
+- US$ 900 por site (US$ 497 de piloto no primeiro), e vocês definem o preço que o cliente paga
 
 Nove conceitos recentes, cada um com nota de velocidade e link ao vivo:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
@@ -163,7 +163,7 @@ I'm Ítalo, a web designer in Brazil. I build original, fast websites for the ki
 - Home + 4 pages, delivered in 5 days
 - Lighthouse mobile performance of 92 to 100 on the samples
 - Your brand only: nothing points back to me
-- US$ 900 per site (US$ 750 for your first one), and you set the price your client pays
+- US$ 900 per site (US$ 497 pilot for your first one), and you set the price your client pays
 
 Nine recent design concepts, each with its speed score and a live link:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
@@ -196,7 +196,7 @@ Sou o Ítalo, web designer no Brasil. Crio sites originais e rápidos para os ti
 - Home + 4 páginas, entregues em 5 dias
 - Nota de desempenho Lighthouse no celular entre 92 e 100 nas amostras
 - Só a marca de vocês: nada aponta para mim
-- US$ 900 por site (US$ 750 no primeiro), e vocês definem o preço que o cliente paga
+- US$ 900 por site (US$ 497 de piloto no primeiro), e vocês definem o preço que o cliente paga
 
 Nove conceitos recentes, cada um com nota de velocidade e link ao vivo:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
@@ -234,7 +234,7 @@ I'm Ítalo, a web designer in Brazil. I build original, fast websites for home s
 - Home + 4 pages, delivered in 5 days
 - Lighthouse mobile performance of 92 to 100 on the samples
 - Your brand only: nothing points back to me
-- US$ 900 per site (US$ 750 for your first one), and you set the price your client pays
+- US$ 900 per site (US$ 497 pilot for your first one), and you set the price your client pays
 
 Nine recent design concepts (plumbing, electrical and roofing among them), each with its speed score and a live link:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
@@ -267,7 +267,7 @@ Sou o Ítalo, web designer no Brasil. Crio sites originais e rápidos para empre
 - Home + 4 páginas, entregues em 5 dias
 - Nota de desempenho Lighthouse no celular entre 92 e 100 nas amostras
 - Só a marca de vocês: nada aponta para mim
-- US$ 900 por site (US$ 750 no primeiro), e vocês definem o preço que o cliente paga
+- US$ 900 por site (US$ 497 de piloto no primeiro), e vocês definem o preço que o cliente paga
 
 Nove conceitos recentes (entre eles encanamento, elétrica e telhado), cada um com nota de velocidade e link ao vivo:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
@@ -305,7 +305,7 @@ I'm Ítalo, a web designer in Brazil. I build original, fast websites for home s
 - Home + 4 pages, delivered in 5 days
 - Lighthouse mobile performance of 92 to 100 on the samples
 - Your brand only: nothing points back to me
-- US$ 900 per site (US$ 750 for your first one), and you set the price your client pays
+- US$ 900 per site (US$ 497 pilot for your first one), and you set the price your client pays
 
 Nine recent design concepts (one of them a landscaping company), each with its speed score and a live link:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
@@ -338,7 +338,7 @@ Sou o Ítalo, web designer no Brasil. Crio sites originais e rápidos para empre
 - Home + 4 páginas, entregues em 5 dias
 - Nota de desempenho Lighthouse no celular entre 92 e 100 nas amostras
 - Só a marca de vocês: nada aponta para mim
-- US$ 900 por site (US$ 750 no primeiro), e vocês definem o preço que o cliente paga
+- US$ 900 por site (US$ 497 de piloto no primeiro), e vocês definem o preço que o cliente paga
 
 Nove conceitos recentes (um deles de paisagismo), cada um com nota de velocidade e link ao vivo:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
@@ -376,7 +376,7 @@ I'm Ítalo, a web designer in Brazil. I build original, fast websites for home s
 - Home + 4 pages, delivered in 5 days
 - Lighthouse mobile performance of 92 to 100 on the samples
 - Your brand only: nothing points back to me
-- US$ 900 per site (US$ 750 for your first one), and you set the price your client pays
+- US$ 900 per site (US$ 497 pilot for your first one), and you set the price your client pays
 
 Nine recent design concepts, each with its speed score and a live link:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
@@ -409,7 +409,7 @@ Sou o Ítalo, web designer no Brasil. Crio sites originais e rápidos para empre
 - Home + 4 páginas, entregues em 5 dias
 - Nota de desempenho Lighthouse no celular entre 92 e 100 nas amostras
 - Só a marca de vocês: nada aponta para mim
-- US$ 900 por site (US$ 750 no primeiro), e vocês definem o preço que o cliente paga
+- US$ 900 por site (US$ 497 de piloto no primeiro), e vocês definem o preço que o cliente paga
 
 Nove conceitos recentes, cada um com nota de velocidade e link ao vivo:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
@@ -447,7 +447,7 @@ I'm Ítalo, a web designer in Brazil. I build original, fast websites for home s
 - Home + 4 pages, delivered in 5 days
 - Lighthouse mobile performance of 92 to 100 on the samples
 - Your brand only: nothing points back to me
-- US$ 900 per site (US$ 750 for your first one), and you set the price your client pays
+- US$ 900 per site (US$ 497 pilot for your first one), and you set the price your client pays
 
 Nine recent design concepts (three of them pool companies), each with its speed score and a live link:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
@@ -480,7 +480,7 @@ Sou o Ítalo, web designer no Brasil. Crio sites originais e rápidos para empre
 - Home + 4 páginas, entregues em 5 dias
 - Nota de desempenho Lighthouse no celular entre 92 e 100 nas amostras
 - Só a marca de vocês: nada aponta para mim
-- US$ 900 por site (US$ 750 no primeiro), e vocês definem o preço que o cliente paga
+- US$ 900 por site (US$ 497 de piloto no primeiro), e vocês definem o preço que o cliente paga
 
 Nove conceitos recentes (três deles de empresas de piscinas), cada um com nota de velocidade e link ao vivo:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
@@ -518,7 +518,7 @@ I'm Ítalo, a web designer in Brazil. I build original, fast websites for home s
 - Home + 4 pages, delivered in 5 days
 - Lighthouse mobile performance of 92 to 100 on the samples
 - Your brand only: nothing points back to me
-- US$ 900 per site (US$ 750 for your first one), and you set the price your client pays
+- US$ 900 per site (US$ 497 pilot for your first one), and you set the price your client pays
 
 Nine recent design concepts (roofing among them), each with its speed score and a live link:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
@@ -551,7 +551,7 @@ Sou o Ítalo, web designer no Brasil. Crio sites originais e rápidos para empre
 - Home + 4 páginas, entregues em 5 dias
 - Nota de desempenho Lighthouse no celular entre 92 e 100 nas amostras
 - Só a marca de vocês: nada aponta para mim
-- US$ 900 por site (US$ 750 no primeiro), e vocês definem o preço que o cliente paga
+- US$ 900 por site (US$ 497 de piloto no primeiro), e vocês definem o preço que o cliente paga
 
 Nove conceitos recentes (entre eles telhado), cada um com nota de velocidade e link ao vivo:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
@@ -589,7 +589,7 @@ I'm Ítalo, a web designer in Brazil. I build original, fast websites for home s
 - Home + 4 pages, delivered in 5 days
 - Lighthouse mobile performance of 92 to 100 on the samples
 - Your brand only: nothing points back to me
-- US$ 900 per site (US$ 750 for your first one), and you set the price your client pays
+- US$ 900 per site (US$ 497 pilot for your first one), and you set the price your client pays
 
 Nine recent design concepts, each with its speed score and a live link:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
@@ -622,7 +622,7 @@ Sou o Ítalo, web designer no Brasil. Crio sites originais e rápidos para empre
 - Home + 4 páginas, entregues em 5 dias
 - Nota de desempenho Lighthouse no celular entre 92 e 100 nas amostras
 - Só a marca de vocês: nada aponta para mim
-- US$ 900 por site (US$ 750 no primeiro), e vocês definem o preço que o cliente paga
+- US$ 900 por site (US$ 497 de piloto no primeiro), e vocês definem o preço que o cliente paga
 
 Nove conceitos recentes, cada um com nota de velocidade e link ao vivo:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
@@ -662,7 +662,7 @@ I'm Ítalo, a web designer in Brazil. I build original, fast websites for home s
 - Home + 4 pages, delivered in 5 days
 - Lighthouse mobile performance of 92 to 100 on the samples
 - Your brand only: nothing points back to me
-- US$ 900 per site (US$ 750 for your first one), and you set the price your client pays
+- US$ 900 per site (US$ 497 pilot for your first one), and you set the price your client pays
 
 Nine recent design concepts, each with its speed score and a live link:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
@@ -697,7 +697,7 @@ Sou o Ítalo, web designer no Brasil. Crio sites originais e rápidos para empre
 - Home + 4 páginas, entregues em 5 dias
 - Nota de desempenho Lighthouse no celular entre 92 e 100 nas amostras
 - Só a marca de vocês: nada aponta para mim
-- US$ 900 por site (US$ 750 no primeiro), e vocês definem o preço que o cliente paga
+- US$ 900 por site (US$ 497 de piloto no primeiro), e vocês definem o preço que o cliente paga
 
 Nove conceitos recentes, cada um com nota de velocidade e link ao vivo:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
@@ -735,7 +735,7 @@ I'm Ítalo, a web designer in Brazil. I build original, fast websites for the ki
 - Home + 4 pages, delivered in 5 days
 - Lighthouse mobile performance of 92 to 100 on the samples
 - Your brand only: nothing points back to me
-- US$ 900 per site (US$ 750 for your first one), and you set the price your client pays
+- US$ 900 per site (US$ 497 pilot for your first one), and you set the price your client pays
 
 Nine recent design concepts, each with its speed score and a live link:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
@@ -768,7 +768,7 @@ Sou o Ítalo, web designer no Brasil. Crio sites originais e rápidos para o tip
 - Home + 4 páginas, entregues em 5 dias
 - Nota de desempenho Lighthouse no celular entre 92 e 100 nas amostras
 - Só a marca de vocês: nada aponta para mim
-- US$ 900 por site (US$ 750 no primeiro), e vocês definem o preço que o cliente paga
+- US$ 900 por site (US$ 497 de piloto no primeiro), e vocês definem o preço que o cliente paga
 
 Nove conceitos recentes, cada um com nota de velocidade e link ao vivo:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
@@ -806,7 +806,7 @@ I'm Ítalo, a web designer in Brazil. I build original, fast websites for roofin
 - Home + 4 pages, delivered in 5 days
 - Lighthouse mobile performance of 92 to 100 on the samples
 - Your brand only: nothing points back to me
-- US$ 900 per site (US$ 750 for your first one), and you set the price your client pays
+- US$ 900 per site (US$ 497 pilot for your first one), and you set the price your client pays
 
 Nine recent design concepts (including a roofing company), each with its speed score and a live link:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
@@ -839,7 +839,7 @@ Sou o Ítalo, web designer no Brasil. Crio sites originais e rápidos para empre
 - Home + 4 páginas, entregues em 5 dias
 - Nota de desempenho Lighthouse no celular entre 92 e 100 nas amostras
 - Só a marca de vocês: nada aponta para mim
-- US$ 900 por site (US$ 750 no primeiro), e vocês definem o preço que o cliente paga
+- US$ 900 por site (US$ 497 de piloto no primeiro), e vocês definem o preço que o cliente paga
 
 Nove conceitos recentes (incluindo uma empresa de telhados), cada um com nota de velocidade e link ao vivo:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
@@ -877,7 +877,7 @@ I'm Ítalo, a web designer in Brazil. I build original, fast websites for those 
 - Home + 4 pages, delivered in 5 days
 - Lighthouse mobile performance of 92 to 100 on the samples
 - Your brand only: nothing points back to me
-- US$ 900 per site (US$ 750 for your first one), and you set the price your client pays
+- US$ 900 per site (US$ 497 pilot for your first one), and you set the price your client pays
 
 Nine recent design concepts, each with its speed score and a live link:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
@@ -910,7 +910,7 @@ Sou o Ítalo, web designer no Brasil. Crio sites originais e rápidos para esses
 - Home + 4 páginas, entregues em 5 dias
 - Nota de desempenho Lighthouse no celular entre 92 e 100 nas amostras
 - Só a marca de vocês: nada aponta para mim
-- US$ 900 por site (US$ 750 no primeiro), e vocês definem o preço que o cliente paga
+- US$ 900 por site (US$ 497 de piloto no primeiro), e vocês definem o preço que o cliente paga
 
 Nove conceitos recentes, cada um com nota de velocidade e link ao vivo:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
@@ -948,7 +948,7 @@ I'm Ítalo, a web designer in Brazil. I build original, fast websites for contra
 - Home + 4 pages, delivered in 5 days
 - Lighthouse mobile performance of 92 to 100 on the samples
 - Your brand only: nothing points back to me
-- US$ 900 per site (US$ 750 for your first one), and you set the price your client pays
+- US$ 900 per site (US$ 497 pilot for your first one), and you set the price your client pays
 
 Nine recent design concepts, each with its speed score and a live link:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
@@ -981,7 +981,7 @@ Sou o Ítalo, web designer no Brasil. Crio sites originais e rápidos para prest
 - Home + 4 páginas, entregues em 5 dias
 - Nota de desempenho Lighthouse no celular entre 92 e 100 nas amostras
 - Só a marca de vocês: nada aponta para mim
-- US$ 900 por site (US$ 750 no primeiro), e vocês definem o preço que o cliente paga
+- US$ 900 por site (US$ 497 de piloto no primeiro), e vocês definem o preço que o cliente paga
 
 Nove conceitos recentes, cada um com nota de velocidade e link ao vivo:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
@@ -1019,7 +1019,7 @@ I'm Ítalo, a web designer in Brazil. I build original, fast websites for the sa
 - Home + 4 pages, delivered in 5 days
 - Lighthouse mobile performance of 92 to 100 on the samples
 - Your brand only: nothing points back to me
-- US$ 900 per site (US$ 750 for your first one), and you set the price your client pays
+- US$ 900 per site (US$ 497 pilot for your first one), and you set the price your client pays
 
 Nine recent design concepts (roofing, plumbing, electrical, pools, painting and landscaping among them), each with its speed score and a live link:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
@@ -1052,7 +1052,7 @@ Sou o Ítalo, web designer no Brasil. Crio sites originais e rápidos para os me
 - Home + 4 páginas, entregues em 5 dias
 - Nota de desempenho Lighthouse no celular entre 92 e 100 nas amostras
 - Só a marca de vocês: nada aponta para mim
-- US$ 900 por site (US$ 750 no primeiro), e vocês definem o preço que o cliente paga
+- US$ 900 por site (US$ 497 de piloto no primeiro), e vocês definem o preço que o cliente paga
 
 Nove conceitos recentes (entre eles telhado, encanamento, elétrica, piscinas, pintura e paisagismo), cada um com nota de velocidade e link ao vivo:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
@@ -1090,7 +1090,7 @@ I'm Ítalo, a web designer in Brazil. I build original, fast websites for home s
 - Home + 4 pages, delivered in 5 days
 - Lighthouse mobile performance of 92 to 100 on the samples
 - Your brand only: nothing points back to me
-- US$ 900 per site (US$ 750 for your first one), and you set the price your client pays
+- US$ 900 per site (US$ 497 pilot for your first one), and you set the price your client pays
 
 Nine recent design concepts from other trades, each with its speed score and a live link:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
@@ -1123,7 +1123,7 @@ Sou o Ítalo, web designer no Brasil. Crio sites originais e rápidos para ofíc
 - Home + 4 páginas, entregues em 5 dias
 - Nota de desempenho Lighthouse no celular entre 92 e 100 nas amostras
 - Só a marca de vocês: nada aponta para mim
-- US$ 900 por site (US$ 750 no primeiro), e vocês definem o preço que o cliente paga
+- US$ 900 por site (US$ 497 de piloto no primeiro), e vocês definem o preço que o cliente paga
 
 Nove conceitos recentes de outros ofícios, cada um com nota de velocidade e link ao vivo:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
@@ -1161,7 +1161,7 @@ I'm Ítalo, a web designer in Brazil. I build original, fast websites for local 
 - Home + 4 pages, delivered in 5 days
 - Lighthouse mobile performance of 92 to 100 on the samples
 - Your brand only: nothing points back to me
-- US$ 900 per site (US$ 750 for your first one), and you set the price your client pays
+- US$ 900 per site (US$ 497 pilot for your first one), and you set the price your client pays
 
 Nine recent design concepts, each with its speed score and a live link:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
@@ -1194,7 +1194,7 @@ Sou o Ítalo, web designer no Brasil. Crio sites originais e rápidos para negó
 - Home + 4 páginas, entregues em 5 dias
 - Nota de desempenho Lighthouse no celular entre 92 e 100 nas amostras
 - Só a marca de vocês: nada aponta para mim
-- US$ 900 por site (US$ 750 no primeiro), e vocês definem o preço que o cliente paga
+- US$ 900 por site (US$ 497 de piloto no primeiro), e vocês definem o preço que o cliente paga
 
 Nove conceitos recentes, cada um com nota de velocidade e link ao vivo:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
@@ -1232,7 +1232,7 @@ I'm Ítalo, a web designer in Brazil. I build original, fast websites for local 
 - Home + 4 pages, delivered in 5 days
 - Lighthouse mobile performance of 92 to 100 on the samples
 - Your brand only: nothing points back to me
-- US$ 900 per site (US$ 750 for your first one), and you set the price your client pays
+- US$ 900 per site (US$ 497 pilot for your first one), and you set the price your client pays
 
 Nine recent design concepts, each with its speed score and a live link:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
@@ -1265,7 +1265,7 @@ Sou o Ítalo, web designer no Brasil. Crio sites originais e rápidos para negó
 - Home + 4 páginas, entregues em 5 dias
 - Nota de desempenho Lighthouse no celular entre 92 e 100 nas amostras
 - Só a marca de vocês: nada aponta para mim
-- US$ 900 por site (US$ 750 no primeiro), e vocês definem o preço que o cliente paga
+- US$ 900 por site (US$ 497 de piloto no primeiro), e vocês definem o preço que o cliente paga
 
 Nove conceitos recentes, cada um com nota de velocidade e link ao vivo:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
@@ -1303,7 +1303,7 @@ I'm Ítalo, a web designer in Brazil. I build original, fast websites for local 
 - Home + 4 pages, delivered in 5 days
 - Lighthouse mobile performance of 92 to 100 on the samples
 - Your brand only: nothing points back to me
-- US$ 900 per site (US$ 750 for your first one), and you set the price your client pays
+- US$ 900 per site (US$ 497 pilot for your first one), and you set the price your client pays
 
 Nine recent design concepts, each with its speed score and a live link:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
@@ -1336,7 +1336,7 @@ Sou o Ítalo, web designer no Brasil. Crio sites originais e rápidos para negó
 - Home + 4 páginas, entregues em 5 dias
 - Nota de desempenho Lighthouse no celular entre 92 e 100 nas amostras
 - Só a marca de vocês: nada aponta para mim
-- US$ 900 por site (US$ 750 no primeiro), e vocês definem o preço que o cliente paga
+- US$ 900 por site (US$ 497 de piloto no primeiro), e vocês definem o preço que o cliente paga
 
 Nove conceitos recentes, cada um com nota de velocidade e link ao vivo:
 https://italosilveiradsn.github.io/isdesign-prototipos/parceiros/
