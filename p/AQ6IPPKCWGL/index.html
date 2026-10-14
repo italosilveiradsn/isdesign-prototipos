@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Book 8 Editora | Elevando histórias à autoridade</title>
+<meta name="description" content="A Book 8 Editora transforma a trajetória de empreendedores experientes em livros de autoridade, com curadoria artística do briefing ao lançamento.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#12141c">
+<link rel="icon" href="img/simbolo.webp" type="image/webp">
+<link rel="preload" href="fonts/InstrumentSerif-normal-400.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"IS";src:url(fonts/InstrumentSerif-normal-400.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"IS";src:url(fonts/InstrumentSerif-italic-400.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"IT";src:url(fonts/InterTight.woff2) format("woff2");font-weight:100 900;font-display:swap}
+:root{--ink:#12141c;--ink2:#1c2030;--ink3:#262b3f;--paper:#f3eee2;--paper2:#e9e0cb;--gold:#b8923f;--goldl:#d8b878;--goldd:#8f6d2a;--seal:#7c2a2a;--ton:#f3eee2;--tons:#b9b6ac;--top:#1b1a17;--tops:#55503f;
+--serif:"IS",Georgia,serif;--sans:"IT",system-ui,sans-serif;--ease:cubic-bezier(.2,.7,.2,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+section{scroll-margin-top:70px}
+body{background:var(--ink);color:var(--ton);font:400 17px/1.6 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit;text-decoration:none}
+.wrap{width:min(1180px,100% - 48px);margin-inline:auto}
+.eb{display:block;font:600 12px/1.5 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+em{font-style:italic;color:var(--goldl)}
+h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.015em}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:2px;font:600 14px/1 var(--sans);letter-spacing:.04em;transition:transform .3s var(--ease),background .3s,color .3s,border-color .3s}
+.btn.g{background:var(--gold);color:#17120a}.btn.g:hover{background:var(--goldl);transform:translateY(-2px)}
+.btn.o{border:1px solid rgba(243,238,226,.35);color:var(--ton)}.btn.o:hover{border-color:var(--goldl);color:var(--goldl)}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}.rv.in{opacity:1;transform:none}
+/* header */
+header{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .4s,backdrop-filter .4s,border-color .4s;border-bottom:1px solid transparent}
+header.s{background:rgba(18,20,28,.82);backdrop-filter:blur(12px);border-color:rgba(243,238,226,.08)}
+.bar{background:var(--gold);color:#17120a;text-align:center;font:600 12px/1.3 var(--sans);letter-spacing:.04em;padding:9px 16px;max-height:60px;overflow:hidden;transition:max-height .35s var(--ease),padding .35s var(--ease)}
+header.s .bar{max-height:0;padding-top:0;padding-bottom:0}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{display:flex;align-items:center;gap:12px;font:400 22px/1 var(--serif)}.brand img{width:30px;height:auto}.brand .wm{display:inline-flex;align-items:baseline;gap:.26em;white-space:nowrap}.brand em{color:var(--goldl)}
+.links{display:flex;align-items:center;gap:30px;font:500 14px/1 var(--sans);color:var(--tons)}.links a:hover{color:var(--ton)}
+.links .btn{padding:12px 18px;color:#17120a}
+/* hero */
+.hero{min-height:100svh;display:grid;align-items:center;padding:140px 0 70px;position:relative;overflow:hidden;background:radial-gradient(60% 60% at var(--mx,78%) var(--my,45%),rgba(184,146,63,.16),transparent 70%),var(--ink)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(3rem,6.6vw,6.2rem);line-height:.98;margin:22px 0 26px}
+.hero p.lead{font-size:clamp(1.05rem,1.4vw,1.25rem);color:var(--tons);max-width:34em;margin-bottom:34px}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap}
+.stagebook{perspective:1700px;display:grid;place-items:center;min-height:640px;position:relative}
+.stagebook:before{content:"";position:absolute;width:380px;height:70px;bottom:36px;background:radial-gradient(closest-side,rgba(0,0,0,.65),transparent);filter:blur(6px)}
+.cap{position:absolute;bottom:0;left:50%;transform:translateX(-50%);white-space:nowrap;font:600 12px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--goldl);padding:14px 4px;border-bottom:1px solid rgba(216,184,120,.45);transition:color .3s,border-color .3s}.cap b{display:inline-block;transition:transform .3s var(--ease)}.cap:hover{color:var(--ton);border-color:var(--ton)}.cap:hover b{transform:translateX(5px)}
+/* 3D book */
+.tilt{transform-style:preserve-3d;will-change:transform}
+.glare{position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .5s;background:radial-gradient(420px circle at var(--gx,30%) var(--gy,20%),rgba(255,255,255,.16),transparent 62%);mix-blend-mode:screen}
+.hero:hover .glare{opacity:1}
+.book{--w:350px;--h:515px;--d:60px;position:relative;width:var(--w);height:var(--h);transform-style:preserve-3d;animation:sway 10s ease-in-out infinite alternate}
+@keyframes sway{from{transform:rotateX(5deg) rotateY(-36deg)}to{transform:rotateX(5deg) rotateY(-10deg)}}
+.book>div{position:absolute;backface-visibility:hidden}
+.book .f{inset:0;transform:translateZ(calc(var(--d)/2))}
+.book .b{inset:0;transform:rotateY(180deg) translateZ(calc(var(--d)/2));background:#1a1d2b}
+.book .sp{top:0;height:100%;width:var(--d);left:calc(50% - var(--d)/2);transform:rotateY(-90deg) translateZ(calc(var(--w)/2));background:linear-gradient(90deg,#0d0f16,#1c2030 40%,#0d0f16);display:grid;place-items:center}
+.book .sp span{writing-mode:vertical-rl;transform:rotate(180deg);font:400 20px/1 var(--serif);color:var(--goldl);letter-spacing:.06em;white-space:nowrap}
+.book .pg{top:3px;height:calc(100% - 6px);width:var(--d);left:calc(50% - var(--d)/2);transform:rotateY(90deg) translateZ(calc(var(--w)/2 - 2px));background:repeating-linear-gradient(90deg,#efe8d6 0 2px,#d9cfb6 2px 3px)}
+/* covers */
+.cv{width:100%;height:100%;position:relative;display:flex;flex-direction:column;justify-content:space-between;padding:26px 24px 22px;overflow:hidden;box-shadow:inset 0 0 0 1px rgba(255,255,255,.04);background-image:linear-gradient(90deg,rgba(0,0,0,.35),rgba(0,0,0,0) 7%,rgba(255,255,255,.05) 8%,rgba(0,0,0,0) 10%)}
+.cv .top{font:600 9px/1.2 var(--sans);letter-spacing:.24em;text-transform:uppercase;opacity:.85}
+.cv .tt{font:400 clamp(1.7rem,2.3vw,2.25rem)/1 var(--serif);letter-spacing:-.01em}
+.cv .tt i{display:block;font-size:.5em;letter-spacing:.02em;margin-top:12px;font-style:italic;opacity:.9}
+.book .cv .tt{font-size:3rem}.book .cv .tt i{font-size:.36em;line-height:1.3;margin-top:16px}
+.cv .au{font:600 9px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;display:flex;justify-content:space-between;align-items:center}
+.cv .au img{width:22px}
+.cv .ln{position:absolute;inset:14px;border:1px solid currentColor;opacity:.35;pointer-events:none}
+.c1{background-color:#151a2e;color:var(--goldl)}
+.c2{background-color:#7c2a2a;color:#f3e3c3}
+.c3{background-color:#f3eee2;color:#1b1a17}
+.c4{background-color:#1f3a34;color:#e3d3a8}
+.c1 .tt,.c4 .tt{color:#f3eee2}.c2 .tt{color:#fbf2dc}
+/* strip */
+.strip{background:var(--gold);color:#17120a;overflow:hidden;white-space:nowrap;padding:16px 0;font:600 13px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase}
+.strip div{display:inline-block;animation:mq 38s linear infinite}.strip span{margin:0 26px}.strip i{font-style:normal;opacity:.55}
+@keyframes mq{to{transform:translateX(-50%)}}
+/* manifesto */
+.man{background:var(--paper);color:var(--top);padding:clamp(80px,12vw,150px) 0}
+.man h2{font-size:clamp(2.6rem,6.6vw,6rem);line-height:1;max-width:14em;margin:20px 0 60px}
+.man h2 em{color:var(--goldd)}
+.man .eb{color:var(--goldd)}
+.pil{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(27,26,23,.25)}
+.pil div{padding:30px 32px 10px;border-right:1px solid rgba(27,26,23,.15)}.pil div:first-child{padding-left:0}.pil div:last-child{border:0;padding-right:0}
+.pil b{display:block;font:italic 400 1.1rem/1 var(--serif);color:var(--goldd);margin-bottom:14px}
+.pil h3{font-size:1.9rem;line-height:1.05;margin-bottom:14px}
+.pil p{color:var(--tops);font-size:15.5px}
+/* process */
+.proc{padding:clamp(80px,11vw,140px) 0;background:var(--ink)}
+.proc .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}
+.proc .side{position:sticky;top:120px;align-self:start}
+.proc h2{font-size:clamp(2.4rem,5vw,4.4rem);line-height:1;margin:18px 0 22px}
+.proc .side p{color:var(--tons);max-width:26em}
+.prog{margin-top:34px;height:2px;background:rgba(243,238,226,.14);position:relative;max-width:260px}.prog i{position:absolute;inset:0 auto 0 0;width:0;background:var(--gold)}
+.steps{position:relative;list-style:none}
+.steps:before{content:"";position:absolute;left:34px;top:10px;bottom:10px;width:1px;background:rgba(243,238,226,.14)}
+.steps li{display:grid;grid-template-columns:70px 1fr auto;gap:22px;padding:30px 0;border-bottom:1px solid rgba(243,238,226,.08);opacity:.72;transition:opacity .5s}
+.steps li.on{opacity:1}
+.steps .n{text-align:center;font:italic 400 2.4rem/1 var(--serif);color:var(--goldl);background:var(--ink);position:relative;z-index:1;align-self:start}
+.steps h3{font-size:1.9rem;line-height:1.05;margin-bottom:8px}
+.steps p{color:var(--tons);font-size:15.5px;max-width:30em}
+.steps .t{font:600 11px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--gold);padding-top:12px}
+/* shelf */
+.shelf{background:var(--paper2);color:var(--top);padding:clamp(80px,11vw,140px) 0 clamp(70px,9vw,110px)}
+.shelf .eb{color:var(--goldd)}
+.shelf h2{font-size:clamp(2.4rem,5.6vw,5rem);line-height:1;margin:18px 0 18px;max-width:12em}.shelf h2 em{color:var(--goldd)}
+.shelf p.i{color:var(--tops);max-width:34em;margin-bottom:60px}
+.row{display:grid;grid-template-columns:repeat(5,1fr);gap:26px;align-items:end;padding-bottom:26px;border-bottom:14px solid #b79b63;position:relative}
+.row:after{content:"";position:absolute;left:0;right:0;bottom:-30px;height:16px;background:linear-gradient(rgba(0,0,0,.18),transparent)}
+.bk{aspect-ratio:2/3;position:relative;transition:transform .5s var(--ease);box-shadow:0 22px 30px -16px rgba(20,14,4,.6),6px 0 0 -2px rgba(0,0,0,.18)}
+.bk:hover{transform:translateY(-12px) rotate(-1.2deg)}
+.bk.tl{will-change:transform}
+.bk .cv .top{visibility:hidden}
+.bk .st{position:absolute;top:10px;left:10px;z-index:2;font:600 7px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;background:var(--gold);color:#17120a;padding:5px 7px;border-radius:99px;font-style:normal}
+.bk .glare{opacity:0}.bk:hover .glare{opacity:1}
+.cv .tt{overflow-wrap:break-word;hyphens:auto}
+.cv .tt.long{font-size:clamp(.95rem,1.5vw,1.3rem)}
+.bk .cv{padding:16px 14px 14px}.bk .cv .tt{font-size:clamp(1.05rem,1.7vw,1.5rem)}.bk .cv .top,.bk .cv .au{font-size:7px}.bk .cv .ln{inset:8px}.bk .cv .au img{width:14px}
+.bk.slot{border:1.5px dashed rgba(143,109,42,.65);box-shadow:none;display:grid;place-items:center;text-align:center;color:var(--goldd);background:rgba(255,255,255,.28);padding:14px}
+.bk.slot b{display:block;font:400 2.6rem/1 var(--serif);margin-bottom:8px}.bk.slot span{font:600 10px/1.4 var(--sans);letter-spacing:.16em;text-transform:uppercase}
+.nota{margin-top:50px;font:500 12px/1.5 var(--sans);letter-spacing:.06em;color:var(--tops);opacity:.8}
+/* contact */
+.ct{background:radial-gradient(70% 90% at 15% 0%,rgba(184,146,63,.16),transparent 70%),var(--ink);padding:clamp(80px,11vw,140px) 0}
+.ct .wrap{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}
+.ct h2{font-size:clamp(2.4rem,5.4vw,4.8rem);line-height:1;margin:18px 0 22px}
+.ct .lead{color:var(--tons);max-width:28em;margin-bottom:32px}
+.ct dl{display:grid;gap:14px;font-size:15.5px}.ct dt{font:600 11px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:5px}.ct dd a{border-bottom:1px solid rgba(216,184,120,.4)}
+form{background:var(--ink2);border:1px solid rgba(243,238,226,.1);padding:34px;display:grid;gap:18px}
+label{display:grid;gap:8px;font:600 11px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--tons)}
+input,textarea{background:var(--ink);border:1px solid rgba(243,238,226,.16);color:var(--ton);padding:14px 14px;font:400 16px/1.4 var(--sans);border-radius:2px;width:100%}
+input:focus,textarea:focus{outline:2px solid var(--gold);outline-offset:1px;border-color:transparent}
+textarea{min-height:110px;resize:vertical}
+form small{color:var(--tons);font-size:13px}
+footer{background:#0c0e14;color:var(--tons);padding:38px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+@media (max-width:960px){
+.links a:not(.btn){display:none}
+.hero .wrap,.proc .wrap,.ct .wrap{grid-template-columns:1fr;gap:36px}
+.stagebook{min-height:470px}.book{--w:240px;--h:352px;--d:42px}.book .cv .tt{font-size:2.1rem}
+.cap{position:static;transform:none;margin-top:10px}.stagebook{display:flex;flex-direction:column;justify-content:center}
+.pil{grid-template-columns:1fr}.pil div,.pil div:first-child,.pil div:last-child{border:0;border-bottom:1px solid rgba(27,26,23,.15);padding:24px 0}
+.proc .side{position:static}
+.steps li{grid-template-columns:54px 1fr}.steps .t{display:none}.steps:before{left:26px}
+.row{grid-template-columns:repeat(2,1fr)}
+}
+@media (prefers-reduced-motion:reduce){.book{animation:none;transform:rotateX(5deg) rotateY(-24deg)}.strip div{animation:none}.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header id="hd"><div class="bar">Proposta de design preparada por Ítalo Silveira (IsDesign) para a Book 8 Editora. Versão de apresentação, não é o site oficial.</div><div class="wrap nav">
+<a class="brand" href="#topo" aria-label="Book 8 Editora, início"><img src="img/simbolo.webp" width="205" height="240" alt=""><span class="wm">Book 8<em>Editora</em></span></a>
+<nav class="links" aria-label="Principal"><a href="#sobre">Sobre</a><a href="#processo">Processo</a><a href="#obras">Catálogo</a><a class="btn g" href="#contato">Publicar meu livro</a></nav>
+</div></header>
+
+<main id="topo">
+<section class="hero"><div class="wrap">
+<div>
+<span class="eb rv">Editora de autoria &middot; Curadoria artística</span>
+<h1 class="rv">Sua trajetória merece virar <em>legado</em>, não só um livro.</h1>
+<p class="lead rv">A Book 8 transforma a experiência de empreendedores que já construíram algo real em livros de autoridade. Objetos de desejo, do briefing ao lançamento.</p>
+<div class="cta rv"><a class="btn g" href="#contato">Quero publicar meu livro</a><a class="btn o" href="#processo">Ver como funciona</a></div>
+</div>
+<div class="stagebook">
+<div class="tilt" aria-hidden="true"><div class="book">
+<div class="f"><div class="cv c1"><i class="ln"></i><span class="top">Coleção Autoria</span><div class="tt">O seu nome na capa<i>A sua trajetória, em um livro de autoridade.</i></div><div class="au"><span>Seu nome aqui</span><img src="img/simbolo.webp" alt=""></div><i class="glare"></i></div></div>
+<div class="b"></div>
+<div class="sp"><span>O seu nome na capa</span></div>
+<div class="pg"></div>
+</div></div>
+<a class="cap" href="#contato">Reserve o seu lugar no catálogo <b aria-hidden="true">&rarr;</b></a>
+</div>
+</div></section>
+
+<div class="strip" aria-hidden="true"><div><span>Briefing</span><i>/</i><span>Roteirização</span><i>/</i><span>Revisão</span><i>/</i><span>Design interno</span><i>/</i><span>Capa</span><i>/</i><span>ISBN</span><i>/</i><span>Distribuição</span><i>/</i><span>Lançamento</span><i>/</i><span>Briefing</span><i>/</i><span>Roteirização</span><i>/</i><span>Revisão</span><i>/</i><span>Design interno</span><i>/</i><span>Capa</span><i>/</i><span>ISBN</span><i>/</i><span>Distribuição</span><i>/</i><span>Lançamento</span><i>/</i></div></div>
+
+<section class="man" id="sobre"><div class="wrap">
+<span class="eb rv">Apresentação</span>
+<h2 class="rv">Empreendedor entendendo <em>empreendedor.</em></h2>
+<p class="rv" style="max-width:36em;margin:-20px 0 56px;color:var(--tops);font-size:1.1rem">A Book 8 é uma editora independente com curadoria artística, especializada em transformar a trajetória de empreendedores experientes em livros de autoridade. Cada livro é tratado como um ativo de alto valor, não como um produto de prateleira.</p>
+<div class="pil">
+<div class="rv"><b>Pilar I</b><h3>Empreendedor ensinando empreendedor</h3><p>Somos formados por quem já viveu a jornada e as dores de construir um negócio, e sabe transformar essa vivência em conteúdo.</p></div>
+<div class="rv"><b>Pilar II</b><h3>Curadoria artística</h3><p>Cada livro é tratado como objeto de desejo, com conceito visual e estético acima do padrão comercial comum.</p></div>
+<div class="rv"><b>Pilar III</b><h3>Atendimento próximo</h3><p>Processo consultivo, personalizado e livre de burocracias excessivas, do briefing ao pós-lançamento.</p></div>
+</div></div></section>
+
+<section class="proc" id="processo"><div class="wrap">
+<div class="side">
+<span class="eb">Processo de trabalho</span>
+<h2 class="rv">Do briefing ao <em>lançamento.</em></h2>
+<p class="rv">Um fluxo de 8 etapas claras, pensado para que o autor foque apenas na transmissão do seu conhecimento.</p>
+<div class="prog" aria-hidden="true"><i id="pg"></i></div>
+</div>
+<ol class="steps" id="steps">
+<li><span class="n">01</span><div><h3>Briefing</h3><p>Alinhamento de expectativas e definição do objetivo central da obra.</p></div><span class="t">Diagnóstico</span></li>
+<li><span class="n">02</span><div><h3>Desenvolvimento</h3><p>Estruturação da roteirização, para que a sua história ganhe forma de livro.</p></div><span class="t">Conteúdo</span></li>
+<li><span class="n">03</span><div><h3>Refino</h3><p>Revisão técnica, ortográfica e refinamento gramatical.</p></div><span class="t">Revisão</span></li>
+<li><span class="n">04</span><div><h3>Design interno</h3><p>Diagramação e escolha tipográfica focadas na experiência de leitura.</p></div><span class="t">Miolo</span></li>
+<li><span class="n">05</span><div><h3>Design externo</h3><p>Criação da capa sob curadoria artística de alto nível.</p></div><span class="t">Capa</span></li>
+<li><span class="n">06</span><div><h3>Legalização</h3><p>Registro de ISBN, ficha catalográfica e trâmites burocráticos.</p></div><span class="t">Registros</span></li>
+<li><span class="n">07</span><div><h3>Distribuição</h3><p>Configuração nos canais de venda sob demanda, no Brasil e fora dele.</p></div><span class="t">E-commerce</span></li>
+<li><span class="n">08</span><div><h3>Lançamento</h3><p>Entrega da obra ao mercado e acompanhamento de divulgação, antes e depois.</p></div><span class="t">Autoridade</span></li>
+</ol>
+</div></section>
+
+<section class="shelf" id="obras"><div class="wrap">
+<span class="eb rv">Em produção</span>
+<h2 class="rv">Os próximos títulos já estão saindo <em>do forno.</em></h2>
+<p class="i rv">Com a bagagem editorial de quem já publicou muito, a Book 8 prepara os seus próximos lançamentos. As obras abaixo estão em produção, e as capas oficiais chegam em breve. Esta é uma prévia do nível de curadoria de cada uma.</p>
+<div class="row rv">
+<div class="bk tl"><div class="cv c1"><i class="ln"></i><span class="top">Coleção Autoria</span><div class="tt ">Escolha-se</div><div class="au"><span>Book 8</span><img src="img/simbolo.webp" alt=""></div><i class="glare"></i></div><em class="st">Em produção</em></div>
+<div class="bk tl"><div class="cv c2"><i class="ln"></i><span class="top">Coleção Autoria</span><div class="tt ">Contos Comestíveis</div><div class="au"><span>Book 8</span><img src="img/simbolo.webp" alt=""></div><i class="glare"></i></div><em class="st">Em produção</em></div>
+<div class="bk tl"><div class="cv c3"><i class="ln"></i><span class="top">Coleção Autoria</span><div class="tt long">Face a Face com a Palavra</div><div class="au"><span>Book 8</span><img src="img/simbolo.webp" alt=""></div><i class="glare"></i></div><em class="st">Em produção</em></div>
+<div class="bk tl"><div class="cv c4"><i class="ln"></i><span class="top">Coleção Autoria</span><div class="tt long">Guia do Investidor-Franqueado</div><div class="au"><span>Book 8</span><img src="img/simbolo.webp" alt=""></div><i class="glare"></i></div><em class="st">Em produção</em></div>
+<a class="bk slot" href="#contato"><div><b>+</b><span>O seu livro<br>pode ser o próximo</span></div></a>
+</div>
+<p class="nota">Capas em conceito. As capas oficiais serão reveladas a cada lançamento.</p>
+</div></section>
+
+<section class="ct" id="contato"><div class="wrap">
+<div>
+<span class="eb rv">Próximos passos</span>
+<h2 class="rv">Vamos transformar sua trajetória em <em>autoridade impressa.</em></h2>
+<p class="lead rv">Agende uma reunião de diagnóstico, receba um cronograma personalizado e comece a mentoria com validação mútua da viabilidade.</p>
+<dl class="rv">
+<div><dt>WhatsApp</dt><dd><a href="https://wa.me/5511917937381">(11) 91793-7381</a></dd></div>
+<div><dt>E-mail</dt><dd><a href="mailto:contato@book8.com.br">contato@book8.com.br</a></dd></div>
+<div><dt>Instagram</dt><dd>@Book8</dd></div>
+<div><dt>Onde estamos</dt><dd>São Bernardo do Campo, SP</dd></div>
+</dl>
+</div>
+<form id="f" class="rv">
+<label>Seu nome<input name="n" autocomplete="name" required></label>
+<label>Sua trajetória em uma frase<textarea name="t" placeholder="Ex.: construí uma rede de padarias do zero e quero contar como."></textarea></label>
+<button class="btn g" type="submit" style="justify-content:center;border:0;cursor:pointer">Falar com a Book 8 no WhatsApp</button>
+<small>Ao enviar, abrimos o WhatsApp com a sua mensagem pronta. Nada é guardado neste site.</small>
+</form>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>&copy; 2026 Book 8 Editora. Todos os direitos reservados.</span><span>Elevando histórias à autoridade.</span></div></footer>
+
+<script>
+(function(){
+var hd=document.getElementById('hd');function sc(){hd.classList.toggle('s',scrollY>30)}sc();addEventListener('scroll',sc,{passive:true});
+var io='IntersectionObserver' in window;
+var rv=[].slice.call(document.querySelectorAll('.rv'));
+if(io){var o=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');o.unobserve(x.target)}})},{threshold:.15});rv.forEach(function(r,i){r.style.transitionDelay=(i%4)*70+'ms';o.observe(r)})}else rv.forEach(function(r){r.classList.add('in')});
+var li=[].slice.call(document.querySelectorAll('#steps li')),pg=document.getElementById('pg');
+if(io){var o2=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('on');var i=li.indexOf(x.target);pg.style.width=((i+1)/li.length*100)+'%'}})},{rootMargin:'-40% 0px -40% 0px'});li.forEach(function(l){o2.observe(l)})}else li.forEach(function(l){l.classList.add('on')});
+
+var fine=matchMedia('(pointer:fine)').matches&&!matchMedia('(prefers-reduced-motion:reduce)').matches;
+if(fine){
+var hero=document.querySelector('.hero'),tl=document.querySelector('.tilt'),gl=document.querySelector('.hero .glare');
+var tx=0,ty=0,cx=0,cy=0,run=false;
+function lp(){cx+=(tx-cx)*.08;cy+=(ty-cy)*.08;tl.style.transform='rotateY('+cx.toFixed(2)+'deg) rotateX('+cy.toFixed(2)+'deg)';if(Math.abs(tx-cx)>.02||Math.abs(ty-cy)>.02)requestAnimationFrame(lp);else run=false}
+hero.addEventListener('pointermove',function(e){var nx=e.clientX/innerWidth-.5,ny=e.clientY/innerHeight-.5;tx=nx*16;ty=-ny*9;hero.style.setProperty('--mx',(50+nx*60)+'%');hero.style.setProperty('--my',(45+ny*40)+'%');var r=tl.getBoundingClientRect();gl.style.setProperty('--gx',((e.clientX-r.left)/r.width*100)+'%');gl.style.setProperty('--gy',((e.clientY-r.top)/r.height*100)+'%');if(!run){run=true;requestAnimationFrame(lp)}});
+hero.addEventListener('pointerleave',function(){tx=0;ty=0;if(!run){run=true;requestAnimationFrame(lp)}});
+[].slice.call(document.querySelectorAll('.bk.tl')).forEach(function(b){var g=b.querySelector('.glare');
+b.addEventListener('pointermove',function(e){var r=b.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;b.style.transition='transform .08s linear';b.style.transform='perspective(800px) translateY(-12px) rotateY('+(x*14).toFixed(1)+'deg) rotateX('+(-y*10).toFixed(1)+'deg)';g.style.setProperty('--gx',(x+.5)*100+'%');g.style.setProperty('--gy',(y+.5)*100+'%')});
+b.addEventListener('pointerleave',function(){b.style.transition='transform .6s cubic-bezier(.2,.7,.2,1)';b.style.transform=''})});
+}
+document.getElementById('f').addEventListener('submit',function(ev){ev.preventDefault();var d=new FormData(ev.target);var m='Olá, Book 8! Meu nome é '+d.get('n')+'.'+(d.get('t')?' Minha trajetória em uma frase: '+d.get('t'):'')+' Gostaria de agendar o diagnóstico.';open('https://wa.me/5511917937381?text='+encodeURIComponent(m),'_blank','noopener')});
+})();
+</script>
+</body>
+</html>
