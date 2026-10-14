@@ -1,0 +1,9 @@
+# Publica só o site (portfólios e protótipos). Listas e e-mails de prospecção não vão para o ar na Netlify.
+[build]
+  command = "rm -rf agencias wordpress"
+  publish = "."
+
+[[redirects]]
+  from = "/"
+  to = "/parceiros/"
+  status = 302
