@@ -7,3 +7,9 @@
   from = "/"
   to = "/parceiros/"
   status = 302
+
+# Proposta OrigoX: fora dos buscadores (página e PDFs)
+[[headers]]
+  for = "/origox/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow, noarchive"
