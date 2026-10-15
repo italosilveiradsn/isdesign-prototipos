@@ -55,7 +55,7 @@ section.s{padding:clamp(80px,12vw,150px) 0}
 .case .tx{padding:28px 28px 34px}
 .case .n{font:900 14px "Inter Tight";color:var(--red);letter-spacing:.12em}
 .case h3{font-size:clamp(26px,3vw,40px);margin:12px 0 12px}
-.case p{color:#cfcfcf}.case small{display:block;margin-top:14px;color:var(--mute);font-size:13px;letter-spacing:.04em}
+.case p{color:#cfcfcf}.case .tx{flex:1}.case small{display:block;margin-top:14px;color:var(--mute);font-size:13px;letter-spacing:.04em}
 .note{margin-top:24px;color:var(--mute);font-size:14px;max-width:80ch}
 .sites{background:#fff;color:#0a0a0a}
 .sites .k{color:var(--red)}.sites .sh p{color:#555}
@@ -81,11 +81,13 @@ section.s{padding:clamp(80px,12vw,150px) 0}
 .farol h2 em{color:#0a0a0a}
 .farol .g{display:grid;grid-template-columns:1.2fr 1fr;gap:50px;align-items:start}
 .farol p{font-size:clamp(18px,1.8vw,22px);max-width:44ch}
-.farol ul{list-style:none;border-top:2px solid #fff}
+.fl-logo{width:min(300px,70%);height:auto;border-radius:18px;margin-top:30px}.farol ul{list-style:none;border-top:2px solid #fff}
 .farol li{display:flex;gap:18px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.45);font-weight:700;font-size:19px}
 .farol li b{font-weight:900;opacity:.6;min-width:30px}
 .g2{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(30px,5vw,70px);align-items:center}.wpl{list-style:none;margin-top:26px;border-top:1px solid var(--line)}.wpl li{display:flex;gap:18px;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--line);color:#cfcfcf}.wpl b{font:400 34px/1 "Anton";color:var(--red);min-width:84px}.wpd{box-shadow:12px 12px 0 var(--red)}
 .v4{display:grid;grid-template-columns:auto 1fr;gap:clamp(24px,4vw,56px);align-items:center;border:1px solid var(--line);background:var(--bg2);padding:clamp(24px,4vw,48px);margin-bottom:34px;position:relative}.v4::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--red)}.v4 img{width:clamp(150px,18vw,240px);height:auto}.v4 h3{font-size:clamp(28px,3.4vw,46px);margin:8px 0 14px}.v4 p{color:#cfcfcf;max-width:62ch;margin-top:10px}.v4 p b{color:#fff}
+.ab{display:grid;grid-template-columns:auto 1fr;gap:clamp(24px,5vw,64px);align-items:center;border-top:1px solid var(--line);padding-top:clamp(40px,6vw,70px)}.av{width:clamp(130px,16vw,190px);height:auto;border-radius:50%;border:3px solid var(--red)}.ab h2{font-size:clamp(46px,7vw,100px);margin:18px 0 20px}.ab p{color:#d4d4d4;max-width:60ch;margin-bottom:12px}.fl{list-style:none;display:flex;flex-wrap:wrap;gap:12px 22px;margin-top:22px}.fl li{display:flex;align-items:center;gap:9px;font:700 12px "Inter Tight";letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}.fl svg{width:30px;height:20px;border-radius:3px;box-shadow:0 0 0 1px #3a3a3a}
+.cr{display:flex;gap:10px;padding:0 28px 28px;overflow-x:auto}.cr img{height:240px;width:auto;flex:none;border:1px solid var(--line)}
 .how{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line)}
 .how div{padding:30px 26px;border-right:1px solid var(--line)}.how div:last-child{border:0}
 .how b{font:400 50px/1 "Anton";color:var(--red);letter-spacing:-.04em}
@@ -96,22 +98,22 @@ section.s{padding:clamp(80px,12vw,150px) 0}
 .end{text-align:center;padding:clamp(90px,14vw,190px) 0;background:radial-gradient(800px 420px at 50% 100%,rgba(238,28,37,.35),transparent 70%)}
 .end h2{font-size:clamp(52px,10vw,160px);margin:22px auto 30px;max-width:13ch}
 .end p{max-width:48ch;margin:0 auto;color:#cfcfcf}.end .cta{justify-content:center}
-footer{border-top:1px solid var(--line);padding:26px 0;color:var(--mute);font-size:13px}
+.fl2{display:flex;align-items:center;justify-content:center;gap:26px;margin-bottom:22px}.fl2 img{height:38px;width:auto}.fl2 span{font:400 28px "Anton";color:var(--mute)}footer{text-align:center;border-top:1px solid var(--line);padding:26px 0;color:var(--mute);font-size:13px}
 .rv{opacity:0;transform:translateY(34px);transition:opacity .8s,transform .8s cubic-bezier(.2,.7,.2,1)}.rv.in{opacity:1;transform:none}
 @media (max-width:900px){nav{display:none}.stats,.how{grid-template-columns:repeat(2,1fr)}.stats div:nth-child(2),.how div:nth-child(2){border-right:0}.stats div,.how div{border-bottom:1px solid var(--line)}
-.g2,.v4,.cases,.plate,.plate:nth-child(even),.farol .g{grid-template-columns:1fr}.plate:nth-child(even) .pt{order:0}.phone,.plate:nth-child(even) .phone{right:6px;left:auto;width:28%}.desk{box-shadow:8px 8px 0 var(--red)}
+.ab,.g2,.v4,.cases,.plate,.plate:nth-child(even),.farol .g{grid-template-columns:1fr}.plate:nth-child(even) .pt{order:0}.phone,.plate:nth-child(even) .phone{right:6px;left:auto;width:28%}.desk{box-shadow:8px 8px 0 var(--red)}
 .exp li{grid-template-columns:1fr;gap:4px}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
 </style></head><body>
 <header><div class="w"><a class="logo" href="#top"><img src="img/logo-white.png" width="400" height="170" alt="">Ítalo Silveira</a>
-<nav aria-label="Principal"><a href="#cases">Cases</a><a href="#sites">Sites</a><a href="#wordpress">WordPress</a><a href="#farol">Método FAROL</a><a href="#trajetoria">Trajetória</a><a href="#contato">Contato</a></nav></div></header>
+<nav aria-label="Principal"><a href="#sobre">Sobre</a><a href="#cases">Cases</a><a href="#sites">Sites</a><a href="#wordpress">WordPress</a><a href="#farol">Método FAROL</a><a href="#trajetoria">Trajetória</a><a href="#contato">Contato</a></nav></div></header>
 
 <main id="top">
 <section class="hero"><div class="w">
 <p class="k">Portfólio · Design e estratégia de marca</p>
-<h1>Marca que <span>vende.</span> Site que <em>prova.</em></h1>
-<p class="lead">Sou o <b>Ítalo Silveira</b>, ex-Designer Sênior da V4 Company. São 15 anos de mercado, com empresas de vários países, em campanhas de marcas grandes, estratégia de marca e sites que não parecem com os de ninguém.</p>
-<div class="cta"><a class="btn" href="#cases">Ver os cases</a><a class="btn o" href="#contato">Falar comigo</a></div>
+<h1>Designer e <span>estrategista</span> <em>de marca.</em></h1>
+<p class="lead">Oi, eu sou o <b>Ítalo Silveira</b>. Este é o meu portfólio para a vaga de design na Trieme &amp; Co. Reuni aqui o que fiz na V4 Company, o que estou fazendo agora e um pouco de quem eu sou.</p>
+<div class="cta"><a class="btn" href="#cases">Ver meu trabalho</a><a class="btn o" href="#contato">Contato</a></div>
 <p class="for"><img class="v4b" src="img/v4-logo-white.png" width="862" height="219" alt="V4 Company"> Preparado para <b id="emp">Trieme &amp; Co</b></p>
 </div></section>
 
@@ -119,24 +121,32 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--mute);font-si
 
 <section class="s"><div class="w"><div class="stats rv">
 <div><b data-c="15">0</b><span>anos de mercado</span></div>
-<div><b><span data-c="10">0</span>+</b><span>Estruturações Estratégicas na V4</span></div>
-<div><b style="font-size:clamp(36px,4.6vw,66px);padding-top:.12em">DEZENAS</b><span>de sites no V4 Pages, o software de sites da V4</span></div>
+<div><b><span data-c="10">0</span>+</b><span>Estruturações Estratégicas</span></div>
+<div><b style="font-size:clamp(36px,4.6vw,66px);padding-top:.12em">DEZENAS</b><span>sites no V4 Pages</span></div>
 <div><b data-c="4">0</b><span>campanhas de marcas grandes</span></div>
 </div></div></section>
 
+<section class="s" id="sobre" style="padding-top:0"><div class="w ab rv">
+<img class="av" src="img/avatar.png" width="260" height="260" alt="Foto de Ítalo Silveira">
+<div><p class="k">Quem faz</p><h2>Ítalo <em>Silveira.</em></h2>
+<p>Sou de Itabaiana, em Sergipe, e trabalho de forma remota. Tenho mais de 15 anos de mercado em design, campanha e estratégia de marca, e passei pela V4 Company como Designer Sênior.</p>
+<p>Nesse tempo trabalhei com clientes no Brasil, na América do Sul, na Europa e nos Estados Unidos.</p>
+<ul class="fl"><li><svg viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#009b3a"/><path d="M15 2.2 27.5 10 15 17.8 2.5 10Z" fill="#fedf00"/><circle cx="15" cy="10" r="4.3" fill="#002776"/></svg><span>Brasil</span></li><li><svg viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="10" fill="#fcd116"/><rect y="10" width="30" height="5" fill="#003893"/><rect y="15" width="30" height="5" fill="#ce1126"/></svg><span>Colômbia</span></li><li><svg viewBox="0 0 30 20" aria-hidden="true"><rect y="0.00" width="30" height="1.56" fill="#b22234"/><rect y="1.54" width="30" height="1.56" fill="#fff"/><rect y="3.08" width="30" height="1.56" fill="#b22234"/><rect y="4.62" width="30" height="1.56" fill="#fff"/><rect y="6.15" width="30" height="1.56" fill="#b22234"/><rect y="7.69" width="30" height="1.56" fill="#fff"/><rect y="9.23" width="30" height="1.56" fill="#b22234"/><rect y="10.77" width="30" height="1.56" fill="#fff"/><rect y="12.31" width="30" height="1.56" fill="#b22234"/><rect y="13.85" width="30" height="1.56" fill="#fff"/><rect y="15.38" width="30" height="1.56" fill="#b22234"/><rect y="16.92" width="30" height="1.56" fill="#fff"/><rect y="18.46" width="30" height="1.56" fill="#b22234"/><rect width="13" height="10.8" fill="#3c3b6e"/></svg><span>Estados Unidos</span></li><li><svg viewBox="0 0 30 20" aria-hidden="true"><rect width="10" height="20" fill="#009246"/><rect x="10" width="10" height="20" fill="#fff"/><rect x="20" width="10" height="20" fill="#ce2b37"/></svg><span>Itália</span></li><li><svg viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#aa151b"/><rect y="5" width="30" height="10" fill="#f1bf00"/></svg><span>Espanha</span></li></ul></div>
+</div></section>
+
 <section class="s" id="cases" style="padding-top:0"><div class="w">
-<div class="sh rv"><div><p class="k">01 · Cases</p><h2>Campanhas que <em>você conhece.</em></h2></div><p>Estratégia e criação dentro de campanhas de grandes marcas, no Brasil e na América do Sul.</p></div>
+<div class="sh rv"><div><p class="k">01 · Cases</p><h2>Campanhas <em>que fiz.</em></h2></div><p>Estratégia e criação em campanhas de marcas grandes, no Brasil e na América do Sul. Os criativos abaixo são alguns dos que fiz.</p></div>
 <div class="cases">
-<article class="case rv"><div class="lg"><img class="l-condor" src="img/brands/condor-t.png" width="780" height="215" alt="Logo Condor Instruments" loading="lazy"></div><div class="tx"><span class="n">CASE 01 · NASA · ARTEMIS II</span><h3>Condor Instruments</h3><p>Campanha da tecnologia brasileira indo para o espaço.</p></div></article>
-<article class="case rv"><div class="lg"><img class="l-peak" src="img/brands/peak-t.png" width="223" height="280" alt="Logo Peak Sports" loading="lazy"></div><div class="tx"><span class="n">CASE 02 · JOGOS OLÍMPICOS</span><h3>Peak Sports</h3><p>Patrocinadora oficial de uniformes da delegação brasileira.</p><small>Tóquio 2020 e Paris 2024</small></div></article>
-<article class="case rv"><div class="lg"><img class="l-cusquena" src="img/brands/cusquena-t.png" width="685" height="260" alt="Logo Cusqueña" loading="lazy"></div><div class="tx"><span class="n">CASE 03 · AB INBEV · PERU</span><h3>Cusqueña</h3><p>Participação na campanha da final da Libertadores, Flamengo x Palmeiras.</p></div></article>
-<article class="case rv"><div class="lg"><img class="l-menin" src="img/brands/menin-t.png" width="900" height="323" alt="Logo Menin Engenharia" loading="lazy"></div><div class="tx"><span class="n">CASE 04 · CONSTRUÇÃO</span><h3>Menin Engenharia</h3><p>A 13ª maior construtora do Brasil.</p><small>Ranking INTEC 2026, por área construída</small></div></article>
+<article class="case rv"><div class="lg"><img class="l-condor" src="img/brands/condor-t.png" width="780" height="215" alt="Logo Condor Instruments" loading="lazy"></div><div class="tx"><span class="n">CASE 01 · NASA · ARTEMIS II</span><h3>Condor Instruments</h3><p>Campanha da tecnologia brasileira indo para o espaço.</p></div><div class="cr"><img src="img/criativos/condor.webp" height="240" loading="lazy" alt="Criativo Condor Instruments 1"><img src="img/criativos/condor-2.webp" height="240" loading="lazy" alt="Criativo Condor Instruments 2"><img src="img/criativos/condor-3.webp" height="240" loading="lazy" alt="Criativo Condor Instruments 3"></div></article>
+<article class="case rv"><div class="lg"><img class="l-peak" src="img/brands/peak-t.png" width="223" height="280" alt="Logo Peak Sports" loading="lazy"></div><div class="tx"><span class="n">CASE 02 · JOGOS OLÍMPICOS</span><h3>Peak Sports</h3><p>Patrocinadora oficial de uniformes da delegação brasileira.</p><small>Tóquio 2020 e Paris 2024</small></div><div class="cr"><img src="img/criativos/peak-2.webp" height="240" loading="lazy" alt="Criativo Peak Sports 1"><img src="img/criativos/peak-3.webp" height="240" loading="lazy" alt="Criativo Peak Sports 2"></div></article>
+<article class="case rv"><div class="lg"><img class="l-cusquena" src="img/brands/cusquena-t.png" width="685" height="260" alt="Logo Cusqueña" loading="lazy"></div><div class="tx"><span class="n">CASE 03 · AB INBEV · PERU</span><h3>Cusqueña</h3><p>Participação na campanha da final da Libertadores, Flamengo x Palmeiras.</p></div><div class="cr"><img src="img/criativos/cusquena.webp" height="240" loading="lazy" alt="Criativo Cusqueña 1"><img src="img/criativos/cusquena-2.webp" height="240" loading="lazy" alt="Criativo Cusqueña 2"><img src="img/criativos/cusquena-3.webp" height="240" loading="lazy" alt="Criativo Cusqueña 3"></div></article>
+<article class="case rv"><div class="lg"><img class="l-menin" src="img/brands/menin-t.png" width="900" height="323" alt="Logo Menin Engenharia" loading="lazy"></div><div class="tx"><span class="n">CASE 04 · CONSTRUÇÃO</span><h3>Menin Engenharia</h3><p>A 13ª maior construtora do Brasil.</p><small>Ranking INTEC 2026, por área construída</small></div><div class="cr"><img src="img/criativos/menin.webp" height="240" loading="lazy" alt="Criativo Menin Engenharia 1"><img src="img/criativos/menin-2.webp" height="240" loading="lazy" alt="Criativo Menin Engenharia 2"><img src="img/criativos/menin-3.webp" height="240" loading="lazy" alt="Criativo Menin Engenharia 3"></div></article>
 </div>
 <p class="note rv">Meu papel: estratégia e criação. As logos pertencem aos seus donos. Por contrato, o material completo eu mostro em reunião privada.</p>
 </div></section>
 
 <section class="s sites" id="sites"><div class="w">
-<div class="sh rv"><div><p class="k">02 · Sites</p><h2>Os que <em>eu faço agora.</em></h2></div><p>Projetos para o mercado americano. Cada um com layout próprio, feito à mão, sem template.</p></div>
+<div class="sh rv"><div><p class="k">02 · Sites</p><h2>Sites <em>que fiz.</em></h2></div><p>Projetos que estou desenvolvendo agora, para o mercado americano, cada um com layout próprio.</p></div>
 
 <article class="plate rv"><div class="pt"><div class="big">01</div><h3>Wave Plumbing</h3><p class="tag">Encanamento · Tipografia de cartaz</p><p>Marca gigante sobre um vídeo de gota d'água em loop, com os serviços rolando na horizontal.</p>
 <a class="btn" href="https://italosilveiradsn.github.io/isdesign-prototipos/p/oBYPVyfV6Fn/" target="_blank" rel="noopener">Abrir o site ao vivo ↗</a></div>
@@ -154,8 +164,8 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--mute);font-si
 </div></section>
 
 <section class="s" id="wordpress"><div class="w g2">
-<div class="rv"><p class="k">03 · WordPress</p><h2 style="font-size:clamp(46px,7vw,104px);margin:20px 0 26px">Do design <em>ao tema editável.</em></h2>
-<p class="lead" style="max-width:40ch">Agência e cliente precisam trocar texto, foto e cor sozinhos. Transformei o site da Casa Roofing num tema WordPress que mantém o visual idêntico e dá ao cliente um editor visual.</p>
+<div class="rv"><p class="k">03 · WordPress</p><h2 style="font-size:clamp(46px,7vw,104px);margin:20px 0 26px">Tema <em>WordPress.</em></h2>
+<p class="lead" style="max-width:40ch">Para o cliente conseguir trocar texto, foto e cor sozinho, transformei o site da Casa Roofing num tema WordPress. O visual ficou idêntico e ele ganhou um editor visual.</p>
 <ul class="wpl"><li><b>0,0%</b>de diferença visual para o design original, no computador e no celular.</li><li><b>91</b>campos editáveis em Aparência &gt; Personalizar, mais 6 cores da marca, com prévia ao vivo.</li><li><b>1</b>formulário de contato que envia e-mail de verdade, com proteção contra spam.</li></ul>
 <p class="note">Ainda não testado em hospedagem de produção com envio real de e-mail. É um tema de uma página.</p>
 <a class="btn" href="https://github.com/italosilveiradsn/isdesign-prototipos/tree/main/wordpress" target="_blank" rel="noopener" style="margin-top:22px">Ver o tema e as notas ↗</a></div>
@@ -164,8 +174,8 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--mute);font-si
 
 <section class="s farol" id="farol"><div class="w g">
 <div><p class="k rv">04 · Método FAROL</p><h2 class="rv">Marca não é <em>marketing.</em></h2></div>
-<div class="rv"><p>Eu criei o Método FAROL, um produto de mentoria de marca e estratégia de marca para negócio real. Antes de abrir o layout, a pergunta é uma só: por que escolhem este negócio e não o do vizinho?</p>
-<ul style="margin-top:34px"><li><b>01</b>Entender o que o negócio já faz de especial e ele não percebe.</li><li><b>02</b>Transformar isso numa frase que o cliente repete.</li><li><b>03</b>Levar essa frase para o site, o perfil e a campanha.</li><li><b>04</b>Medir o que mudou, com número e sem enfeite.</li></ul></div>
+<div class="rv"><p>Criei o Método FAROL, uma mentoria de marca e estratégia de marca para negócio real. Ele parte de uma pergunta simples: por que escolhem este negócio e não o do vizinho?</p>
+<ul style="margin-top:34px"><li><b>01</b>Fundamento</li><li><b>02</b>Audiência</li><li><b>03</b>Reputação</li><li><b>04</b>Origem</li><li><b>05</b>Linguagem</li></ul><img class="fl-logo" src="img/farol-logo.webp" width="800" height="530" loading="lazy" alt="Logo do Método FAROL"></div>
 </div></section>
 
 <section class="s" id="trajetoria"><div class="w">
@@ -178,7 +188,7 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--mute);font-si
 </div>
 <div class="v4 rv"><img src="img/v4-logo.png" width="862" height="219" alt="V4 Company">
 <div><p class="k">Setembro de 2025 a abril de 2026</p><h3>Designer Sênior na V4 Company</h3>
-<p>Atuei na unidade Souza Santos, em Uberlândia. Conduzi <b>mais de 10 Estruturações Estratégicas</b>, o produto de entrada da V4, um trabalho bem completo de posicionamento do negócio. Construí <b>dezenas de sites no V4 Pages</b>, o software próprio de construção de sites da V4.</p>
+<p>Atuei na unidade Souza Santos, em Uberlândia. Fiz <b>mais de 10 Estruturações Estratégicas</b> e <b>dezenas de sites no V4 Pages</b>.</p>
 <p>Trabalhei lado a lado com o <b>André</b> durante todo esse período. Conheço também a <b>Júlia</b> desde 2025: entrei na V4 para assumir a vaga que ela estava deixando.</p></div></div>
 <ul class="exp rv">
 <li><span class="y">Remoto</span><span class="r">Estrategista de marca e designer líder</span><span class="c">PHX Consulting · Novezero Negócios</span></li>
@@ -187,13 +197,13 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--mute);font-si
 </div></section>
 
 <section class="end" id="contato"><div class="w">
-<p class="k rv">Vamos conversar</p>
-<h2 class="rv">Pronto para somar na <em>Trieme &amp; Co.</em></h2>
-<p class="rv">Trabalho bem por escrito e em equipe. Se fizer sentido, me chame e eu mostro o material completo dos cases em reunião.</p>
+<p class="k rv">Contato</p>
+<h2 class="rv">Vamos <em>conversar?</em></h2>
+<p class="rv">Obrigado por olhar meu trabalho. Fico à disposição para conversar e mostrar o material completo dos cases.</p>
 <div class="cta rv"><a class="btn" href="https://wa.me/5579999990185" target="_blank" rel="noopener">WhatsApp</a><a class="btn o" href="https://www.linkedin.com/in/italosilveiraa/" target="_blank" rel="noopener">LinkedIn</a><a class="btn o" href="https://www.italosilveira.com" target="_blank" rel="noopener">italosilveira.com</a></div>
 </div></section>
 </main>
-<footer><div class="w">© 2026 Ítalo Silveira · Itabaiana, Sergipe · Página de apresentação. Logos e marcas citadas pertencem aos seus donos; a marca V4 Company aparece apenas para indicar a experiência profissional.</div></footer>
+<footer><div class="w"><div class="fl2"><img src="img/logo-white.png" width="400" height="170" alt="Ítalo Silveira"><span>×</span><img src="img/v4-logo.png" width="862" height="219" alt="V4 Company"></div>© 2026 Ítalo Silveira · Itabaiana, Sergipe · Página de apresentação. Logos e marcas citadas pertencem aos seus donos; a marca V4 Company aparece apenas para indicar a experiência profissional.</div></footer>
 
 <script>
 (function(){
