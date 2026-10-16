@@ -63,16 +63,25 @@ function colocar(n,slot){var at=B.xi.indexOf(n);if(slot==null||slot<0){slot=B.se
  if(slot<0){say("Time completo. Toque em um jogador do campo para tirá-lo.");return}
  if(at>-1)B.xi[at]=B.xi[slot];B.xi[slot]=n;B.sel=-1;refresh()}
 function modal(html){var m=document.createElement("div");m.className="modal";m.innerHTML='<div class="mb" role="dialog" aria-modal="true"><button class="mx" aria-label="Fechar">×</button>'+html+'</div>';function close(){m.remove();removeEventListener("keydown",k)}function k(e){if(e.key==="Escape")close()}m.addEventListener("click",function(e){if(e.target===m||e.target.className==="mx")close()});addEventListener("keydown",k);document.body.appendChild(m);m.querySelector(".mx").focus()}
-function gerarImagem(){var W=1080,Hh=1350,cv=document.createElement("canvas");cv.width=W;cv.height=Hh;var x=cv.getContext("2d");
- var g=x.createLinearGradient(0,0,0,Hh);g.addColorStop(0,"#0b1a4a");g.addColorStop(1,"#08123a");x.fillStyle=g;x.fillRect(0,0,W,Hh);
- var im=new Image();im.onload=function(){x.drawImage(im,60,50,100,106);
-  x.fillStyle="#fff";x.font="800 84px 'Barlow Condensed',Arial Narrow,Arial,sans-serif";x.textBaseline="alphabetic";x.fillText("MEU TIME",190,112);x.fillStyle="#ff8a80";x.font="700 38px 'Barlow Condensed',Arial Narrow,Arial,sans-serif";x.fillText("ITABAIANA  ·  "+B.form,190,156);
+function gerarImagem(){
+ var F="'Barlow Condensed','Arial Narrow',Arial,sans-serif";
+ var fonts=document.fonts&&document.fonts.load?Promise.all([document.fonts.load("800 84px 'Barlow Condensed'"),document.fonts.load("700 38px 'Barlow Condensed'"),document.fonts.load("600 30px 'Barlow Condensed'")]).catch(function(){}):Promise.resolve();
+ var im=new Image();var loaded=new Promise(function(ok){im.onload=ok;im.onerror=ok});im.src=LOGO;
+ Promise.all([fonts,loaded]).then(function(){
+  var W=1080,Hh=1350,cv=document.createElement("canvas");cv.width=W;cv.height=Hh;var x=cv.getContext("2d");
+  var g=x.createLinearGradient(0,0,0,Hh);g.addColorStop(0,"#0b1a4a");g.addColorStop(1,"#08123a");x.fillStyle=g;x.fillRect(0,0,W,Hh);
+  if(im.naturalWidth){var ch=128,cw=ch*im.naturalWidth/im.naturalHeight;x.drawImage(im,60,40,cw,ch)}
+  x.textAlign="left";x.textBaseline="alphabetic";x.fillStyle="#fff";x.font="800 84px "+F;x.fillText("MEU TIME",190,108);x.fillStyle="#ff8a80";x.font="700 38px "+F;x.fillText("ITABAIANA  \u00b7  "+B.form,190,156);
   var px=90,py=200,pw=900,ph=1000;x.fillStyle="#118a41";x.fillRect(px,py,pw,ph);for(var i=0;i<10;i+=2){x.fillStyle="#0f7a3a";x.fillRect(px,py+i*ph/10,pw,ph/10)}
   x.strokeStyle="rgba(255,255,255,.85)";x.lineWidth=4;x.strokeRect(px+20,py+20,pw-40,ph-40);x.beginPath();x.moveTo(px+20,py+ph/2);x.lineTo(px+pw-20,py+ph/2);x.stroke();x.beginPath();x.arc(px+pw/2,py+ph/2,90,0,7);x.stroke();x.strokeRect(px+pw*.23,py+20,pw*.54,160);x.strokeRect(px+pw*.23,py+ph-180,pw*.54,160);
   FORM[B.form].forEach(function(c,i){var p=B.xi[i]!=null&&player(B.xi[i]);var cx=px+c[0]/100*pw,cy=py+c[1]/100*ph;x.beginPath();x.arc(cx,cy,40,0,7);x.fillStyle=p?"#fff":"rgba(255,255,255,.25)";x.fill();x.lineWidth=7;x.strokeStyle="#0a3fc2";x.stroke();
-   if(p){x.fillStyle="#0b1a4a";x.font="800 44px 'Barlow Condensed',Arial,sans-serif";x.textAlign="center";x.fillText(String(p.n),cx,cy+15);x.fillStyle="#fff";x.font="700 28px 'Barlow Condensed',Arial,sans-serif";x.fillText(p.nome.split(" ")[0].toUpperCase(),cx,cy+78)}});
-  x.textAlign="left";x.fillStyle="#cdd6ff";x.font="600 30px 'Barlow Condensed',Arial,sans-serif";x.fillText("Associação Olímpica de Itabaiana  ·  #Tremendão",90,1290);
-  modal('<h3>Sua escalação</h3><img class="gen" alt="Imagem da escalação montada" src="'+cv.toDataURL("image/png")+'"><p class="hint" style="color:#333">Para salvar: clique com o botão direito (ou segure o dedo) sobre a imagem e escolha salvar. Depois é só postar.</p>')};im.src=LOGO}
+   if(p){x.textAlign="center";x.fillStyle="#0b1a4a";x.font="800 44px "+F;x.fillText(String(p.n),cx,cy+15);x.fillStyle="#fff";x.font="700 28px "+F;x.fillText(p.nome.split(" ")[0].toUpperCase(),cx,cy+78)}});
+  x.textAlign="left";x.fillStyle="#cdd6ff";x.font="600 30px "+F;x.fillText("Associa\u00e7\u00e3o Ol\u00edmpica de Itabaiana  \u00b7  #Tremend\u00e3o",90,1290);
+  var url=cv.toDataURL("image/png");
+  modal('<h3>Sua escala\u00e7\u00e3o</h3><img class="gen" alt="Imagem da escala\u00e7\u00e3o montada" src="'+url+'"><div class="acts2 mact"><button class="btn" data-m="share" hidden>Compartilhar imagem</button><a class="btn b" href="'+url+'" download="meu-time-itabaiana.png">Baixar imagem</a></div><p class="hint" style="color:#333">Se o bot\u00e3o n\u00e3o funcionar no seu aparelho: clique com o bot\u00e3o direito (ou segure o dedo) sobre a imagem e escolha salvar.</p>');
+  var sh=document.querySelector('.modal [data-m="share"]');
+  if(sh&&navigator.canShare&&navigator.share&&cv.toBlob){cv.toBlob(function(bl){if(!bl)return;var f=new File([bl],"meu-time-itabaiana.png",{type:"image/png"});if(navigator.canShare({files:[f]})){sh.hidden=false;sh.addEventListener("click",function(){navigator.share({files:[f],title:"Meu time do Itabaiana",text:"Minha escala\u00e7\u00e3o do Tremend\u00e3o"}).catch(function(){})})}})}
+ })}
 function bindBuilder(){var b=document.getElementById("bld");if(!b)return;
  b.addEventListener("click",function(e){var t=e.target.closest("button");if(!t)return;
   if(t.dataset.f){mudarForm(t.dataset.f);refresh();return}
