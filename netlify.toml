@@ -13,3 +13,9 @@
   for = "/origox/*"
   [headers.values]
     X-Robots-Tag = "noindex, nofollow, noarchive"
+
+# Proposta Itabaiana: dados de exemplo, fora dos buscadores
+[[headers]]
+  for = "/itabaiana/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow, noarchive"
