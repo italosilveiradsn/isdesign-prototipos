@@ -34,7 +34,7 @@ function href(k,v,msg){if(!v)return"";if(k==="whatsapp")return"https://wa.me/"+v
 function redesBtns(cls,msg){return REDES.map(function(r){var h=href(r[0],C[r[0]],r[0]==="whatsapp"?msg:"");return h?'<a class="'+cls+'" href="'+esc(h)+'" target="_blank" rel="noopener">'+r[1]+'</a>':'<span class="'+cls+' off" title="Link a definir" aria-disabled="true">'+r[1]+'</span>'}).join("")}
 /* ---------- hero ---------- */
 function hero(){var g=proximo,adv=me(g.casa)?g.fora:g.casa,ct=me(g.casa)?"EM CASA":"FORA DE CASA";
-return '<section class="hero"><div class="bg"><img src="img/ranking-2020.jpg" alt=""></div><div class="wrap main"><div class="shw"><img class="shield" src="'+LOGO+'" alt="Escudo da Associação Olímpica de Itabaiana" width="358" height="499"></div>'+
+return '<section class="hero"><div class="bg"><img src="img/time-1971.jpg" alt="Elenco do Itabaiana, campeão do Nordeste em 1971"></div><p class="cap">Elenco campeão do Nordeste · 1971</p><div class="wrap main"><div class="shw"><img class="shield" src="'+LOGO+'" alt="Escudo da Associação Olímpica de Itabaiana" width="358" height="499"></div>'+
 '<div><div class="lbl"><i>Próximo jogo</i><span class="eyebrow" style="color:#ffb4ad">'+esc(g.comp)+' · '+ct+'</span></div>'+
 '<h1>Itabaiana<small>contra</small>'+esc(adv)+'</h1>'+
 '<div class="meta"><span><b>'+DIA[dt(g).getDay()]+', '+dt(g).getDate()+' '+MES[dt(g).getMonth()]+'</b></span><span><b>'+g.h+'</b></span><span>'+esc(g.local)+'</span></div>'+
