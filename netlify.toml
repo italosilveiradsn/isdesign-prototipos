@@ -19,3 +19,9 @@
   for = "/itabaiana/*"
   [headers.values]
     X-Robots-Tag = "noindex, nofollow, noarchive"
+
+# Proposta Ávida: identidade visual, fora dos buscadores
+[[headers]]
+  for = "/avida/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow, noarchive"
