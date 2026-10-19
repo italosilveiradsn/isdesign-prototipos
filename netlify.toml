@@ -25,3 +25,9 @@
   for = "/avida/*"
   [headers.values]
     X-Robots-Tag = "noindex, nofollow, noarchive"
+
+# Proposta Ávida v2: identidade visual refeita, fora dos buscadores
+[[headers]]
+  for = "/avida-v2/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow, noarchive"
