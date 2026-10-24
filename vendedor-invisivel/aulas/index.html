@@ -384,7 +384,6 @@ body{padding-bottom:0}
     </div>
     <div class="aulas-cta rv">
       <a class="btn" href="#simulador" data-cta>Ir para a calculadora <svg><use href="#ar"/></svg></a>
-      <a class="btn ghost-l" id="grp" href="#" hidden>Entrar no grupo de avisos <svg><use href="#ar"/></svg></a>
       
     </div>
     <p class="note-l rv">Aulas gravadas antes do lançamento. Os valores e exemplos citados são resultados do Léo, não promessa de ganho para você: o resultado depende de produto, influenciador, investimento e execução. Os vídeos só carregam quando você aperta o play (YouTube, sem cookies antes do clique).</p>
@@ -466,7 +465,6 @@ body{padding-bottom:0}
   var WA_NUMBER = "";     // WhatsApp do Léo com DDI e DDD, só números. Ex.: 5579999999999
   var CHECKOUT  = "";     // link de compra (Kiwify, Hotmart etc.)
   var VSL_URL   = "";     // .mp4 próprio, ou link de embed (YouTube/Vimeo/Panda). Quando preencher, o bloco de vídeo do topo aparece.
-  var GROUP_URL = "";     // link do grupo de avisos no WhatsApp. Quando preencher, o botão aparece nas aulas.
   /* ===================================================== */
 
   var $=function(id){return document.getElementById(id)};
@@ -484,8 +482,6 @@ body{padding-bottom:0}
   }
 
 
-  // grupo
-  var grp=$('grp');if(GROUP_URL){grp.href=GROUP_URL;grp.rel='noopener';grp.target='_blank';grp.hidden=false}
 
   // aulas do YouTube: só carregam no clique (sem cookies antes)
   function loadYT(wrap,start){
