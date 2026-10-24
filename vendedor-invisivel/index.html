@@ -446,19 +446,11 @@ body{padding-bottom:0}
         </div>
         <div class="verdict" id="verd" role="status"></div>
 
-        <div class="sc" id="sc">
+        <div class="sc on" id="sc">
           <h3 style="margin:0">Cenários</h3>
           <div class="t" id="sc-t"></div>
           <p class="note" style="margin:0">Pessimista: metade das vendas. Otimista: 50% a mais.</p>
         </div>
-
-        <form class="gate" id="gate" novalidate>
-          <h4>Quer ver os 3 cenários e falar com o Léo?</h4>
-          <p>Digite seu nome. Vamos abrir o WhatsApp com a sua simulação já escrita para o Léo.</p>
-          <div class="fld"><label for="i-nome" class="lab">Seu nome</label><div class="inp"><input id="i-nome" type="text" autocomplete="given-name" placeholder="Como o Léo pode te chamar?"></div></div>
-          <button class="btn wa" type="submit">Liberar cenários e chamar no WhatsApp <svg><use href="#ar"/></svg></button>
-          <p class="consent">Ao clicar, você abre uma conversa no WhatsApp com o Léo. Só enviamos a mensagem se você mandar.</p>
-        </form>
       </div>
     </div>
   </div>
@@ -688,22 +680,6 @@ body{padding-bottom:0}
   ['i-valor','i-parc','i-seg','i-eng','i-conv'].forEach(function(id){$(id).addEventListener('input',sim)});
   sim();
 
-  $('gate').addEventListener('submit',function(e){
-    e.preventDefault();
-    var c=last||calc(),nome=$('i-nome').value.trim();
-    var vb=$('verd').textContent.replace(/^(OK|!|X)/,'').trim();
-    var msg='Oi Léo, aqui é '+(nome||'um visitante do site')+'. Fiz a simulação no site do Vendedor Invisível:\n'+
-      '• Comissão por venda: '+brl(c.valor)+'\n• Divulgação: '+brl(c.parc)+'\n• Seguidores: '+nf(c.seg)+'\n'+
-      '• Engajamento: '+nf(c.eng*100,1)+'% · Conversão: '+nf(c.conv*100,1)+'%\n'+
-      '• Vendas estimadas: '+nf(c.vendas,1)+' · Lucro: '+brl(c.lucro)+'\n'+
-      'Resultado: '+vb+'\nQuero saber mais sobre o curso.';
-    var url='https://wa.me/'+(WA_NUMBER||'')+'?text='+encodeURIComponent(msg);
-    unlocked=true;
-    $('sc').classList.add('on');
-    $('gate').querySelector('h4').textContent='Cenários liberados.';
-    $('gate').querySelector('button').innerHTML='Abrir WhatsApp de novo';
-    window.open(url,'_blank','noopener');
-  });
 })();
 </script>
 </body>
